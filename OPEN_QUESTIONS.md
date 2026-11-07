@@ -30,6 +30,7 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 20. Partner school logos with permission (search shows Colegio Granadino, Interamerican School, Academia Merici). Can we cite Colegio Granadino's 3rd place and the Mexican press feature (link?)?
 21. Venue logos: assume **none** authorised (text-only mentions of NASA, Disney, Universal, etc.). Confirm. "Performing Arts Workshop by Disney" — is that an official Disney program name we may use?
 22. Brand rule: "Coded" wordmark + "Coding Education" legal/domain — or "CODED" all-caps?
+31. **Brand palette & logo files.** No colour spec exists; `/styleguide` uses a provisional palette. The live favicon is violet — is there a brand guide (hex values, logo SVG, wordmark rules)? *(blocks P2 visual design)*
 
 ## P1 — integrations (block P5)
 23. WhatsApp number (is +1 954 868 2367 WhatsApp-enabled, or a LATAM number?).

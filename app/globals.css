@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens. PALETTE IS PROVISIONAL — official brand colours pending (OPEN_QUESTIONS Q31).
+ * Motion: one ease set + token durations (PLAN §5). GSAP reads the same values from lib/motion/tokens.ts.
+ */
+@theme {
+  --color-ink: #0b0d12;
+  --color-ink-2: #1a1e27;
+  --color-paper: #f6f4ef;
+  --color-mist: #c9ccd3;
+  --color-accent: #3d5afe;
+  --color-steam-s: #22c3a6; /* Science */
+  --color-steam-t: #3d5afe; /* Technology */
+  --color-steam-e: #ff8a00; /* Engineering */
+  --color-steam-a: #ff3d7f; /* Arts */
+  --color-steam-m: #9b5cff; /* Math */
+  --color-ok: #1f9d55;
+  --color-warn: #b7791f;
+  --color-off: #6b7280;
+
+  --font-display: var(--font-unbounded), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter-tight), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+
+  --ease-coded: cubic-bezier(0.65, 0, 0.15, 1);
+  --ease-expo-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-power3-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+
+  --dur-1: 0.24s;
+  --dur-2: 0.4s;
+  --dur-3: 0.6s;
+  --dur-4: 0.9s;
+  --dur-5: 1.2s;
+
+  --radius-pill: 999px;
+  --radius-card: 28px;
+}
+
+html {
+  color-scheme: dark;
+  background: var(--color-ink);
+  color: var(--color-paper);
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

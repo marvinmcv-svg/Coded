@@ -1,7 +1,7 @@
 # CLAUDE.md — Coded 2.0 (codingeducation.us / codededucation.com rebuild)
 
 ## Status
-Phase **P0 (plan) complete — awaiting Marvin's approval of PLAN.md.** Do not write production code before approval.
+P0 approved 2026-11-07. Phase **P1 (foundation)** in progress on `claude/p1-foundation`.
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)
@@ -29,7 +29,9 @@ assets/manifest.json         media index (raw files in assets/raw/, gitignored)
 
 ## Motion rules
 - Animate only `transform`, `opacity`, `clip-path` (+ filters on small elements). Never layout properties.
-- Every ScrollTrigger is created inside `useGSAP` (auto-reverted on unmount/route change).
+- Every ScrollTrigger is created inside `useLazyGSAP` (`components/motion/useLazyGSAP.ts`: GSAP via dynamic import +
+  `gsap.context` auto-revert on unmount/route change). Never import `components/motion/gsap` statically — it costs ~48 KB gz
+  of a ~186 KB baseline against the 200 KB initial-JS budget.
   Call `ScrollTrigger.refresh()` after `document.fonts.ready` and hero image decode.
 - Lenis synced to GSAP: `lenis.on('scroll', ScrollTrigger.update)`, `gsap.ticker.add(t => lenis.raf(t * 1000))`, `gsap.ticker.lagSmoothing(0)`.
 - `useMotionTier()` → `static | lite | full`. `prefers-reduced-motion: reduce` ⇒ static: no Lenis, no scrub, no 3D,
@@ -46,7 +48,15 @@ Initial JS ≤ 200 KB gz/route; hero video ≤ 2.5 MB; LCP image ≤ 180 KB. axe
 Content check fails the build if a cohort with `start_date <= today` is open or an i18n key is missing in ES/EN.
 
 ## Commands
-P1 will add: `pnpm dev`, `pnpm build`, `pnpm typecheck`, `pnpm lint`, `pnpm test:e2e`, `pnpm lhci`, `pnpm content:check`.
+```bash
+pnpm dev                      # http://localhost:3000 → /es
+pnpm build                    # runs content:check first
+pnpm typecheck && pnpm lint
+pnpm test:e2e                 # needs a prior build; sandbox: PW_CHROMIUM_PATH=/opt/pw-browsers/chromium
+pnpm lhci                     # needs a prior build; sandbox: CHROME_PATH=/opt/pw-browsers/chromium
+pnpm content:check            # i18n ES/EN parity; + past-open cohorts when DATABASE_URL is set
+pnpm db:generate | db:migrate | db:seed   # Drizzle; DATABASE_URL=postgres://…
+```
 
 Audit / ingestion (re-runnable):
 ```bash

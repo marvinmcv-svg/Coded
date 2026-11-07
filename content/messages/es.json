@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "siteName": "Coded",
+    "homeTitle": "Coded — El mundo es el aula",
+    "homeDescription": "Programas STEAM internacionales para estudiantes de 11 a 17 años en Orlando, Reino Unido y Tokio.",
+    "styleguideTitle": "Guía de estilo — Coded"
+  },
+  "common": {
+    "skipToContent": "Saltar al contenido",
+    "switchLocale": "Cambiar idioma",
+    "localeName": "Español",
+    "otherLocaleName": "English"
+  },
+  "home": {
+    "headline": "El mundo es el aula. Tu proyecto, el futuro.",
+    "wip": "Estamos construyendo el nuevo sitio de Coded. Muy pronto vas a poder explorar los programas aquí.",
+    "styleguideLink": "Ver la guía de estilo"
+  },
+  "styleguide": {
+    "title": "Guía de estilo",
+    "intro": "Tokens y componentes base del sitio. Esta página no se indexa.",
+    "provisional": "Paleta provisional: falta confirmar los colores oficiales de la marca.",
+    "colors": "Colores",
+    "type": "Tipografía",
+    "typeDisplay": "Display — Unbounded",
+    "typeBody": "Texto — Inter Tight",
+    "typeMono": "Mono — JetBrains Mono",
+    "typeSample": "De tu aula a Tokio.",
+    "bodySample": "Estudiantes de toda Latinoamérica diseñan, programan y presentan proyectos reales junto a expertos.",
+    "motion": "Movimiento",
+    "motionTier": "Nivel de movimiento detectado: {tier}",
+    "motionReveal": "Este bloque aparece con un fundido al entrar en pantalla.",
+    "durations": "Duraciones",
+    "eases": "Curvas",
+    "components": "Componentes",
+    "buttons": "Botones",
+    "buttonPrimary": "Agenda una llamada",
+    "buttonSecondary": "Inscríbete",
+    "buttonGhost": "Ver programas",
+    "chips": "Estados de cohorte",
+    "chipOpen": "Inscripciones abiertas",
+    "chipFew": "Últimos cupos",
+    "chipClosed": "Cerrada"
+  }
+}

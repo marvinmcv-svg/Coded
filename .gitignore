@@ -3,3 +3,8 @@ node_modules/
 assets/raw/
 .next/
 .env*
+.lighthouseci/
+test-results/
+playwright-report/
+*.tsbuildinfo
+next-env.d.ts

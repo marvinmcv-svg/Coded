@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "siteName": "Coded",
+    "homeTitle": "Coded — The world is the classroom",
+    "homeDescription": "International STEAM programs for students aged 11–17 in Orlando, the UK and Tokyo.",
+    "styleguideTitle": "Styleguide — Coded"
+  },
+  "common": {
+    "skipToContent": "Skip to content",
+    "switchLocale": "Switch language",
+    "localeName": "English",
+    "otherLocaleName": "Español"
+  },
+  "home": {
+    "headline": "The world is the classroom. Your project is the future.",
+    "wip": "We're building the new Coded website. You'll be able to explore our programs here very soon.",
+    "styleguideLink": "View the styleguide"
+  },
+  "styleguide": {
+    "title": "Styleguide",
+    "intro": "Base tokens and components for the site. This page is not indexed.",
+    "provisional": "Provisional palette: official brand colours still to be confirmed.",
+    "colors": "Colours",
+    "type": "Typography",
+    "typeDisplay": "Display — Unbounded",
+    "typeBody": "Body — Inter Tight",
+    "typeMono": "Mono — JetBrains Mono",
+    "typeSample": "From your classroom to Tokyo.",
+    "bodySample": "Students from across Latin America design, code and present real projects alongside experts.",
+    "motion": "Motion",
+    "motionTier": "Detected motion tier: {tier}",
+    "motionReveal": "This block fades in when it enters the viewport.",
+    "durations": "Durations",
+    "eases": "Eases",
+    "components": "Components",
+    "buttons": "Buttons",
+    "buttonPrimary": "Book a call",
+    "buttonSecondary": "Enroll",
+    "buttonGhost": "See programs",
+    "chips": "Cohort status",
+    "chipOpen": "Enrollment open",
+    "chipFew": "Last spots",
+    "chipClosed": "Closed"
+  }
+}
