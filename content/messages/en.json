@@ -501,6 +501,22 @@
           "a": "For Orlando STEAM League, yes: each student brings their own laptop."
         }
       ]
+    },
+    "contact": {
+      "title": "Contact",
+      "metaDescription": "Talk to Coded: book a call, write to us or visit our offices in Miami and London.",
+      "intro": "Questions about a program, the dates or how to enroll your school? We're here to help.",
+      "call": {
+        "title": "Book a call",
+        "body": "In an online consultation with our team we walk you through the programs, dates and pricing, and answer your questions.",
+        "button": "Book a call"
+      },
+      "write": {
+        "title": "Write or call us",
+        "email": "Email",
+        "phone": "Phone"
+      },
+      "sellerOfTravel": "Registered Florida Seller of Travel, No. ST46325."
     }
   },
   "media": {

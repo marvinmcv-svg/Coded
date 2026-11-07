@@ -3,14 +3,17 @@ import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
 import { buttonClass } from "@/components/ui/Button";
 import { CONSULTATION_URL } from "@/lib/links";
+import { pageMetadata } from "@/lib/seo/meta";
 
 export type PageKey = "about" | "safety" | "worldCitizens" | "faq";
 type Section = { title: string; body?: string; items?: string[] };
 type Faq = { q: string; a: string };
 
+const PATHS_BY_KEY: Record<PageKey, string> = { about: "/about", safety: "/safety", worldCitizens: "/world-citizens", faq: "/faq" };
+
 export async function contentMetadata(locale: string, key: PageKey): Promise<Metadata> {
   const t = await getTranslations({ locale, namespace: `pages.${key}` });
-  return { title: `${t("title")} — Coded`, description: t("metaDescription") };
+  return pageMetadata(locale, PATHS_BY_KEY[key], `${t("title")} — Coded`, t("metaDescription"));
 }
 
 /** Text pages rendered from `pages.<key>` in messages. Safety is calm (fade-only). */
