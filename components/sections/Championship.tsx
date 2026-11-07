@@ -3,6 +3,7 @@ import { Reveal } from "@/components/motion/Reveal";
 import { buttonClass } from "@/components/ui/Button";
 import { nextCohort, programs } from "@/content/programs";
 import { CONSULTATION_URL } from "@/lib/links";
+import { Countdown } from "./Countdown";
 
 export async function Championship() {
   const t = await getTranslations("home.championship");
@@ -25,6 +26,7 @@ export async function Championship() {
             </time>
           </p>
         ) : null}
+        {date ? <Countdown date={date} labels={t.raw("countdown")} /> : null}
         <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("secondary")}>{t("cta")}</a>
       </Reveal>
     </section>

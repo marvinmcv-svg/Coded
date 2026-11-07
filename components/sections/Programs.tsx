@@ -1,4 +1,5 @@
 import { getFormatter, getTranslations } from "next-intl/server";
+import { Parallax } from "@/components/motion/Parallax";
 import { Reveal } from "@/components/motion/Reveal";
 import { srcSet } from "@/content/media";
 import { nextCohort, programs } from "@/content/programs";
@@ -34,8 +35,10 @@ export async function Programs({ asPage = false }: { asPage?: boolean }) {
           return (
             <li key={p.slug}>
               <Reveal className={`relative flex h-full flex-col gap-4 overflow-hidden rounded-[var(--radius-card)] bg-ink-2 before:absolute before:inset-x-0 before:top-0 before:z-10 before:h-1 ${border[p.accent]}`}>
-                {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized webp + srcset in public/media (content/media.ts) */}
-                <img {...srcSet(p.slug)} sizes="(min-width: 768px) 560px, 100vw" alt={tm(p.slug)} loading="lazy" decoding="async" className="aspect-[16/9] w-full object-cover" />
+                <Parallax>
+                  {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized webp + srcset in public/media (content/media.ts) */}
+                  <img {...srcSet(p.slug)} sizes="(min-width: 768px) 560px, 100vw" alt={tm(p.slug)} loading="lazy" decoding="async" className="aspect-[16/9] w-full object-cover" />
+                </Parallax>
                 <div className="flex flex-1 flex-col gap-4 px-8 pt-2 pb-8">
                   <p className="font-mono text-sm text-mist">{tp(`${p.slug}.location`)}</p>
                   {/* h2 on the index page so heading levels don't skip */}

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { buttonClass } from "@/components/ui/Button";
+import { HeroScrub } from "@/components/motion/HeroScrub";
 import { srcSet } from "@/content/media";
 import { CONSULTATION_URL } from "@/lib/links";
 
@@ -15,8 +16,8 @@ export async function Hero() {
     <section className="relative overflow-hidden">
       {/* Art-directed backdrop (brand hues) behind the hero photo; video pending originals (Q1). Decorative only. */}
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 opacity-60 [background:radial-gradient(60%_50%_at_80%_20%,rgb(118_0_231/.45),transparent),radial-gradient(40%_40%_at_10%_80%,rgb(206_54_223/.22),transparent),radial-gradient(35%_35%_at_60%_90%,rgb(58_159_214/.2),transparent)]" />
-      <div className="mx-auto grid min-h-[88svh] max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[1.15fr_1fr]">
-        <div className="flex flex-col gap-8">
+      <HeroScrub className="mx-auto grid min-h-[88svh] max-w-6xl items-center gap-12 px-6 py-24 md:grid-cols-[1.15fr_1fr]">
+        <div data-hero-copy className="flex flex-col gap-8">
           <p className="flex items-center gap-3 font-mono text-sm text-mist">
             <span aria-hidden className="flex gap-1 font-semibold">
               {letters.map(([l, c]) => <span key={l} className={c}>{l}</span>)}
@@ -38,9 +39,10 @@ export async function Hero() {
           alt={tm("hero")}
           fetchPriority="high"
           decoding="async"
+          data-hero-media
           className="aspect-[4/3] w-full rounded-[var(--radius-card)] object-cover"
         />
-      </div>
+      </HeroScrub>
     </section>
   );
 }
