@@ -62,7 +62,7 @@ Guardian responsibilities (8): Supervision, Guidance, Coordination, Monitoring (
 4-step Learning Path: Expert Delivered ("Tech Gurus") → Live Workshops → Project-Based Learning → Coding.
 Every project picks ≥1 UN SDG. Power skills → careers: Creativity, Collaboration, Adaptability, Problem-Solving, Technical, Critical Thinking (career lists on .us world-citizen).
 
-## 6. Teachers (named on .com) 🔴 confirm consent + current roster
+## 6. Teachers (named on .com) ✅ names + photos OK (Marvin, 2026-11-07) — rendered from `content/teachers.ts`; partners still 🔴
 Kay Hill (documentary filmmaker, FRSA, co-founder Florida Film and STEM Academy 2009) · Peter Smith (illustration; ex-Disney animation dept, Marvel intern; head of Art & Animation, Florida Film & STEM Academy) · Isobel Haynes (STEAM curriculum; Harvard HE teaching cert) · Ryen DeToro (Ozobot Certified Educator) · Tom Caruth (CS, St Andrews; Head of Education, Blueshift Education) · Carolina Capelo Garcia (Director, Blueshift Education CIC) · Dr Claire Keene (researcher) · Calum Bell · Richard Emmerton (Goldsmiths) · Scott Lu · Rayan Took (all Blueshift Education).
 → Delivery partners implied: **Blueshift Education CIC** (London/Tokyo) and **Florida Film & STEM Academy** (Orlando). 🔴 confirm we may name them.
 

@@ -57,6 +57,25 @@ body {
   outline-offset: 3px;
 }
 
+/* Above-the-fold intro: CSS-only so it runs on first paint (no GSAP, no hydration) and never delays LCP. */
+@keyframes word-in { from { transform: translateY(110%) rotate(5deg); } to { transform: none; } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: none; } }
+@keyframes mask-in { from { clip-path: inset(12% 10% 12% 10% round 28px); transform: scale(1.06); } to { clip-path: inset(0 round 28px); transform: none; } }
+@keyframes cue { 0% { transform: scaleY(0); } 50% { transform: scaleY(1); } 100% { transform: scaleY(0); transform-origin: bottom; } }
+@media (prefers-reduced-motion: no-preference) {
+
+  .intro-fade { animation: fade-up var(--dur-4) var(--ease-expo-out) both; animation-delay: var(--d, 0ms); }
+  .intro-mask { animation: mask-in 1.4s var(--ease-expo-out) both; }
+  .scroll-cue { animation: cue 2.2s var(--ease-power3-in-out) infinite; }
+}
+/* Word reveal only ≥ md: on phones the h1 is the LCP element and must paint fully on first frame. */
+@media (prefers-reduced-motion: no-preference) and (min-width: 768px) {
+  .intro-words [data-word] { animation: word-in var(--dur-5) var(--ease-expo-out) both; animation-delay: calc(100ms + var(--i) * 55ms); }
+}
+
+.text-outline { color: transparent; -webkit-text-stroke: 1.5px var(--color-accent-soft); }
+.grain { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     transition-duration: 0.01ms !important;

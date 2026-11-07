@@ -3,6 +3,7 @@ import { axeViolations } from "./helpers";
 import es from "../../content/messages/es.json";
 import en from "../../content/messages/en.json";
 import { reviews } from "../../content/reviews";
+import { teachers } from "../../content/teachers";
 
 const locales = { es, en } as const;
 
@@ -14,8 +15,8 @@ for (const [locale, m] of Object.entries(locales)) {
       page.on("pageerror", (err) => errors.push(err.message));
 
       await page.goto(`/${locale}`);
-      await expect(page.getByRole("heading", { level: 1 })).toHaveText(m.home.hero.headline);
-      for (const id of ["programs-title", "method-title", "skills-title", "championship-title", "reviews-title", "safety-title", "contact-title"]) {
+      await expect(page.getByRole("heading", { level: 1 })).toHaveAccessibleName(m.home.hero.headline);
+      for (const id of ["programs-title", "method-title", "skills-title", "gallery-title", "championship-title", "teachers-title", "reviews-title", "safety-title", "contact-title"]) {
         await expect(page.locator(`#${id}`)).toBeVisible();
       }
       expect(errors).toEqual([]);
@@ -49,6 +50,21 @@ test("reviews render verbatim, in their own language", async ({ page }) => {
     await expect(quotes.nth(i)).toHaveAttribute("lang", r.lang);
     expect(await quotes.nth(i).textContent()).toBe(`“${r.text}”`);
   }
+});
+
+test("teachers render with names and roles", async ({ page }) => {
+  await page.goto("/es");
+  const items = page.locator("#teachers li");
+  await expect(items).toHaveCount(teachers.length);
+  for (const p of teachers) await expect(page.locator("#teachers h3", { hasText: p.name })).toHaveCount(1);
+});
+
+test("moving photo rows can be paused (WCAG 2.2.2)", async ({ page }) => {
+  await page.goto("/en");
+  const button = page.getByRole("button", { name: en.common.pause }).first();
+  await button.scrollIntoViewIfNeeded();
+  await button.click();
+  await expect(page.getByRole("button", { name: en.common.play }).first()).toHaveAttribute("aria-pressed", "true");
 });
 
 test("no past cohort dates are shown", async ({ page }) => {

@@ -1,8 +1,7 @@
 # CLAUDE.md — Coded 2.0 (codingeducation.us / codededucation.com rebuild)
 
 ## Status
-P0 approved 2026-11-07. P1 (foundation) shipped to `main`. Phase **P2 (home)** in progress on `claude/p2-home`: static-tier sections live; brand palette + consented photos in (Q1/Q2/Q31 decided 2026-11-07, see OPEN_QUESTIONS);
-lite/full motion + 3D + video pending.
+P0 approved 2026-11-07. P1 (foundation) shipped to `main`. Phase **P2 (home)** in progress on `claude/p2-home`: premium motion pass in (all home sections, globe, IG reels, teachers); see OPEN_QUESTIONS for decisions.
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)
@@ -40,6 +39,11 @@ assets/manifest.json         media index (raw files in assets/raw/, gitignored)
 - ONE persistent `<Canvas>` with drei `<View>`; 3D lazy via `next/dynamic` + IntersectionObserver; never blocks LCP.
   `frameloop="demand"`, paused off-screen / tab hidden. Hero LCP element is a real `<img>`.
 - One ease set (`expo.out`, `power3.inOut`, `coded` cubic-bezier) and token durations. GSAP is the only animation lib.
+- Exception: the above-the-fold hero intro is CSS keyframes (`.intro-*` in globals.css) so it runs on first paint without JS.
+  On phones the hero h1 is the LCP element: render it as ONE plain text block (no word spans) below `md`.
+- Motion kit (components/motion): SplitWords+TextReveal (headings), ClipReveal (media), Marquee (pausable, WCAG 2.2.2),
+  Magnetic, Cursor, VideoLoop (in-view only), HorizontalPin (full tier), SlideRows, Wordmark, LazyImg (IO-deferred images).
+- Media: `python3 -I scripts/build-media.py` rebuilds public/media from assets/raw (site crawl + @coded.education IG).
 - Animated text stays real DOM text (SplitText, `aria-label` on parent). Every 3D/scroll story has a DOM equivalent.
 - Trust/safety sections are deliberately calm: fades only.
 

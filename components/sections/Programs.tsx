@@ -1,4 +1,5 @@
 import { getFormatter, getTranslations } from "next-intl/server";
+import { ClipReveal } from "@/components/motion/ClipReveal";
 import { Parallax } from "@/components/motion/Parallax";
 import { Reveal } from "@/components/motion/Reveal";
 import { srcSet } from "@/content/media";
@@ -20,7 +21,7 @@ export async function Programs({ asPage = false }: { asPage?: boolean }) {
   const Heading = asPage ? "h2" : "h3";
 
   return (
-    <section id="programs" aria-labelledby="programs-title" className="mx-auto flex max-w-6xl scroll-mt-20 flex-col gap-12 px-6 py-24">
+    <section id="programs" aria-labelledby="programs-title" className="mx-auto flex max-w-7xl scroll-mt-20 flex-col gap-12 px-6 py-24">
       {asPage ? (
         <div className="flex flex-col gap-4">
           <h1 id="programs-title" className="font-display text-4xl font-semibold md:text-6xl">{tp("index.title")}</h1>
@@ -33,12 +34,14 @@ export async function Programs({ asPage = false }: { asPage?: boolean }) {
         {programs.map((p) => {
           const next = nextCohort(p);
           return (
-            <li key={p.slug}>
+            <li key={p.slug} className="group" data-cursor={t("view")}>
               <Reveal className={`relative flex h-full flex-col gap-4 overflow-hidden rounded-[var(--radius-card)] bg-ink-2 before:absolute before:inset-x-0 before:top-0 before:z-10 before:h-1 ${border[p.accent]}`}>
-                <Parallax>
-                  {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized webp + srcset in public/media (content/media.ts) */}
-                  <img {...srcSet(p.slug)} sizes="(min-width: 768px) 560px, 100vw" alt={tm(p.slug)} loading="lazy" decoding="async" className="aspect-[16/9] w-full object-cover" />
-                </Parallax>
+                <ClipReveal>
+                  <Parallax>
+                    {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized webp + srcset in public/media (content/media.ts) */}
+                    <img {...srcSet(p.slug)} sizes="(min-width: 768px) 560px, 100vw" alt={tm(p.slug)} loading="lazy" decoding="async" className="aspect-[4/3] w-full object-cover transition-transform duration-700 ease-[var(--ease-expo-out)] group-hover:scale-[1.06]" />
+                  </Parallax>
+                </ClipReveal>
                 <div className="flex flex-1 flex-col gap-4 px-8 pt-2 pb-8">
                   <p className="font-mono text-sm text-mist">{tp(`${p.slug}.location`)}</p>
                   {/* h2 on the index page so heading levels don't skip */}

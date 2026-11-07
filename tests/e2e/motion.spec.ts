@@ -21,8 +21,7 @@ test.describe("full tier (desktop)", () => {
     await page.mouse.wheel(0, 500);
     await expect.poll(() => copy.evaluate((el) => getComputedStyle(el).transform)).not.toBe("none");
 
-    await page.locator("#method").scrollIntoViewIfNeeded();
-    await expect(page.locator("#method .origin-left")).toHaveCount(1);
+    await expect(page.locator('#method [data-pin="on"]')).toHaveCount(1);
 
     await page.locator("#championship").scrollIntoViewIfNeeded();
     await expect(countdown(page)).toHaveCount(4);
@@ -48,7 +47,9 @@ test.describe("globe (full tier, desktop)", () => {
     await page.locator('[data-stop="3"]').evaluate((el) => el.scrollIntoView({ block: "center" }));
     await expect(route).toHaveAttribute("data-active-stop", "3");
     // navigating away and back keeps a single canvas (persistent root)
-    await page.getByRole("link", { name: "Tokyo STEAM Championship" }).first().click();
+    // DOM click (still a client-side Next <Link> navigation) — avoids pointer hit-testing under the pinned method section
+    await page.locator('a[href="/es/programs/tokyo-steam-championship"]').first().evaluate((a: HTMLAnchorElement) => a.click());
+    await page.waitForURL("**/programs/tokyo-steam-championship");
     await page.goBack();
     await page.locator("[data-active-stop]").scrollIntoViewIfNeeded();
     await expect(page.locator("canvas")).toHaveCount(1);
@@ -66,13 +67,14 @@ test.describe("static tier (reduced motion)", () => {
     await page.mouse.wheel(0, 500);
     await page.waitForTimeout(500);
     expect(await page.locator("[data-hero-copy]").evaluate((el) => getComputedStyle(el).transform)).toBe("none");
-    await expect(page.locator("#method .origin-left")).toHaveCount(0);
+    await expect(page.locator('#method [data-pin="off"]')).toHaveCount(1);
+    await expect(page.locator("video")).toHaveCount(0); // static tier: posters only
     await page.locator("[data-active-stop]").scrollIntoViewIfNeeded();
     await expect(page.locator("[data-stop]")).toHaveCount(4);
     await expect(page.locator("canvas")).toHaveCount(0);
 
     await expect(countdown(page)).toHaveCount(1);
     const days = Math.floor((TOKYO - Date.now()) / 864e5);
-    await expect(page.locator("#championship .sr-only")).toHaveText(es.home.championship.countdown.sr.replace("{days}", String(days)));
+    await expect(page.locator("#championship p.sr-only")).toHaveText(es.home.championship.countdown.sr.replace("{days}", String(days)));
   });
 });

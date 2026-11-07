@@ -10,7 +10,9 @@
     "skipToContent": "Saltar al contenido",
     "switchLocale": "Cambiar idioma",
     "localeName": "Español",
-    "otherLocaleName": "English"
+    "otherLocaleName": "English",
+    "pause": "Pausar",
+    "play": "Reanudar"
   },
   "home": {
     "nav": {
@@ -26,7 +28,8 @@
       "headline": "El mundo es el aula. Tu proyecto, el futuro.",
       "sub": "Programas internacionales para estudiantes de 11 a 17 años en Orlando, el Reino Unido y Tokio: talleres con expertos, proyectos reales y una presentación final de su proyecto.",
       "ctaPrimary": "Agenda una llamada",
-      "ctaSecondary": "Ver programas"
+      "ctaSecondary": "Ver programas",
+      "scroll": "Desliza"
     },
     "route": {
       "eyebrow": "La ruta",
@@ -47,13 +50,28 @@
         }
       }
     },
+    "ticker": [
+      "Ciencia",
+      "Tecnología",
+      "Ingeniería",
+      "Arte",
+      "Matemáticas",
+      "Orlando",
+      "Londres",
+      "Tokio"
+    ],
     "programs": {
       "eyebrow": "El mundo es el aula",
       "title": "Cuatro destinos. Un mismo reto: crear.",
       "next": "Próxima salida",
       "noDate": "Fechas por confirmar",
       "days": "{days} días",
-      "ages": "{min} a {max} años"
+      "ages": "{min} a {max} años",
+      "view": "Ver"
+    },
+    "gallery": {
+      "eyebrow": "En terreno",
+      "title": "Así se vive Coded."
     },
     "method": {
       "eyebrow": "Nuestro método",
@@ -104,6 +122,24 @@
         "minutes": "min",
         "seconds": "seg",
         "sr": "Faltan {days} días para el campeonato."
+      },
+      "bigword": "Tokio 2027"
+    },
+    "teachers": {
+      "eyebrow": "Quién enseña",
+      "title": "Expertos que trabajan en lo que enseñan.",
+      "roles": {
+        "kay-hill": "Documentalista premiada",
+        "peter-smith": "Ilustración y animación",
+        "isobel-haynes": "Currículo STEAM",
+        "ryen-detoro": "Educadora certificada en Ozobot",
+        "tom-caruth": "Ciencias de la computación",
+        "calum-bell": "Educador STEM",
+        "richard-emmerton": "Educador en computación",
+        "scott-lu": "Desarrollador de software",
+        "rayan-took": "Ciencias de la computación",
+        "claire-keene": "Investigadora",
+        "carolina-capelo-garcia": "Gerente de negocios"
       }
     },
     "reviews": {
@@ -154,7 +190,8 @@
       "london": "Londres — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU",
       "contact": "Contacto",
       "rights": "© {year} Coded. Todos los derechos reservados.",
-      "explore": "Explora"
+      "explore": "Explora",
+      "tagline": "Escuela STEAM sin fronteras: el mundo es el aula."
     }
   },
   "styleguide": {
@@ -566,6 +603,24 @@
     "orlando-steam-league": "Estudiantes en mesas redondas durante un taller de Coded",
     "europe-steam-league": "Estudiante trabajando en su laptop durante un taller de Coded",
     "steam-league-ai": "Dos estudiantes programando en una laptop, sentados en una banca del jardín",
-    "tokyo-steam-championship": "Estudiante muestra una lámpara de papel decorada a mano en un taller de Coded"
+    "tokyo-steam-championship": "Estudiante muestra una lámpara de papel decorada a mano en un taller de Coded",
+    "class-laptops": "Estudiantes trabajando en sus laptops en un taller de Coded",
+    "activity": "Estudiantes en una actividad práctica en grupo",
+    "student-laptop": "Estudiante con su laptop durante un taller",
+    "vr": "Estudiante probando unos visores de realidad virtual",
+    "boys-laptop": "Estudiantes revisando un proyecto en la laptop",
+    "tokyo-build": "Estudiantes con gorras de Coded armando un prototipo en Tokio",
+    "tokyo-cap": "Estudiante con gorra de Coded en Tokio",
+    "tokyo-group": "Grupo de Coded frente a un templo en Tokio",
+    "tokyo-temple": "Estudiantes recorriendo un templo en Tokio",
+    "purple-laptop": "Estudiante programando en una laptop",
+    "classroom": "Clase de Coded en pleno taller",
+    "tablets": "Estudiantes trabajando con tabletas",
+    "laptops-room": "Sala llena de estudiantes programando",
+    "lab": "Taller de ciencias en un laboratorio",
+    "london-steps": "Grupo de Coded en las escalinatas de un edificio histórico de Londres",
+    "lab-coat": "Estudiante con bata de laboratorio haciendo un experimento",
+    "worksheet": "Estudiantes resolviendo una hoja de trabajo en equipo",
+    "presenting": "Estudiante presentando su proyecto"
   }
 }

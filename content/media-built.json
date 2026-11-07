@@ -1,0 +1,362 @@
+{
+ "images": {
+  "class-laptops": {
+   "source": "site/2026_04_steam_0000_IMG_0950.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1200,
+    1500
+   ]
+  },
+  "activity": {
+   "source": "site/2026_04_steam_0001_IMG_2035.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1200,
+    1500
+   ]
+  },
+  "student-laptop": {
+   "source": "site/2026_04_steam_0002_Layer-3.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1200,
+    1500
+   ]
+  },
+  "vr": {
+   "source": "site/2026_04_steam_0003_Layer-2.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1200,
+    1500
+   ]
+  },
+  "boys-laptop": {
+   "source": "site/2026_04_steam_0004_IMG_9912.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1200,
+    1500
+   ]
+  },
+  "tokyo-build": {
+   "source": "site/2026_07_tokyo_0000_IMG_0843.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1080,
+    1350
+   ]
+  },
+  "tokyo-cap": {
+   "source": "site/2026_07_tokyo_0001_coded-2-ago-097.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1080,
+    1350
+   ]
+  },
+  "tokyo-group": {
+   "source": "site/2026_07_tokyo_0002_coded-2-ago-095.jpg",
+   "widths": [
+    960,
+    1600
+   ],
+   "ratio": [
+    1080,
+    608
+   ]
+  },
+  "tokyo-temple": {
+   "source": "site/2026_07_coded-2-ago-119.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    720,
+    900
+   ]
+  },
+  "purple-laptop": {
+   "source": "site/2025_11_C48.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    854,
+    1067
+   ]
+  },
+  "classroom": {
+   "source": "site/2025_11_C49.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    854,
+    1067
+   ]
+  },
+  "tablets": {
+   "source": "site/2025_11_DSC00335-1.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    855,
+    1069
+   ]
+  },
+  "laptops-room": {
+   "source": "site/2025_11_DSC00611-scaled-2.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    845,
+    1056
+   ]
+  },
+  "lab": {
+   "source": "site/2025_11_RI-Workshops17.webp",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    960,
+    1200
+   ]
+  },
+  "london-steps": {
+   "source": "site/2025_11_SLE-3.jpg",
+   "widths": [
+    960,
+    1600
+   ],
+   "ratio": [
+    1059,
+    596
+   ]
+  },
+  "lab-coat": {
+   "source": "site/2025_11_SLE-8.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    611,
+    764
+   ]
+  },
+  "worksheet": {
+   "source": "site/2025_11_slo2.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    617,
+    771
+   ]
+  },
+  "presenting": {
+   "source": "site/2025_11_profesionals-3.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    720,
+    900
+   ]
+  },
+  "hero-portrait": {
+   "source": "site/2025_11_imagen-4-scaled-1.jpg",
+   "widths": [
+    600,
+    900
+   ],
+   "ratio": [
+    900,
+    1200
+   ]
+  },
+  "t-kay-hill": {
+   "source": "site/2026_08_images-1.jpeg",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    554,
+    554
+   ]
+  },
+  "t-tom-caruth": {
+   "source": "site/2026_06_team6.png",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    466,
+    466
+   ]
+  },
+  "t-peter-smith": {
+   "source": "site/2026_08_peter.jpg",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    560,
+    560
+   ]
+  },
+  "t-isobel-haynes": {
+   "source": "site/2026_08_isobel.jpg",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    1000,
+    1000
+   ]
+  },
+  "t-ryen-detoro": {
+   "source": "site/2026_08_r.jpg",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    1000,
+    1000
+   ]
+  },
+  "t-carolina-capelo-garcia": {
+   "source": "site/2026_06_team1.png",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    524,
+    524
+   ]
+  },
+  "t-calum-bell": {
+   "source": "site/2026_06_team-member5.png",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    518,
+    518
+   ]
+  },
+  "t-richard-emmerton": {
+   "source": "site/2026_06_team-member4.png",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    516,
+    516
+   ]
+  },
+  "t-scott-lu": {
+   "source": "site/2026_06_team-member3.png",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    572,
+    572
+   ]
+  },
+  "t-rayan-took": {
+   "source": "site/2026_06_team-member2.png",
+   "widths": [
+    400
+   ],
+   "ratio": [
+    482,
+    482
+   ]
+  }
+ },
+ "videos": {
+  "hero-reel": {
+   "sources": [
+    "instagram/DfKkDx9Rb2L.mp4",
+    "instagram/DfQLA45RBdz.mp4",
+    "instagram/Dfa_esyR0wN.mp4"
+   ],
+   "ratio": [
+    3,
+    4
+   ]
+  },
+  "workshop-make": {
+   "sources": [
+    "instagram/DfKkDx9Rb2L.mp4"
+   ],
+   "ratio": [
+    3,
+    4
+   ]
+  },
+  "workshop-class": {
+   "sources": [
+    "instagram/DfQLA45RBdz.mp4"
+   ],
+   "ratio": [
+    3,
+    4
+   ]
+  },
+  "coding-tablet": {
+   "sources": [
+    "instagram/DfXsAfuM4Fy.mp4"
+   ],
+   "ratio": [
+    3,
+    4
+   ]
+  },
+  "pitch-stage": {
+   "sources": [
+    "instagram/Dfa_esyR0wN.mp4"
+   ],
+   "ratio": [
+    3,
+    4
+   ]
+  }
+ }
+}

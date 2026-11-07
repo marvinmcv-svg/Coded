@@ -27,7 +27,7 @@ export function GlobeRouteClient({ stops, children }: { stops: Stop[]; children:
   const [active, setActive] = useState(0);
   const enabled = tier === "full" && near;
 
-  // Load 3D only when the section is within a viewport of the screen.
+  // Load 3D only when the section is about to enter (quarter-screen lead), never on first paint.
   useEffect(() => {
     if (tier !== "full" || !hasWebGL2() || !root.current) return;
     const io = new IntersectionObserver(([e]) => {
@@ -36,7 +36,7 @@ export function GlobeRouteClient({ stops, children }: { stops: Stop[]; children:
         setNear(true);
         io.disconnect();
       }
-    }, { rootMargin: "100% 0px" });
+    }, { rootMargin: "25% 0px" });
     io.observe(root.current);
     return () => io.disconnect();
   }, [tier]);
