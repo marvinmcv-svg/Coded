@@ -68,6 +68,7 @@ Kay Hill (documentary filmmaker, FRSA, co-founder Florida Film and STEM Academy 
 
 ## 7. Reviews (Google via Trustindex) 🟡 — 9 visible, identical on both sites
 Paula Mariana Danilewicz (ES) · jhenny Monroy (EN) · Hector Figarella (EN) · Cristina Arreaga Cáceres (ES) · José Antonio Medina López (EN) · nusly Lara (EN) · Yvonne Rodríguez (EN) · Anne Batista (ES, quotes student Mar Alicia Quesada) · Raul Ernesto Martinez Osorio (ES). Use verbatim with source link; aggregate rating only from live API.
+→ Rendered on home (`content/reviews.ts`, 8 of 9): Anne Batista's review is left out because it is signed with a student's full name. Link to the Google listing pending Q25.
 
 ## 8. Legal (for migration, counsel review)
 Media-release clause grants Coded use of student photos/video for marketing (refund policy). Custodial-supervision disclaimer (C16). Policies partly template-derived.

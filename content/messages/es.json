@@ -105,6 +105,12 @@
         "sr": "Faltan {days} días para el campeonato."
       }
     },
+    "reviews": {
+      "eyebrow": "Reseñas",
+      "title": "Lo que dicen de Coded.",
+      "stars": "{stars} de 5 estrellas",
+      "source": "Reseña en Google"
+    },
     "trust": {
       "eyebrow": "Seguridad",
       "title": "Viajan lejos. Nunca solos.",

@@ -5,6 +5,7 @@ import { GlobeRoute } from "@/components/sections/GlobeRoute";
 import { Hero } from "@/components/sections/Hero";
 import { Method } from "@/components/sections/Method";
 import { Programs } from "@/components/sections/Programs";
+import { Reviews } from "@/components/sections/Reviews";
 import { Skills } from "@/components/sections/Skills";
 import { Trust } from "@/components/sections/Trust";
 
@@ -23,6 +24,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Method />
       <Skills />
       <Championship />
+      <Reviews />
       <Trust />
       <CTA />
     </main>

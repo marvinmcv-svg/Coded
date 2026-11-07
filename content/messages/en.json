@@ -105,6 +105,12 @@
         "sr": "{days} days until the championship."
       }
     },
+    "reviews": {
+      "eyebrow": "Reviews",
+      "title": "What people say about Coded.",
+      "stars": "{stars} out of 5 stars",
+      "source": "Google review"
+    },
     "trust": {
       "eyebrow": "Safety",
       "title": "They travel far. Never alone.",
