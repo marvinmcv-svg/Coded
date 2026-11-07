@@ -2,6 +2,7 @@ import { expect, test } from "@playwright/test";
 import { axeViolations } from "./helpers";
 import es from "../../content/messages/es.json";
 import en from "../../content/messages/en.json";
+import { reviews } from "../../content/reviews";
 
 const locales = { es, en } as const;
 
@@ -14,7 +15,7 @@ for (const [locale, m] of Object.entries(locales)) {
 
       await page.goto(`/${locale}`);
       await expect(page.getByRole("heading", { level: 1 })).toHaveText(m.home.hero.headline);
-      for (const id of ["programs-title", "method-title", "skills-title", "championship-title", "safety-title", "contact-title"]) {
+      for (const id of ["programs-title", "method-title", "skills-title", "championship-title", "reviews-title", "safety-title", "contact-title"]) {
         await expect(page.locator(`#${id}`)).toBeVisible();
       }
       expect(errors).toEqual([]);
@@ -40,10 +41,23 @@ for (const [locale, m] of Object.entries(locales)) {
   });
 }
 
+test("reviews render verbatim, in their own language", async ({ page }) => {
+  await page.goto("/en");
+  const quotes = page.locator("#reviews blockquote");
+  await expect(quotes).toHaveCount(reviews.length);
+  for (const [i, r] of reviews.entries()) {
+    await expect(quotes.nth(i)).toHaveAttribute("lang", r.lang);
+    expect(await quotes.nth(i).textContent()).toBe(`“${r.text}”`);
+  }
+});
+
 test("no past cohort dates are shown", async ({ page }) => {
   await page.goto("/en");
   const today = new Date().toISOString().slice(0, 10);
-  const dates = await page.locator("time[datetime]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
+  // cohort/event dates only — review dates (#reviews) are in the past by nature
+  const dates = await page
+    .locator("time[datetime]")
+    .evaluateAll((els) => els.filter((e) => !e.closest("#reviews")).map((e) => e.getAttribute("datetime")!));
   expect(dates.length).toBeGreaterThan(0);
   for (const d of dates) expect(d > today, `${d} is not in the future`).toBe(true);
 });

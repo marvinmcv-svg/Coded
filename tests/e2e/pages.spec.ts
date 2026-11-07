@@ -9,6 +9,7 @@ const pages = [
   ["world-citizens", "worldCitizens"],
   ["faq", "faq"],
   ["contact", "contact"],
+  ["method", "method"],
 ] as const;
 
 for (const [locale, m] of Object.entries({ es, en })) {

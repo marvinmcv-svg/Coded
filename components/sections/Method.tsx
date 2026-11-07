@@ -1,6 +1,7 @@
 import { getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
 import { ScrubLine } from "@/components/motion/ScrubLine";
+import { Link } from "@/lib/i18n/navigation";
 import { SectionHeading } from "./SectionHeading";
 
 const steps = ["experts", "workshops", "projects", "coding"] as const;
@@ -24,6 +25,7 @@ export async function Method() {
           ))}
         </ol>
       </div>
+      <Link href="/method" className="self-start font-semibold underline underline-offset-4">{t("more")} →</Link>
     </section>
   );
 }
