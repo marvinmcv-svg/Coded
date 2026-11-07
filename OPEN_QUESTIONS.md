@@ -2,6 +2,15 @@
 
 Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks the phase noted, P2 = before launch.
 
+## Decisions — Marvin, 2026-11-07
+- **Q0 domain:** keep the current setup for now; Marvin is confirming with the team. Site stays domain-agnostic (`SITE_URL`). *Still open.*
+- **Q1 media consent:** ✅ photos and videos on Coded's websites and social media are cleared for use. Rule stays: no names beside faces;
+  only Coded's own media (no logos, press, stock, AI images). Originals/high-res footage still wanted for video/scrub sections.
+- **Q2 prices:** ✅ no prices on the site. Price block reads "Ask us about pricing" / "Consúltanos el precio".
+- **Q31 palette:** ✅ use the current brand colours (from the live sites' CSS): violet `#7600e7`, lavender `#c5bbfd`, magenta `#ce36df`,
+  blue `#3a9fd6`. Later, separate proposal: a black / grey / red direction (not started).
+- **Recommendations:** Marvin approved the remaining proposals (assumed: Supabase `/admin` for Q4, Next 16 for Q3, as already built).
+
 ## P0 — decide before P1 starts
 0. **Two sites.** `codededucation.com` (newer: per-program pages, prices, teachers, FAQ) and `codingeducation.us` both live and self-canonical. Which domain is the rebuild's canonical? Does the other 301 into it? Which app domain: `app.codingeducation.us` or `app.codededucation.com`? *(The brief assumes .us; .com looks like where the team is heading.)*
 1. **Original media.** Best site video is 720p and 308/404 images are < 1200 px. Cinematic hero/scrub sequences need originals: Drive/Dropbox of raw photos + footage (preferred) or the Instagram "Download your information" export. Which media has documented consent (minors)? Is the T&C media-release clause the consent basis?

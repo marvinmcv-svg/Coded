@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 }
 
 const swatches = [
-  ["ink", "bg-ink"], ["ink-2", "bg-ink-2"], ["paper", "bg-paper"], ["mist", "bg-mist"], ["accent", "bg-accent"],
+  ["ink", "bg-ink"], ["ink-2", "bg-ink-2"], ["paper", "bg-paper"], ["mist", "bg-mist"], ["accent", "bg-accent"], ["accent-soft", "bg-accent-soft"], ["brand-magenta", "bg-brand-magenta"], ["brand-blue", "bg-brand-blue"],
   ["steam-s", "bg-steam-s"], ["steam-t", "bg-steam-t"], ["steam-e", "bg-steam-e"], ["steam-a", "bg-steam-a"], ["steam-m", "bg-steam-m"],
 ] as const;
 
@@ -44,7 +44,7 @@ export default async function StyleguidePage({ params }: { params: Promise<{ loc
       </header>
 
       <Section title={t("colors")}>
-        <p className="text-sm text-warn">{t("provisional")}</p>
+        <p className="text-sm text-mist">{t("paletteNote")}</p>
         <ul className="grid grid-cols-2 gap-4 sm:grid-cols-5">
           {swatches.map(([name, cls]) => (
             <li key={name} className="flex flex-col gap-2">

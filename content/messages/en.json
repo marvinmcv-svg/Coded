@@ -127,7 +127,7 @@
   "styleguide": {
     "title": "Styleguide",
     "intro": "Base tokens and components for the site. This page is not indexed.",
-    "provisional": "Provisional palette: official brand colours still to be confirmed.",
+    "paletteNote": "Brand palette from the current Coded sites: violet, lavender, magenta and blue. The STEAM letter colours are system accents.",
     "colors": "Colours",
     "type": "Typography",
     "typeDisplay": "Display — Unbounded",
