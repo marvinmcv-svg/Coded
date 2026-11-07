@@ -28,6 +28,25 @@
       "ctaPrimary": "Agenda una llamada",
       "ctaSecondary": "Ver programas"
     },
+    "route": {
+      "eyebrow": "La ruta",
+      "title": "De tu colegio al mundo.",
+      "stops": {
+        "latam": {
+          "title": "Latinoamérica",
+          "body": "Todo empieza en tu colegio, en cualquier parte de Latinoamérica."
+        },
+        "orlando": {
+          "title": "Orlando"
+        },
+        "uk": {
+          "title": "Reino Unido"
+        },
+        "tokyo": {
+          "title": "Tokio"
+        }
+      }
+    },
     "programs": {
       "eyebrow": "El mundo es el aula",
       "title": "Cuatro destinos. Un mismo reto: crear.",
