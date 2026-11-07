@@ -9,6 +9,9 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 - **Q2 prices:** ✅ no prices on the site. Price block reads "Ask us about pricing" / "Consúltanos el precio".
 - **Q31 palette:** ✅ use the current brand colours (from the live sites' CSS): violet `#7600e7`, lavender `#c5bbfd`, magenta `#ce36df`,
   blue `#3a9fd6`. Later, separate proposal: a black / grey / red direction (not started).
+- **Q18 teachers:** ✅ show the teachers with names and photos. Delivery-partner names (Blueshift, Florida Film & STEM Academy) still unconfirmed → not shown.
+- **Media:** ✅ Instagram @coded.education reels/photos may be used (same consent as the sites). Pulled via Firecrawl (influencers-club posts provider) into assets/raw/instagram.
+- **On hold:** WhatsApp (Q23), domain (Q0), legal pages (later). Prototype focus = UX/UI and motion.
 - **Recommendations:** Marvin approved the remaining proposals (assumed: Supabase `/admin` for Q4, Next 16 for Q3, as already built).
 
 ## P0 — decide before P1 starts

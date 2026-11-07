@@ -10,7 +10,9 @@
     "skipToContent": "Skip to content",
     "switchLocale": "Switch language",
     "localeName": "English",
-    "otherLocaleName": "Español"
+    "otherLocaleName": "Español",
+    "pause": "Pause",
+    "play": "Play"
   },
   "home": {
     "nav": {
@@ -26,7 +28,8 @@
       "headline": "The world is the classroom. Your project is the future.",
       "sub": "International programs for students aged 11–17 in Orlando, the UK and Tokyo: expert-led workshops, real projects and a final project presentation.",
       "ctaPrimary": "Book a call",
-      "ctaSecondary": "See programs"
+      "ctaSecondary": "See programs",
+      "scroll": "Scroll"
     },
     "route": {
       "eyebrow": "The route",
@@ -47,13 +50,28 @@
         }
       }
     },
+    "ticker": [
+      "Science",
+      "Technology",
+      "Engineering",
+      "Arts",
+      "Math",
+      "Orlando",
+      "London",
+      "Tokyo"
+    ],
     "programs": {
       "eyebrow": "The world is the classroom",
       "title": "Four destinations. One challenge: create.",
       "next": "Next departure",
       "noDate": "Dates to be confirmed",
       "days": "{days} days",
-      "ages": "Ages {min}–{max}"
+      "ages": "Ages {min}–{max}",
+      "view": "View"
+    },
+    "gallery": {
+      "eyebrow": "On the ground",
+      "title": "This is Coded."
     },
     "method": {
       "eyebrow": "Our method",
@@ -104,6 +122,24 @@
         "minutes": "min",
         "seconds": "sec",
         "sr": "{days} days until the championship."
+      },
+      "bigword": "Tokyo 2027"
+    },
+    "teachers": {
+      "eyebrow": "Who teaches",
+      "title": "Experts who work in what they teach.",
+      "roles": {
+        "kay-hill": "Award-winning documentary filmmaker",
+        "peter-smith": "Illustration & animation",
+        "isobel-haynes": "STEAM curriculum",
+        "ryen-detoro": "Ozobot Certified Educator",
+        "tom-caruth": "Computer science",
+        "calum-bell": "STEM educator",
+        "richard-emmerton": "Computing educator",
+        "scott-lu": "Software developer",
+        "rayan-took": "Computer science",
+        "claire-keene": "Researcher",
+        "carolina-capelo-garcia": "Business manager"
       }
     },
     "reviews": {
@@ -154,7 +190,8 @@
       "london": "London — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU",
       "contact": "Contact",
       "rights": "© {year} Coded. All rights reserved.",
-      "explore": "Explore"
+      "explore": "Explore",
+      "tagline": "The borderless STEAM school: the world is the classroom."
     }
   },
   "styleguide": {
@@ -566,6 +603,24 @@
     "orlando-steam-league": "Students at round tables during a Coded workshop",
     "europe-steam-league": "A student working on a laptop during a Coded workshop",
     "steam-league-ai": "Two students coding on a laptop on a garden bench",
-    "tokyo-steam-championship": "A student holds up a hand-decorated paper lantern in a Coded workshop"
+    "tokyo-steam-championship": "A student holds up a hand-decorated paper lantern in a Coded workshop",
+    "class-laptops": "Students working on laptops in a Coded workshop",
+    "activity": "Students in a hands-on group activity",
+    "student-laptop": "A student with a laptop during a workshop",
+    "vr": "A student trying a virtual reality headset",
+    "boys-laptop": "Students reviewing a project on a laptop",
+    "tokyo-build": "Students in Coded caps building a prototype in Tokyo",
+    "tokyo-cap": "A student in a Coded cap in Tokyo",
+    "tokyo-group": "A Coded group in front of a temple in Tokyo",
+    "tokyo-temple": "Students visiting a temple in Tokyo",
+    "purple-laptop": "A student coding on a laptop",
+    "classroom": "A Coded class mid-workshop",
+    "tablets": "Students working on tablets",
+    "laptops-room": "A room full of students coding",
+    "lab": "A science workshop in a lab",
+    "london-steps": "A Coded group on the steps of a historic building in London",
+    "lab-coat": "A student in a lab coat running an experiment",
+    "worksheet": "Students solving a worksheet together",
+    "presenting": "A student presenting a project"
   }
 }

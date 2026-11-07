@@ -3,6 +3,7 @@ import { setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/sections/Footer";
 import { Header } from "@/components/sections/Header";
 import { ThreeMount } from "@/components/three/ThreeMount";
+import { Cursor } from "@/components/motion/Cursor";
 
 export default async function MarketingLayout({ children, params }: { children: ReactNode; params: Promise<{ locale: string }> }) {
   const { locale } = await params;
@@ -13,6 +14,7 @@ export default async function MarketingLayout({ children, params }: { children: 
       {children}
       <Footer />
       <ThreeMount />
+      <Cursor />
     </>
   );
 }

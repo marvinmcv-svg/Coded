@@ -7,9 +7,10 @@ type Gsap = typeof import("./gsap");
 /**
  * Like useGSAP, but GSAP (+ ScrollTrigger, ~48 KB gz) is fetched via dynamic import so it never counts
  * toward a route's initial JS budget. Everything created in `setup` runs inside gsap.context(scope) and is
- * reverted on unmount / deps change — the same auto-revert guarantee useGSAP gives.
+ * reverted on unmount / deps change — the same auto-revert guarantee useGSAP gives. `setup` may return a cleanup
+ * (listeners); gsap.context runs it on revert.
  */
-export function useLazyGSAP(setup: (g: Gsap) => void, scope: RefObject<Element | null>, deps: DependencyList) {
+export function useLazyGSAP(setup: (g: Gsap) => void | (() => void), scope: RefObject<Element | null>, deps: DependencyList) {
   useEffect(() => {
     let ctx: { revert(): void } | undefined;
     let cancelled = false;

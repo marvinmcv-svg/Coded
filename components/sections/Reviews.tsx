@@ -9,12 +9,13 @@ export async function Reviews() {
   const format = await getFormatter();
 
   return (
-    <section id="reviews" aria-labelledby="reviews-title" className="mx-auto flex max-w-6xl scroll-mt-20 flex-col gap-12 px-6 py-24">
+    <section id="reviews" aria-labelledby="reviews-title" className="mx-auto flex max-w-7xl scroll-mt-20 flex-col gap-12 px-6 py-24">
       <SectionHeading id="reviews-title" eyebrow={t("eyebrow")} title={t("title")} />
       <ul className="columns-1 gap-6 md:columns-2 lg:columns-3">
-        {reviews.map((r) => (
+        {reviews.map((r, i) => (
           <li key={r.name} className="mb-6 break-inside-avoid">
-            <Reveal className="flex flex-col gap-4 rounded-[var(--radius-card)] bg-ink-2 p-7">
+            <Reveal className={`relative flex flex-col gap-4 overflow-hidden rounded-[var(--radius-card)] p-7 ring-1 ring-mist/10 transition-transform duration-500 hover:-translate-y-1 ${i % 3 === 1 ? "bg-accent/20" : "bg-ink-2"}`}>
+              <span aria-hidden className="pointer-events-none absolute -top-6 right-4 font-display text-[9rem] leading-none text-accent-soft/15">“</span>
               <p className="font-mono text-accent-soft" role="img" aria-label={t("stars", { stars: r.stars })}>
                 {"★".repeat(r.stars)}<span className="text-mist/40">{"★".repeat(5 - r.stars)}</span>
               </p>

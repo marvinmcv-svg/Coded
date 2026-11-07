@@ -18,6 +18,7 @@ export function HeroScrub({ children, className }: { children: ReactNode; classN
       const scrollTrigger = { trigger: ref.current, start: "top top", end: "bottom top", scrub: true };
       gsap.to("[data-hero-copy]", { yPercent: -18, opacity: 0.25, ease: "none", scrollTrigger });
       gsap.to("[data-hero-media]", { scale: 0.9, yPercent: 8, ease: "none", scrollTrigger });
+      gsap.to("[data-hero-float]", { yPercent: -60, rotate: -14, ease: "none", scrollTrigger });
       const img = ref.current?.querySelector("img");
       img?.decode().then(() => ScrollTrigger.refresh(), () => {});
     },

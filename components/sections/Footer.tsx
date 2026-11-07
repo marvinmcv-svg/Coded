@@ -1,4 +1,5 @@
 import { getTranslations } from "next-intl/server";
+import { Wordmark } from "@/components/motion/Wordmark";
 import { Link } from "@/lib/i18n/navigation";
 import { EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
 
@@ -8,9 +9,9 @@ export async function Footer() {
   const tn = await getTranslations("home.nav");
   const links = [["/programs", tn("programs")], ["/method", tp("method.title")], ["/world-citizens", tp("worldCitizens.title")], ["/safety", tp("safety.title")], ["/about", tp("about.title")], ["/faq", tp("faq.title")], ["/contact", tp("contact.title")]] as const;
   return (
-    <footer className="border-t border-mist/10">
+    <footer className="overflow-hidden border-t border-mist/10">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-4">
-        <p aria-hidden className="font-display text-6xl font-semibold tracking-tight md:text-7xl">coded</p>
+        <p className="max-w-xs text-sm text-mist">{t("tagline")}</p>
         <nav aria-labelledby="footer-explore" className="flex flex-col gap-2 text-sm text-mist">
           <h2 id="footer-explore" className="font-mono tracking-wide text-paper uppercase">{t("explore")}</h2>
           {links.map(([href, label]) => <Link key={href} href={href} className="hover:text-paper">{label}</Link>)}
@@ -26,7 +27,8 @@ export async function Footer() {
           <a href={PHONE_HREF} className="hover:text-paper">{PHONE}</a>
         </div>
       </div>
-      <p className="mx-auto max-w-6xl px-6 pb-10 text-sm text-mist">{t("rights", { year: new Date().getFullYear() })}</p>
+      <Wordmark text="coded" className="justify-center px-4 font-display text-[clamp(5rem,22vw,22rem)] leading-[0.8] font-semibold tracking-[-0.04em] text-paper select-none" />
+      <p className="mx-auto max-w-6xl px-6 pt-6 pb-10 text-sm text-mist">{t("rights", { year: new Date().getFullYear() })}</p>
     </footer>
   );
 }
