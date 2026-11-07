@@ -1,7 +1,8 @@
 @import "tailwindcss";
 
 /*
- * Design tokens. PALETTE IS PROVISIONAL — official brand colours pending (OPEN_QUESTIONS Q31).
+ * Design tokens. Brand colours = the live sites' palette (codededucation.com / codingeducation.us CSS), per Marvin
+ * 2026-11-07 (OPEN_QUESTIONS Q31). A black/grey/red alternative is a later, separate proposal.
  * Motion: one ease set + token durations (PLAN §5). GSAP reads the same values from lib/motion/tokens.ts.
  */
 @theme {
@@ -9,8 +10,10 @@
   --color-ink-2: #1a1e27;
   --color-paper: #f6f4ef;
   --color-mist: #c9ccd3;
-  --color-accent: #3d5afe;
-  --color-accent-soft: #9aa8ff; /* accent for text on ink: AA contrast */
+  --color-accent: #7600e7; /* brand violet; white text on it 7.2:1. Fails on ink (2.7:1): never text/outline on dark */
+  --color-accent-soft: #c5bbfd; /* brand lavender: accent for text/outlines on ink (11:1) */
+  --color-brand-magenta: #ce36df;
+  --color-brand-blue: #3a9fd6;
   --color-steam-s: #22c3a6; /* Science */
   --color-steam-t: #3d5afe; /* Technology */
   --color-steam-e: #ff8a00; /* Engineering */
@@ -50,7 +53,7 @@ body {
 }
 
 :focus-visible {
-  outline: 3px solid var(--color-accent);
+  outline: 3px solid var(--color-accent-soft);
   outline-offset: 3px;
 }
 

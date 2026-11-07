@@ -1,7 +1,7 @@
 /**
  * Non-text program facts (✅/🟡 in CONTENT_FACTS.md). All copy lives in content/messages/{es,en}.json under
  * `programs.<slug>`. 🔴 values are null and never render: Orlando & AI days (9/10, 12/14), English level,
- * prices (Q2), Orlando July 2027 date (Jul 8 vs 9). Used by the site AND scripts/seed.ts.
+ * prices (not shown: Marvin 2026-11-07 → "ask us about pricing"), Orlando July 2027 date (Jul 8 vs 9). Used by the site AND scripts/seed.ts.
  */
 export type Extension = { key: "paris" | "edinburgh" | "londonExtra" | "osakaKyoto"; timing: "pre" | "post" | null; days: number | null };
 

@@ -127,7 +127,7 @@
   "styleguide": {
     "title": "Styleguide",
     "intro": "Base tokens and components for the site. This page is not indexed.",
-    "provisional": "Provisional palette: official brand colours still to be confirmed.",
+    "paletteNote": "Brand palette from the current Coded sites: violet, lavender, magenta and blue. The STEAM letter colours are system accents.",
     "colors": "Colours",
     "type": "Typography",
     "typeDisplay": "Display — Unbounded",
@@ -476,5 +476,12 @@
         }
       ]
     }
+  },
+  "media": {
+    "hero": "Coded students in purple caps working together on a group activity",
+    "orlando-steam-league": "Students at round tables during a Coded workshop",
+    "europe-steam-league": "A student working on a laptop during a Coded workshop",
+    "steam-league-ai": "Two students coding on a laptop on a garden bench",
+    "tokyo-steam-championship": "A student holds up a hand-decorated paper lantern in a Coded workshop"
   }
 }
