@@ -75,7 +75,8 @@
           "title": "Programación",
           "body": "El código conecta todo: de la idea al prototipo que funciona."
         }
-      }
+      },
+      "more": "Conoce el método"
     },
     "skills": {
       "eyebrow": "Habilidades para la vida",
@@ -523,6 +524,41 @@
         "phone": "Teléfono"
       },
       "sellerOfTravel": "Registrados como Seller of Travel en Florida, N.º ST46325."
+    },
+    "method": {
+      "title": "Nuestro método",
+      "metaDescription": "El método Coded: expertos, talleres en vivo, aprendizaje basado en proyectos y programación, con habilidades que abren carreras.",
+      "intro": "Cuatro pasos llevan a cada estudiante del aula al proyecto: aprenden de expertos, practican en talleres en vivo, construyen una solución real y la programan.",
+      "skillsTitle": "Habilidades que abren carreras",
+      "careersLabel": "Para carreras como",
+      "skills": {
+        "creativity": {
+          "body": "Usar las artes para pensar de formas nuevas e innovadoras.",
+          "careers": "Ciencia de datos, diseño de realidad virtual, bioingeniería y más."
+        },
+        "collaboration": {
+          "body": "Trabajar en equipo en cada proyecto.",
+          "careers": "Análisis del cambio climático, medicina, docencia, periodismo, gestión de redes sociales y más."
+        },
+        "adaptability": {
+          "body": "Los proyectos STEAM obligan a ajustar el método cuando aparecen nuevos retos.",
+          "careers": "Electricidad, cocina profesional, ingeniería mecánica, enfermería, derecho y más."
+        },
+        "problemSolving": {
+          "body": "Enfrentar retos con ciencia, matemáticas y tecnología.",
+          "careers": "Arquitectura, diseño, ingeniería civil, contaduría, gestión de operaciones, farmacia, cadena de suministro y más."
+        },
+        "technical": {
+          "body": "Aprender sobre tecnología e ingeniería.",
+          "careers": "Desarrollo de software, operación de drones, impresión 3D, ética de la IA, desarrollo web, soporte de TI y más."
+        },
+        "criticalThinking": {
+          "body": "Analizar y entender los problemas a fondo.",
+          "careers": "Bienes raíces, ciberseguridad, ingeniería mecánica, recursos humanos, psicología, aviación, veterinaria, odontología y más."
+        }
+      },
+      "groupsTitle": "Cómo se organizan",
+      "groupsBody": "Los estudiantes se agrupan por edad en Junior y Senior, en clases de niveles mixtos, y reciben un certificado al completar su proyecto."
     }
   },
   "media": {

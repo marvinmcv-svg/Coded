@@ -75,7 +75,8 @@
           "title": "Coding",
           "body": "Code ties it all together: from idea to working prototype."
         }
-      }
+      },
+      "more": "Explore the method"
     },
     "skills": {
       "eyebrow": "Power skills",
@@ -523,6 +524,41 @@
         "phone": "Phone"
       },
       "sellerOfTravel": "Registered Florida Seller of Travel, No. ST46325."
+    },
+    "method": {
+      "title": "Our method",
+      "metaDescription": "The Coded method: experts, live workshops, project-based learning and coding, building skills that open careers.",
+      "intro": "Four steps take every student from the classroom to the project: they learn from experts, practise in live workshops, build a real solution and code it.",
+      "skillsTitle": "Skills that open careers",
+      "careersLabel": "Skills for careers such as",
+      "skills": {
+        "creativity": {
+          "body": "Using arts to think in new and innovative ways.",
+          "careers": "Data Scientist, Virtual Reality Designer, Bioengineer and more."
+        },
+        "collaboration": {
+          "body": "Working together on projects.",
+          "careers": "Climate Change Analyst, Doctor, Teacher, Journalist, Social Media Manager and more."
+        },
+        "adaptability": {
+          "body": "STEAM projects often require students to adjust their methods as they encounter new challenges.",
+          "careers": "Electrician, Chef, Mechanical Engineer, Nurse, Lawyer and more."
+        },
+        "problemSolving": {
+          "body": "Tackling challenges using science, math and technology.",
+          "careers": "Architect, Designer, Civil Engineer, Accountant, Operations Manager, Pharmacist, Supply Chain Manager and more."
+        },
+        "technical": {
+          "body": "Learning about technology and engineering.",
+          "careers": "Software Developer, Drone Manager, 3D Printing Specialist, AI Ethicist, Web Developer, IT Support Specialist and more."
+        },
+        "criticalThinking": {
+          "body": "Analyzing and understanding problems deeply.",
+          "careers": "Real Estate Agent, Cybersecurity Analyst, Mechanical Engineer, HR Manager, Psychologist, Pilot, Veterinarian, Dentist and more."
+        }
+      },
+      "groupsTitle": "How groups work",
+      "groupsBody": "Students are grouped by age into Junior and Senior, in mixed-level classes, and receive a certificate when they complete their project."
     }
   },
   "media": {
