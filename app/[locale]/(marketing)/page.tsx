@@ -1,6 +1,7 @@
 import { setRequestLocale } from "next-intl/server";
 import { Championship } from "@/components/sections/Championship";
 import { CTA } from "@/components/sections/CTA";
+import { GlobeRoute } from "@/components/sections/GlobeRoute";
 import { Hero } from "@/components/sections/Hero";
 import { Method } from "@/components/sections/Method";
 import { Programs } from "@/components/sections/Programs";
@@ -17,6 +18,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
   return (
     <main id="main">
       <Hero />
+      <GlobeRoute />
       <Programs />
       <Method />
       <Skills />

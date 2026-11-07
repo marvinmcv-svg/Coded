@@ -32,6 +32,30 @@ test.describe("full tier (desktop)", () => {
   });
 });
 
+test.describe("globe (full tier, desktop)", () => {
+  test.skip(({ isMobile }) => isMobile, "full tier is desktop-only");
+
+  test("loads one shared canvas near the route and follows the active stop", async ({ page }) => {
+    const errors: string[] = [];
+    page.on("console", (m) => m.type() === "error" && errors.push(m.text()));
+    page.on("pageerror", (e) => errors.push(e.message));
+    await forceFull(page);
+    await page.goto("/es");
+    await expect(page.locator("canvas")).toHaveCount(0); // never before the section is near
+    const route = page.locator("[data-active-stop]");
+    await route.scrollIntoViewIfNeeded();
+    await expect(page.locator("canvas")).toHaveCount(1);
+    await page.locator('[data-stop="3"]').evaluate((el) => el.scrollIntoView({ block: "center" }));
+    await expect(route).toHaveAttribute("data-active-stop", "3");
+    // navigating away and back keeps a single canvas (persistent root)
+    await page.getByRole("link", { name: "Tokyo STEAM Championship" }).first().click();
+    await page.goBack();
+    await page.locator("[data-active-stop]").scrollIntoViewIfNeeded();
+    await expect(page.locator("canvas")).toHaveCount(1);
+    expect(errors).toEqual([]);
+  });
+});
+
 test.describe("static tier (reduced motion)", () => {
   test.use({ reducedMotion: "reduce" });
 
@@ -43,6 +67,9 @@ test.describe("static tier (reduced motion)", () => {
     await page.waitForTimeout(500);
     expect(await page.locator("[data-hero-copy]").evaluate((el) => getComputedStyle(el).transform)).toBe("none");
     await expect(page.locator("#method .origin-left")).toHaveCount(0);
+    await page.locator("[data-active-stop]").scrollIntoViewIfNeeded();
+    await expect(page.locator("[data-stop]")).toHaveCount(4);
+    await expect(page.locator("canvas")).toHaveCount(0);
 
     await expect(countdown(page)).toHaveCount(1);
     const days = Math.floor((TOKYO - Date.now()) / 864e5);

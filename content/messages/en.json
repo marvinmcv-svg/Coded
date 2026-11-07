@@ -28,6 +28,25 @@
       "ctaPrimary": "Book a call",
       "ctaSecondary": "See programs"
     },
+    "route": {
+      "eyebrow": "The route",
+      "title": "From your school to the world.",
+      "stops": {
+        "latam": {
+          "title": "Latin America",
+          "body": "It all starts at your school, anywhere in Latin America."
+        },
+        "orlando": {
+          "title": "Orlando"
+        },
+        "uk": {
+          "title": "United Kingdom"
+        },
+        "tokyo": {
+          "title": "Tokyo"
+        }
+      }
+    },
     "programs": {
       "eyebrow": "The world is the classroom",
       "title": "Four destinations. One challenge: create.",
