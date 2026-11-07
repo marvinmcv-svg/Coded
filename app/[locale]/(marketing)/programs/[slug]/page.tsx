@@ -7,6 +7,7 @@ import { getProgram, programs, upcomingCohorts } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { CONSULTATION_URL } from "@/lib/links";
+import { pageMetadata } from "@/lib/seo/meta";
 
 export const revalidate = 86400;
 export const dynamicParams = false;
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const p = getProgram(slug);
   if (!p) return {};
   const t = await getTranslations({ locale, namespace: `programs.${p.slug}` });
-  return { title: `${p.name} — Coded`, description: t("summary") };
+  return pageMetadata(locale, `/programs/${p.slug}`, `${p.name} — Coded`, t("summary"));
 }
 
 const letterColor = { S: "text-steam-s", T: "text-steam-t", E: "text-steam-e", A: "text-steam-a", M: "text-steam-m" } as const;

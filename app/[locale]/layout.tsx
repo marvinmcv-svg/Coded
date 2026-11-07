@@ -5,6 +5,7 @@ import { Inter_Tight, JetBrains_Mono, Unbounded } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { routing } from "@/lib/i18n/routing";
+import { INDEXABLE, pageMetadata, SITE_URL } from "@/lib/seo/meta";
 import { SmoothScroll } from "@/components/motion/SmoothScroll";
 import "../globals.css";
 
@@ -20,9 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
-    metadataBase: new URL(process.env.SITE_URL ?? "http://localhost:3000"),
-    title: t("homeTitle"),
-    description: t("homeDescription"),
+    metadataBase: new URL(SITE_URL),
+    ...pageMetadata(locale, "", t("homeTitle"), t("homeDescription")),
+    ...(INDEXABLE ? {} : { robots: { index: false, follow: false } }),
   };
 }
 
