@@ -12,9 +12,115 @@
     "otherLocaleName": "Español"
   },
   "home": {
-    "headline": "The world is the classroom. Your project is the future.",
-    "wip": "We're building the new Coded website. You'll be able to explore our programs here very soon.",
-    "styleguideLink": "View the styleguide"
+    "nav": {
+      "label": "Main",
+      "programs": "Programs",
+      "method": "Method",
+      "championship": "Championship",
+      "safety": "Safety",
+      "contact": "Contact"
+    },
+    "hero": {
+      "eyebrow": "The borderless STEAM school",
+      "headline": "The world is the classroom. Your project is the future.",
+      "sub": "International programs for students aged 11–17 in Orlando, the UK and Tokyo: expert-led workshops, real projects and a final project presentation.",
+      "ctaPrimary": "Book a call",
+      "ctaSecondary": "See programs"
+    },
+    "programs": {
+      "eyebrow": "The world is the classroom",
+      "title": "Four destinations. One challenge: create.",
+      "next": "Next departure",
+      "noDate": "Dates to be confirmed",
+      "days": "{days} days",
+      "ages": "Ages {min}–{max}"
+    },
+    "method": {
+      "eyebrow": "Our method",
+      "title": "Four steps, from classroom to project",
+      "steps": {
+        "experts": {
+          "title": "Expert delivered",
+          "body": "Classes are led by specialists who work in what they teach."
+        },
+        "workshops": {
+          "title": "Live workshops",
+          "body": "Students learn by doing, in the places where technology actually happens."
+        },
+        "projects": {
+          "title": "Project-based learning",
+          "body": "Every team designs a solution to a real challenge and defends it at the end."
+        },
+        "coding": {
+          "title": "Coding",
+          "body": "Code ties it all together: from idea to working prototype."
+        }
+      }
+    },
+    "skills": {
+      "eyebrow": "Power skills",
+      "title": "What they bring back home",
+      "sdg": "Every project picks at least one of the UN Sustainable Development Goals.",
+      "items": {
+        "creativity": "Creativity",
+        "collaboration": "Collaboration",
+        "adaptability": "Adaptability",
+        "problemSolving": "Problem-solving",
+        "technical": "Technical skills",
+        "criticalThinking": "Critical thinking"
+      }
+    },
+    "championship": {
+      "eyebrow": "Tokyo STEAM Championship",
+      "title": "From your classroom to Tokyo.",
+      "body": "The top 20 winning schools from past leagues prepare for six months and present their project in Tokyo. The winning team gets a cash prize and Coded's support to make it real.",
+      "frequency": "Held every two years.",
+      "dateLabel": "Next edition",
+      "cta": "Tell me more"
+    },
+    "trust": {
+      "eyebrow": "Safety",
+      "title": "They travel far. Never alone.",
+      "items": {
+        "guardian": {
+          "title": "A Guardian for every student",
+          "body": "Each student has a personal Guardian who shares updates and photos with the family every day."
+        },
+        "doctor": {
+          "title": "On-site doctor",
+          "body": "On-site medical care and arrangements with local healthcare providers."
+        },
+        "insurance": {
+          "title": "Health insurance",
+          "body": "Every student travels with health insurance included."
+        },
+        "app": {
+          "title": "360 navigation app",
+          "body": "Families can follow the program's journey from the app."
+        },
+        "staff": {
+          "title": "24/7 staff at the residence",
+          "body": "Passcode or keypass access and on-site staff around the clock."
+        }
+      },
+      "credentials": "Credentials",
+      "sellerOfTravel": "Florida Seller of Travel · Registration No. ST46325",
+      "stemOrg": "STEM.org recognitions: “STEM Educational Program” and “Best in STEM”",
+      "countries": "Students from 20+ countries"
+    },
+    "cta": {
+      "title": "Ready for the next project?",
+      "body": "Tell us whether you're a school, a family or a student and we'll help you pick the right program.",
+      "button": "Book a call",
+      "or": "Or write to us"
+    },
+    "footer": {
+      "offices": "Offices",
+      "miami": "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
+      "london": "London — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU",
+      "contact": "Contact",
+      "rights": "© {year} Coded. All rights reserved."
+    }
   },
   "styleguide": {
     "title": "Styleguide",

@@ -6,38 +6,17 @@
  * Idempotent: wipes and re-inserts seeded tables.  Usage: DATABASE_URL=… pnpm db:seed
  */
 import { createDb } from "../lib/db/client";
-import { cohorts, extensions, programs, stats } from "../lib/db/schema";
+import { programs } from "../content/programs";
+import { cohorts, extensions, programs as programsTable, stats } from "../lib/db/schema";
 
-const PROGRAMS = [
-  {
-    slug: "orlando-steam-league", name: "Orlando STEAM League", sort: 1, status: "live",
-    tagline_es: "¡Crea tu propia colonia espacial!", tagline_en: "Create your own space colony!",
-    location_es: "Orlando, Florida", location_en: "Orlando, Florida", days: null,
-  },
-  {
-    slug: "europe-steam-league", name: "Europe STEAM League", sort: 2, status: "live",
-    tagline_es: "Portafolio digital de carreras STEAM", tagline_en: "STEAM Digital Career Portfolio",
-    location_es: "Londres, Reino Unido", location_en: "London, United Kingdom", days: 12,
-  },
-  {
-    slug: "steam-league-ai", name: "STEAM League AI", sort: 3, status: "live",
-    tagline_es: "Estudio de innovación en IA", tagline_en: "AI Innovation Studio",
-    location_es: "Bradfield College, Reino Unido", location_en: "Bradfield College, United Kingdom", days: null,
-  },
-  {
-    slug: "tokyo-steam-championship", name: "Tokyo STEAM Championship", sort: 4, status: "upcoming",
-    tagline_es: "Soluciones para ciudades y comunidades mejores",
-    tagline_en: "Building Solutions for Better Cities and Communities",
-    location_es: "Tokio, Japón", location_en: "Tokyo, Japan", days: 11,
-  },
-] as const;
+const PROGRAMS = programs.map((p, i) => ({
+  slug: p.slug, name: p.name, sort: i + 1, status: p.status,
+  tagline_es: p.tagline.es, tagline_en: p.tagline.en,
+  location_es: p.location.es, location_en: p.location.en, days: p.days,
+  age_min: p.ages[0], age_max: p.ages[1],
+}));
 
-const COHORTS: Record<string, string[]> = {
-  "orlando-steam-league": ["2027-01-22", "2027-10-30"], // Jul 2027 omitted until Q7 resolves Jul 8 vs 9
-  "europe-steam-league": ["2027-03-30"],
-  "steam-league-ai": ["2027-07-09"],
-  "tokyo-steam-championship": ["2027-08-02"],
-};
+const COHORTS: Record<string, string[]> = Object.fromEntries(programs.map((p) => [p.slug, p.cohorts]));
 
 type Ext = Omit<typeof extensions.$inferInsert, "program_id">;
 const paris: Ext = { name_es: "Extensión París", name_en: "Paris extension", timing: "pre", days: null };
@@ -53,12 +32,12 @@ async function main() {
   try {
     await db.transaction(async (tx) => {
       await tx.delete(stats);
-      await tx.delete(programs); // cascades to cohorts + extensions
+      await tx.delete(programsTable); // cascades to cohorts + extensions
 
       const rows = await tx
-        .insert(programs)
-        .values(PROGRAMS.map((p) => ({ ...p, age_min: 11, age_max: 17 })))
-        .returning({ id: programs.id, slug: programs.slug });
+        .insert(programsTable)
+        .values(PROGRAMS)
+        .returning({ id: programsTable.id, slug: programsTable.slug });
       const idBySlug = Object.fromEntries(rows.map((r) => [r.slug, r.id]));
 
       await tx.insert(cohorts).values(

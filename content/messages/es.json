@@ -12,9 +12,115 @@
     "otherLocaleName": "English"
   },
   "home": {
-    "headline": "El mundo es el aula. Tu proyecto, el futuro.",
-    "wip": "Estamos construyendo el nuevo sitio de Coded. Muy pronto vas a poder explorar los programas aquí.",
-    "styleguideLink": "Ver la guía de estilo"
+    "nav": {
+      "label": "Principal",
+      "programs": "Programas",
+      "method": "Método",
+      "championship": "Campeonato",
+      "safety": "Seguridad",
+      "contact": "Contacto"
+    },
+    "hero": {
+      "eyebrow": "Escuela STEAM sin fronteras",
+      "headline": "El mundo es el aula. Tu proyecto, el futuro.",
+      "sub": "Programas internacionales para estudiantes de 11 a 17 años en Orlando, el Reino Unido y Tokio: talleres con expertos, proyectos reales y una presentación final de su proyecto.",
+      "ctaPrimary": "Agenda una llamada",
+      "ctaSecondary": "Ver programas"
+    },
+    "programs": {
+      "eyebrow": "El mundo es el aula",
+      "title": "Cuatro destinos. Un mismo reto: crear.",
+      "next": "Próxima salida",
+      "noDate": "Fechas por confirmar",
+      "days": "{days} días",
+      "ages": "{min} a {max} años"
+    },
+    "method": {
+      "eyebrow": "Nuestro método",
+      "title": "Cuatro pasos, del aula al proyecto",
+      "steps": {
+        "experts": {
+          "title": "Expertos en tecnología",
+          "body": "Las clases las dan especialistas que trabajan en lo que enseñan."
+        },
+        "workshops": {
+          "title": "Talleres en vivo",
+          "body": "Se aprende haciendo, en los lugares donde la tecnología pasa de verdad."
+        },
+        "projects": {
+          "title": "Aprendizaje basado en proyectos",
+          "body": "Cada equipo diseña una solución a un reto real y la defiende al final."
+        },
+        "coding": {
+          "title": "Programación",
+          "body": "El código conecta todo: de la idea al prototipo que funciona."
+        }
+      }
+    },
+    "skills": {
+      "eyebrow": "Habilidades para la vida",
+      "title": "Lo que se llevan de vuelta",
+      "sdg": "Cada proyecto elige al menos uno de los Objetivos de Desarrollo Sostenible de la ONU.",
+      "items": {
+        "creativity": "Creatividad",
+        "collaboration": "Colaboración",
+        "adaptability": "Adaptabilidad",
+        "problemSolving": "Resolución de problemas",
+        "technical": "Habilidades técnicas",
+        "criticalThinking": "Pensamiento crítico"
+      }
+    },
+    "championship": {
+      "eyebrow": "Tokyo STEAM Championship",
+      "title": "De tu aula a Tokio.",
+      "body": "Las 20 escuelas ganadoras de las ligas anteriores se preparan durante seis meses y presentan su proyecto en Tokio. El equipo ganador recibe un premio en efectivo y el apoyo de Coded para hacerlo realidad.",
+      "frequency": "Se realiza cada dos años.",
+      "dateLabel": "Próxima edición",
+      "cta": "Quiero saber más"
+    },
+    "trust": {
+      "eyebrow": "Seguridad",
+      "title": "Viajan lejos. Nunca solos.",
+      "items": {
+        "guardian": {
+          "title": "Un guardián por estudiante",
+          "body": "Cada estudiante tiene un guardián personal que comparte novedades y fotos con la familia todos los días."
+        },
+        "doctor": {
+          "title": "Médico en sitio",
+          "body": "Atención médica en el lugar y acuerdos con centros de salud locales."
+        },
+        "insurance": {
+          "title": "Seguro médico",
+          "body": "Todos los estudiantes viajan con seguro médico incluido."
+        },
+        "app": {
+          "title": "App de navegación 360",
+          "body": "Las familias pueden seguir el recorrido del programa desde la app."
+        },
+        "staff": {
+          "title": "Personal 24/7 en el alojamiento",
+          "body": "Acceso con clave o tarjeta y personal en el lugar las 24 horas."
+        }
+      },
+      "credentials": "Credenciales",
+      "sellerOfTravel": "Agencia de viajes registrada en Florida · Seller of Travel N.º ST46325",
+      "stemOrg": "Reconocimientos de STEM.org: «STEM Educational Program» y «Best in STEM»",
+      "countries": "Estudiantes de más de 20 países"
+    },
+    "cta": {
+      "title": "¿Listo para el próximo proyecto?",
+      "body": "Cuéntanos si eres colegio, familia o estudiante y te ayudamos a elegir el programa ideal.",
+      "button": "Agenda una llamada",
+      "or": "O escríbenos"
+    },
+    "footer": {
+      "offices": "Oficinas",
+      "miami": "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
+      "london": "Londres — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU",
+      "contact": "Contacto",
+      "rights": "© {year} Coded. Todos los derechos reservados."
+    }
   },
   "styleguide": {
     "title": "Guía de estilo",

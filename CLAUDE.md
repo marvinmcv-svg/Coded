@@ -1,7 +1,7 @@
 # CLAUDE.md — Coded 2.0 (codingeducation.us / codededucation.com rebuild)
 
 ## Status
-P0 approved 2026-11-07. Phase **P1 (foundation)** in progress on `claude/p1-foundation`.
+P0 approved 2026-11-07. P1 (foundation) shipped to `main`. Phase **P2 (home)** in progress on `claude/p2-home`: static-tier sections live; lite/full motion + 3D + media pending (Q1, Q31).
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)

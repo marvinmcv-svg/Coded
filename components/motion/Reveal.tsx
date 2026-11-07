@@ -5,23 +5,24 @@ import { dur } from "@/lib/motion/tokens";
 import { useLazyGSAP } from "./useLazyGSAP";
 import { useMotionTier } from "./useMotionTier";
 
-/** Fades content in on scroll. Static tier: opacity only. Content is visible without JS. */
-export function Reveal({ children, className }: { children: ReactNode; className?: string }) {
+/** Fades content in on scroll. Static tier or `calm` (trust/safety sections): opacity only. Visible without JS. */
+export function Reveal({ children, className, calm = false }: { children: ReactNode; className?: string; calm?: boolean }) {
   const ref = useRef<HTMLDivElement>(null);
   const tier = useMotionTier();
+  const fadeOnly = calm || tier === "static";
 
   useLazyGSAP(
     ({ gsap }) => {
       gsap.from(ref.current, {
         opacity: 0,
-        y: tier === "static" ? 0 : 32,
+        y: fadeOnly ? 0 : 32,
         duration: dur[4],
-        ease: tier === "static" ? "none" : "expo.out",
+        ease: fadeOnly ? "none" : "expo.out",
         scrollTrigger: { trigger: ref.current, start: "top 85%", once: true },
       });
     },
     ref,
-    [tier],
+    [fadeOnly],
   );
 
   return (
