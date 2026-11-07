@@ -7,25 +7,26 @@
  */
 import { createDb } from "../lib/db/client";
 import { programs } from "../content/programs";
+import es from "../content/messages/es.json";
+import en from "../content/messages/en.json";
 import { cohorts, extensions, programs as programsTable, stats } from "../lib/db/schema";
 
 const PROGRAMS = programs.map((p, i) => ({
   slug: p.slug, name: p.name, sort: i + 1, status: p.status,
-  tagline_es: p.tagline.es, tagline_en: p.tagline.en,
-  location_es: p.location.es, location_en: p.location.en, days: p.days,
+  tagline_es: es.programs[p.slug].tagline, tagline_en: en.programs[p.slug].tagline,
+  location_es: es.programs[p.slug].location, location_en: en.programs[p.slug].location, days: p.days,
   age_min: p.ages[0], age_max: p.ages[1],
 }));
 
 const COHORTS: Record<string, string[]> = Object.fromEntries(programs.map((p) => [p.slug, p.cohorts]));
 
-type Ext = Omit<typeof extensions.$inferInsert, "program_id">;
-const paris: Ext = { name_es: "Extensión París", name_en: "Paris extension", timing: "pre", days: null };
-const edinburgh: Ext = { name_es: "Edimburgo y Liverpool", name_en: "Edinburgh & Liverpool", timing: "post", days: 3 };
-const EXTENSIONS: Record<string, Ext[]> = {
-  "europe-steam-league": [paris, edinburgh],
-  "steam-league-ai": [paris, edinburgh],
-  "tokyo-steam-championship": [{ name_es: "Osaka y Kioto", name_en: "Osaka & Kyoto", timing: "post", days: 2 }],
-};
+const EXT_NAMES = { es: es.programs.extensions, en: en.programs.extensions };
+// London extra activities have no stated timing, so they are not seeded (timing is NOT NULL).
+const EXTENSIONS = programs.flatMap((p) =>
+  p.extensions
+    .filter((e) => e.timing)
+    .map((e) => ({ slug: p.slug, name_es: EXT_NAMES.es[e.key], name_en: EXT_NAMES.en[e.key], timing: e.timing!, days: e.days })),
+);
 
 async function main() {
   const { db, client } = createDb();
@@ -45,9 +46,7 @@ async function main() {
           dates.map((start_date) => ({ program_id: idBySlug[slug]!, start_date })),
         ),
       );
-      await tx.insert(extensions).values(
-        Object.entries(EXTENSIONS).flatMap(([slug, exts]) => exts.map((e) => ({ ...e, program_id: idBySlug[slug]! }))),
-      );
+      await tx.insert(extensions).values(EXTENSIONS.map(({ slug, ...e }) => ({ ...e, program_id: idBySlug[slug]! })));
       await tx.insert(stats).values({
         key: "countries", value: "+20", label_es: "países", label_en: "countries",
         source_note: "codingeducation.us + codededucation.com landing pages, 2026-11-06 (CONTENT_FACTS §1 🟡)",

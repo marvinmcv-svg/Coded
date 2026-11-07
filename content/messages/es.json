@@ -3,7 +3,8 @@
     "siteName": "Coded",
     "homeTitle": "Coded — El mundo es el aula",
     "homeDescription": "Programas STEAM internacionales para estudiantes de 11 a 17 años en Orlando, Reino Unido y Tokio.",
-    "styleguideTitle": "Guía de estilo — Coded"
+    "styleguideTitle": "Guía de estilo — Coded",
+    "programsTitle": "Programas — Coded"
   },
   "common": {
     "skipToContent": "Saltar al contenido",
@@ -147,5 +148,162 @@
     "chipOpen": "Inscripciones abiertas",
     "chipFew": "Últimos cupos",
     "chipClosed": "Cerrada"
+  },
+  "programs": {
+    "index": {
+      "title": "Programas",
+      "intro": "Cuatro programas STEAM para estudiantes de 11 a 17 años. Cada uno termina con un proyecto propio presentado en el destino.",
+      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI y Tokyo STEAM Championship: fechas, destinos y contenidos."
+    },
+    "detail": {
+      "back": "Todos los programas",
+      "keyFacts": "Datos clave",
+      "location": "Destino",
+      "ages": "Edades",
+      "days": "Duración",
+      "daysValue": "{days} días",
+      "daysTbc": "Por confirmar",
+      "agesValue": "{min} a {max} años",
+      "cohorts": "Próximas salidas",
+      "pathway": "Ruta STEAM",
+      "visits": "Experiencias",
+      "inclusions": "Qué incluye",
+      "notIncluded": "No incluye",
+      "extensions": "Extensiones opcionales",
+      "extensionDays": "{days} días",
+      "timing": {
+        "pre": "Antes del programa",
+        "post": "Después del programa"
+      },
+      "price": "Precio",
+      "priceOnRequest": "Consúltanos el precio y las formas de pago.",
+      "cta": "Agenda una llamada",
+      "ctaBody": "Te contamos fechas, cupos y cómo inscribirte."
+    },
+    "orlando-steam-league": {
+      "tagline": "¡Crea tu propia colonia espacial!",
+      "location": "Orlando, Florida",
+      "summary": "Los estudiantes diseñan una colonia espacial trabajando en cinco parques temáticos, el Kennedy Space Center de la NASA y el campus de UCF, donde pasan dos días académicos completos.",
+      "pathway": {
+        "S": "Programación en el Digital Hub y la física detrás de Disney's Hollywood Studios",
+        "T": "Taller de seis grados de libertad en Universal y robótica con Ozobots",
+        "E": "Ingeniería ambiental en Epic Universe y diseño de una montaña rusa inspirada en VelociCoaster (Islands of Adventure)",
+        "A": "Art of Animation: diseño de la colonia y de los trajes espaciales",
+        "M": "IA y aprendizaje automático: programación de chatbots"
+      },
+      "visits": [
+        "Cinco parques temáticos",
+        "Kennedy Space Center de la NASA",
+        "Dos días académicos en el campus de UCF"
+      ],
+      "inclusions": [
+        "Comidas durante el programa académico (excepto tres comidas)",
+        "Software y materiales (cada estudiante trae su laptop)",
+        "Contenido académico",
+        "Entradas a los parques y a la NASA",
+        "Alojamiento",
+        "Transporte privado",
+        "Seguro médico",
+        "App de seguimiento",
+        "Certificado"
+      ],
+      "notIncluded": [
+        "Vuelos"
+      ],
+      "rooms": "Habitaciones separadas por género, de 2 a 4 estudiantes (hasta 5 en suites). Toque de queda a las 10 p. m."
+    },
+    "europe-steam-league": {
+      "tagline": "Portafolio digital de carreras STEAM",
+      "location": "Londres, Reino Unido",
+      "summary": "Doce días en el Reino Unido para construir un portafolio digital de carreras STEAM, con base en el campus de Woldingham School y una excursión a Oxford.",
+      "pathway": [
+        "IA aplicada",
+        "Diseño de experiencias de realidad virtual jugables",
+        "Sistemas autónomos y drones",
+        "Taller de artes escénicas",
+        "Criptografía"
+      ],
+      "visits": [
+        "Science Museum",
+        "Detrás de escena en Red Bull Racing",
+        "Backstage de El Rey León",
+        "Estadio del Arsenal",
+        "Excursión a Oxford"
+      ],
+      "inclusions": [
+        "Todas las comidas",
+        "Transporte público y privado",
+        "Entradas a El Rey León y al estadio del Arsenal",
+        "Experiencia Red Bull",
+        "Science Museum",
+        "Alojamiento en residencias de colegios privados del Reino Unido",
+        "Seguro médico",
+        "App de seguimiento"
+      ],
+      "notIncluded": [
+        "Vuelos"
+      ]
+    },
+    "steam-league-ai": {
+      "tagline": "Estudio de innovación en IA",
+      "location": "Bradfield College, Reino Unido",
+      "summary": "Un estudio de innovación en inteligencia artificial en Bradfield College, con proyectos alineados a los Objetivos de Desarrollo Sostenible.",
+      "pathway": [
+        "Fundamentos de IA",
+        "Modelos predictivos",
+        "Mapeo geoespacial",
+        "Microsimulaciones",
+        "Sistemas de recomendación"
+      ],
+      "visits": [
+        "Science Museum",
+        "El Rey León",
+        "London Eye",
+        "Oxford"
+      ],
+      "inclusions": [
+        "Todas las comidas",
+        "Transporte público y privado",
+        "Entradas a El Rey León",
+        "Science Museum",
+        "Alojamiento en residencias de colegios privados del Reino Unido",
+        "Seguro médico",
+        "App de seguimiento"
+      ],
+      "notIncluded": [
+        "Vuelos"
+      ]
+    },
+    "tokyo-steam-championship": {
+      "tagline": "Soluciones para ciudades y comunidades mejores",
+      "location": "Tokio, Japón",
+      "summary": "Las 20 escuelas ganadoras de las ligas anteriores se preparan durante seis meses y presentan en Tokio soluciones para ciudades y comunidades mejores. Se realiza cada dos años; el equipo ganador recibe un premio en efectivo y el apoyo de Coded para implementar su proyecto.",
+      "pathway": [
+        "IA y sistemas ambientales",
+        "Apps y nube",
+        "Integración de robótica",
+        "Experiencia de usuario (UX)",
+        "Ciencia de datos y aprendizaje automático"
+      ],
+      "visits": [
+        "Tokyo Tower",
+        "Rally tecnológico en Akihabara",
+        "Visita a la industria japonesa",
+        "teamLab",
+        "Miraikan",
+        "Museo de Toyota",
+        "Tokyo DisneySea",
+        "Gundam en Odaiba",
+        "Templos de Tokio"
+      ],
+      "inclusions": [],
+      "notIncluded": []
+    },
+    "extensions": {
+      "paris": "París",
+      "edinburgh": "Edimburgo y Liverpool",
+      "londonExtra": "Actividades extra en Londres",
+      "osakaKyoto": "Osaka y Kioto"
+    }
   }
 }

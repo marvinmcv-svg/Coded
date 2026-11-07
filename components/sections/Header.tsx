@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { LocaleSwitch } from "@/components/ui/LocaleSwitch";
+import { Link } from "@/lib/i18n/navigation";
 import { buttonClass } from "@/components/ui/Button";
 import { CONSULTATION_URL } from "@/lib/links";
 
@@ -13,11 +14,11 @@ export async function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-mist/10 bg-ink/80 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-3">
-        <a href="#main" className="font-display text-xl font-semibold tracking-tight">coded</a>
+        <Link href="/" className="font-display text-xl font-semibold tracking-tight">coded</Link>
         <nav aria-label={t("label")} className="hidden lg:block">
           <ul className="flex gap-6 text-sm text-mist">
             {anchors.map((a) => (
-              <li key={a}><a href={`#${a}`} className="hover:text-paper">{t(a)}</a></li>
+              <li key={a}><Link href={a === "programs" ? "/programs" : `/#${a}`} className="hover:text-paper">{t(a)}</Link></li>
             ))}
           </ul>
         </nav>

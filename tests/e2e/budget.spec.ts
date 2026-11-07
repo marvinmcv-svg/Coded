@@ -5,7 +5,7 @@ import { expect, test } from "@playwright/test";
 // "Initial" = every script the server HTML references (script src + modulepreload). Code loaded later via
 // dynamic import (e.g. the motion stack after idle) is excluded by design.
 const BUDGET = 200 * 1024;
-const ROUTES = ["/es", "/en", "/es/styleguide", "/en/styleguide"];
+const ROUTES = ["/es", "/en", "/es/programs", "/es/programs/orlando-steam-league", "/es/styleguide", "/en/styleguide"];
 
 test.describe.configure({ mode: "parallel" });
 

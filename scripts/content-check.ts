@@ -6,14 +6,16 @@
 import es from "../content/messages/es.json";
 import en from "../content/messages/en.json";
 
-type Tree = { [k: string]: string | Tree };
+// Arrays are walked like objects (keys 0..n), so ES/EN lists must also match in length.
+type Node = string | Node[] | { [k: string]: Node };
+type Tree = { [k: string]: Node };
 
-function leaves(tree: Tree, prefix = ""): Map<string, string> {
+function leaves(tree: Tree | Node[], prefix = ""): Map<string, string> {
   const out = new Map<string, string>();
   for (const [k, v] of Object.entries(tree)) {
     const key = prefix ? `${prefix}.${k}` : k;
     if (typeof v === "string") out.set(key, v);
-    else for (const [kk, vv] of leaves(v, key)) out.set(kk, vv);
+    else for (const [kk, vv] of leaves(v as Tree, key)) out.set(kk, vv);
   }
   return out;
 }

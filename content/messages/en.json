@@ -3,7 +3,8 @@
     "siteName": "Coded",
     "homeTitle": "Coded — The world is the classroom",
     "homeDescription": "International STEAM programs for students aged 11–17 in Orlando, the UK and Tokyo.",
-    "styleguideTitle": "Styleguide — Coded"
+    "styleguideTitle": "Styleguide — Coded",
+    "programsTitle": "Programs — Coded"
   },
   "common": {
     "skipToContent": "Skip to content",
@@ -147,5 +148,162 @@
     "chipOpen": "Enrollment open",
     "chipFew": "Last spots",
     "chipClosed": "Closed"
+  },
+  "programs": {
+    "index": {
+      "title": "Programs",
+      "intro": "Four STEAM programs for students aged 11–17. Each one ends with the students' own project, presented on location.",
+      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI and Tokyo STEAM Championship: dates, destinations and content."
+    },
+    "detail": {
+      "back": "All programs",
+      "keyFacts": "Key facts",
+      "location": "Destination",
+      "ages": "Ages",
+      "days": "Duration",
+      "daysValue": "{days} days",
+      "daysTbc": "To be confirmed",
+      "agesValue": "{min}–{max}",
+      "cohorts": "Upcoming departures",
+      "pathway": "STEAM pathway",
+      "visits": "Experiences",
+      "inclusions": "What's included",
+      "notIncluded": "Not included",
+      "extensions": "Optional extensions",
+      "extensionDays": "{days} days",
+      "timing": {
+        "pre": "Before the program",
+        "post": "After the program"
+      },
+      "price": "Price",
+      "priceOnRequest": "Ask us about pricing and payment plans.",
+      "cta": "Book a call",
+      "ctaBody": "We'll walk you through dates, places and how to enroll."
+    },
+    "orlando-steam-league": {
+      "tagline": "Create your own space colony!",
+      "location": "Orlando, Florida",
+      "summary": "Students design a space colony while working across five theme parks, NASA's Kennedy Space Center and the UCF campus, where they spend two full academic days.",
+      "pathway": {
+        "S": "Coding at the Digital Hub and the physics behind Disney's Hollywood Studios",
+        "T": "Six-degrees-of-freedom workshop at Universal and robotics with Ozobots",
+        "E": "Environmental engineering at Epic Universe and a coaster design inspired by VelociCoaster (Islands of Adventure)",
+        "A": "Art of Animation: colony layout and space-suit design",
+        "M": "AI & machine learning: coding chatbots"
+      },
+      "visits": [
+        "Five theme parks",
+        "NASA Kennedy Space Center",
+        "Two academic days on the UCF campus"
+      ],
+      "inclusions": [
+        "Meals during the academic program (except three meals)",
+        "Software and materials (students bring their own laptop)",
+        "Academic content",
+        "Theme-park and NASA tickets",
+        "Accommodation",
+        "Private transport",
+        "Health insurance",
+        "Tracking app",
+        "Certificate"
+      ],
+      "notIncluded": [
+        "Flights"
+      ],
+      "rooms": "Gender-split rooms of 2–4 students (up to 5 in suites). 10 pm curfew."
+    },
+    "europe-steam-league": {
+      "tagline": "STEAM Digital Career Portfolio",
+      "location": "London, United Kingdom",
+      "summary": "Twelve days in the UK building a digital STEAM career portfolio, based on the Woldingham School campus with an excursion to Oxford.",
+      "pathway": [
+        "Applied AI",
+        "Designing playable VR experiences",
+        "Autonomous systems and drones",
+        "Performing arts workshop",
+        "Cryptography"
+      ],
+      "visits": [
+        "Science Museum",
+        "Red Bull Racing behind the scenes",
+        "The Lion King backstage",
+        "Arsenal Stadium",
+        "Oxford excursion"
+      ],
+      "inclusions": [
+        "All meals",
+        "Public and private transport",
+        "The Lion King and Arsenal Stadium tickets",
+        "Red Bull experience",
+        "Science Museum",
+        "Accommodation in UK private-college residences",
+        "Health insurance",
+        "Tracking app"
+      ],
+      "notIncluded": [
+        "Flights"
+      ]
+    },
+    "steam-league-ai": {
+      "tagline": "AI Innovation Studio",
+      "location": "Bradfield College, United Kingdom",
+      "summary": "An artificial-intelligence innovation studio at Bradfield College, with projects aligned to the Sustainable Development Goals.",
+      "pathway": [
+        "AI foundations",
+        "Predictive modelling",
+        "Geospatial mapping",
+        "Micro-simulations",
+        "Recommendation systems"
+      ],
+      "visits": [
+        "Science Museum",
+        "The Lion King",
+        "London Eye",
+        "Oxford"
+      ],
+      "inclusions": [
+        "All meals",
+        "Public and private transport",
+        "The Lion King tickets",
+        "Science Museum",
+        "Accommodation in UK private-college residences",
+        "Health insurance",
+        "Tracking app"
+      ],
+      "notIncluded": [
+        "Flights"
+      ]
+    },
+    "tokyo-steam-championship": {
+      "tagline": "Building Solutions for Better Cities and Communities",
+      "location": "Tokyo, Japan",
+      "summary": "The top 20 winning schools from past leagues prepare for six months and present solutions for better cities and communities in Tokyo. Held every two years; the winning team gets a cash prize and Coded's support to implement its project.",
+      "pathway": [
+        "AI & environmental systems",
+        "Apps & cloud",
+        "Robotics integration",
+        "User experience (UX)",
+        "Data science & machine learning"
+      ],
+      "visits": [
+        "Tokyo Tower",
+        "Akihabara tech rally",
+        "Japanese industry visit",
+        "teamLab",
+        "Miraikan",
+        "Toyota museum",
+        "Tokyo DisneySea",
+        "Gundam in Odaiba",
+        "Tokyo temples"
+      ],
+      "inclusions": [],
+      "notIncluded": []
+    },
+    "extensions": {
+      "paris": "Paris",
+      "edinburgh": "Edinburgh & Liverpool",
+      "londonExtra": "Extra London activities",
+      "osakaKyoto": "Osaka & Kyoto"
+    }
   }
 }

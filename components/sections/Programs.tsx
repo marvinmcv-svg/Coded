@@ -1,7 +1,7 @@
-import { getFormatter, getLocale, getTranslations } from "next-intl/server";
+import { getFormatter, getTranslations } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
 import { nextCohort, programs } from "@/content/programs";
-import type { Locale } from "@/lib/i18n/routing";
+import { Link } from "@/lib/i18n/navigation";
 import { SectionHeading } from "./SectionHeading";
 
 const border: Record<string, string> = {
@@ -9,23 +9,35 @@ const border: Record<string, string> = {
   "steam-a": "before:bg-steam-a", "steam-m": "before:bg-steam-m",
 };
 
-export async function Programs() {
+/** Home section, or the /programs index body when `asPage` (h1 + intro). */
+export async function Programs({ asPage = false }: { asPage?: boolean }) {
   const t = await getTranslations("home.programs");
+  const tp = await getTranslations("programs");
   const format = await getFormatter();
-  const locale = (await getLocale()) as Locale;
+  const Heading = asPage ? "h2" : "h3";
 
   return (
     <section id="programs" aria-labelledby="programs-title" className="mx-auto flex max-w-6xl scroll-mt-20 flex-col gap-12 px-6 py-24">
-      <SectionHeading id="programs-title" eyebrow={t("eyebrow")} title={t("title")} />
+      {asPage ? (
+        <div className="flex flex-col gap-4">
+          <h1 id="programs-title" className="font-display text-4xl font-semibold md:text-6xl">{tp("index.title")}</h1>
+          <p className="max-w-2xl text-lg text-mist">{tp("index.intro")}</p>
+        </div>
+      ) : (
+        <SectionHeading id="programs-title" eyebrow={t("eyebrow")} title={t("title")} />
+      )}
       <ul className="grid gap-6 md:grid-cols-2">
         {programs.map((p) => {
           const next = nextCohort(p);
           return (
             <li key={p.slug}>
               <Reveal className={`relative flex h-full flex-col gap-4 overflow-hidden rounded-[var(--radius-card)] bg-ink-2 p-8 before:absolute before:inset-x-0 before:top-0 before:h-1 ${border[p.accent]}`}>
-                <p className="font-mono text-sm text-mist">{p.location[locale]}</p>
-                <h3 className="font-display text-2xl font-semibold">{p.name}</h3>
-                <p className="text-lg">{p.tagline[locale]}</p>
+                <p className="font-mono text-sm text-mist">{tp(`${p.slug}.location`)}</p>
+                {/* h2 on the index page so heading levels don't skip */}
+                <Heading className="font-display text-2xl font-semibold">
+                  <Link href={`/programs/${p.slug}`} className="after:absolute after:inset-0">{p.name}</Link>
+                </Heading>
+                <p className="text-lg">{tp(`${p.slug}.tagline`)}</p>
                 <ul className="mt-auto flex flex-wrap gap-x-6 gap-y-2 pt-4 text-sm text-mist">
                   <li>
                     {next ? (

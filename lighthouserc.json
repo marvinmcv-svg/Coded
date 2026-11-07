@@ -5,6 +5,7 @@
       "startServerReadyPattern": "Ready",
       "url": [
         "http://localhost:3200/es",
+        "http://localhost:3200/es/programs/orlando-steam-league",
         "http://localhost:3200/es/styleguide",
         "http://localhost:3200/en/styleguide"
       ],
