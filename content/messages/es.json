@@ -476,5 +476,12 @@
         }
       ]
     }
+  },
+  "media": {
+    "hero": "Estudiantes de Coded con gorras moradas resolviendo una actividad en equipo",
+    "orlando-steam-league": "Estudiantes en mesas redondas durante un taller de Coded",
+    "europe-steam-league": "Estudiante trabajando en su laptop durante un taller de Coded",
+    "steam-league-ai": "Dos estudiantes programando en una laptop, sentados en una banca del jardín",
+    "tokyo-steam-championship": "Estudiante muestra una lámpara de papel decorada a mano en un taller de Coded"
   }
 }

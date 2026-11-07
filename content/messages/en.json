@@ -476,5 +476,12 @@
         }
       ]
     }
+  },
+  "media": {
+    "hero": "Coded students in purple caps working together on a group activity",
+    "orlando-steam-league": "Students at round tables during a Coded workshop",
+    "europe-steam-league": "A student working on a laptop during a Coded workshop",
+    "steam-league-ai": "Two students coding on a laptop on a garden bench",
+    "tokyo-steam-championship": "A student holds up a hand-decorated paper lantern in a Coded workshop"
   }
 }

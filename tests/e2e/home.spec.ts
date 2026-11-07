@@ -20,6 +20,19 @@ for (const [locale, m] of Object.entries(locales)) {
       expect(errors).toEqual([]);
     });
 
+    test("hero and program photos load with localized alt text", async ({ page }) => {
+      await page.goto(`/${locale}`);
+      const hero = page.getByRole("img", { name: m.media.hero, exact: true });
+      await expect(hero).toHaveAttribute("fetchpriority", "high");
+      const cards = page.locator("#programs img");
+      await expect(cards).toHaveCount(4);
+      for (const img of [hero, ...(await cards.all())]) {
+        await img.scrollIntoViewIfNeeded();
+        await expect.poll(() => img.evaluate((el: HTMLImageElement) => el.complete && el.naturalWidth > 0)).toBe(true);
+        expect(Object.values(m.media)).toContain(await img.getAttribute("alt"));
+      }
+    });
+
     test("axe: no WCAG 2.2 AA violations", async ({ page }) => {
       await page.goto(`/${locale}`);
       expect(await axeViolations(page)).toEqual([]);
