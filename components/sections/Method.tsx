@@ -13,7 +13,7 @@ export async function Method() {
         {steps.map((s, i) => (
           <li key={s}>
             <Reveal className="flex h-full flex-col gap-3 border-t border-mist/20 pt-6">
-              <span aria-hidden className="font-mono text-sm text-accent">0{i + 1}</span>
+              <span aria-hidden className="font-mono text-sm text-accent-soft">0{i + 1}</span>
               <h3 className="font-display text-xl font-semibold">{t(`steps.${s}.title`)}</h3>
               <p className="text-mist">{t(`steps.${s}.body`)}</p>
             </Reveal>

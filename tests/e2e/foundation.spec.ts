@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import AxeBuilder from "@axe-core/playwright";
+import { axeViolations } from "./helpers";
 import es from "../../content/messages/es.json";
 import en from "../../content/messages/en.json";
 
@@ -26,10 +26,7 @@ for (const [locale, m] of Object.entries(locales)) {
 
     test("axe: no WCAG 2.2 AA violations", async ({ page }) => {
       await page.goto(`/${locale}/styleguide`);
-      const { violations } = await new AxeBuilder({ page })
-        .withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"])
-        .analyze();
-      expect(violations.map((v) => `${v.id}: ${v.nodes.length}`)).toEqual([]);
+      expect(await axeViolations(page)).toEqual([]);
     });
   });
 }

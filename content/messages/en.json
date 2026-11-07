@@ -120,7 +120,8 @@
       "miami": "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
       "london": "London — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU",
       "contact": "Contact",
-      "rights": "© {year} Coded. All rights reserved."
+      "rights": "© {year} Coded. All rights reserved.",
+      "explore": "Explore"
     }
   },
   "styleguide": {
@@ -304,6 +305,176 @@
       "edinburgh": "Edinburgh & Liverpool",
       "londonExtra": "Extra London activities",
       "osakaKyoto": "Osaka & Kyoto"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "About Coded",
+      "metaDescription": "Coded, the borderless STEAM school: mission, method, credentials and offices.",
+      "intro": "We are a borderless STEAM school: the Academy of Tomorrow. We take students from Latin America to learn where the future is built.",
+      "sections": [
+        {
+          "title": "Our mission",
+          "body": "To empower the leaders and innovators of tomorrow, through transformative TechEd experiences."
+        },
+        {
+          "title": "How we teach",
+          "body": "A four-step method, from classroom to project:",
+          "items": [
+            "Expert delivered",
+            "Live workshops",
+            "Project-based learning",
+            "Coding"
+          ]
+        },
+        {
+          "title": "Credentials",
+          "items": [
+            "Florida Seller of Travel · Registration No. ST46325",
+            "STEM.org recognitions: “STEM Educational Program” and “Best in STEM”",
+            "Students from 20+ countries"
+          ]
+        },
+        {
+          "title": "Offices",
+          "items": [
+            "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
+            "London — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "title": "Safety",
+      "metaDescription": "How we look after every student: personal Guardian, health, accommodation and family communication.",
+      "intro": "Every program is designed so students can learn far from home while families stay at ease.",
+      "sections": [
+        {
+          "title": "A Guardian for every student",
+          "body": "Each student has a personal Guardian who shares updates and photos with the family every day."
+        },
+        {
+          "title": "What the Guardian does",
+          "items": [
+            "Guidance",
+            "Coordination",
+            "Assistance",
+            "Rule enforcement",
+            "Communication with families",
+            "Emergency response"
+          ]
+        },
+        {
+          "title": "Health",
+          "items": [
+            "On-site doctor",
+            "Health insurance",
+            "Emergency contacts",
+            "Arrangements with local healthcare providers",
+            "Counseling and peer support for homesickness"
+          ]
+        },
+        {
+          "title": "Accommodation",
+          "items": [
+            "Passcode access in London, keypass in Orlando",
+            "On-site staff 24/7"
+          ]
+        },
+        {
+          "title": "Communication",
+          "items": [
+            "360 navigation app",
+            "Daily updates and photos from the Guardian",
+            "For World Citizens: separate chat groups for students and for parents"
+          ]
+        },
+        {
+          "title": "Independent outings",
+          "body": "When a student goes out on their own, we follow three steps:",
+          "items": [
+            "They share contact details and a travel plan",
+            "They receive guidance and training beforehand",
+            "On return, the Guardian accompanies the check-in and confirms it with photos in the group chat"
+          ]
+        }
+      ]
+    },
+    "worldCitizens": {
+      "title": "World Citizens",
+      "metaDescription": "International STEAM programs for students who travel on their own, without their school.",
+      "intro": "For students who want to join a Coded program on their own, even if their school isn't traveling.",
+      "sections": [
+        {
+          "title": "How to apply",
+          "items": [
+            "Schedule a consultation",
+            "Meet our business development team online",
+            "Receive your acceptance letter"
+          ]
+        },
+        {
+          "title": "Support",
+          "body": "Every student has a personal Guardian. Families get updates and photos every day, with separate chat groups for students and for parents."
+        },
+        {
+          "title": "Enrollment & payment",
+          "items": [
+            "Online registration and cohort selection",
+            "Enrollment fee by card",
+            "Installment plans",
+            "Klarna, where available"
+          ]
+        },
+        {
+          "title": "Parent Portal forms",
+          "items": [
+            "Medical form",
+            "T-shirt size",
+            "Release form",
+            "Pick-up authorization"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "metaDescription": "Ages, enrollment, forms, health and what each Coded program includes.",
+      "intro": "Can't find your answer? Book a call and we'll help.",
+      "items": [
+        {
+          "q": "What ages are the programs for?",
+          "a": "Students aged 11 to 17."
+        },
+        {
+          "q": "How are classes organized?",
+          "a": "Students are grouped by age into Junior and Senior, in mixed-level classes."
+        },
+        {
+          "q": "Do students get a certificate?",
+          "a": "Yes, on completing their project."
+        },
+        {
+          "q": "How do I enroll?",
+          "a": "Register online, pick a cohort and pay the enrollment fee by card. Installment plans are available, and Klarna where available."
+        },
+        {
+          "q": "Which forms do we need to fill in?",
+          "a": "In the Parent Portal: medical form, T-shirt size, release form and pick-up authorization."
+        },
+        {
+          "q": "Are flights included?",
+          "a": "No, flights are not included."
+        },
+        {
+          "q": "What if a student needs medical care?",
+          "a": "There is an on-site doctor, health insurance and arrangements with local healthcare providers."
+        },
+        {
+          "q": "Do students need a laptop?",
+          "a": "For Orlando STEAM League, yes: each student brings their own laptop."
+        }
+      ]
     }
   }
 }

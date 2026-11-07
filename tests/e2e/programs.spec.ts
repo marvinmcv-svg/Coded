@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import AxeBuilder from "@axe-core/playwright";
+import { axeViolations } from "./helpers";
 import { programs } from "../../content/programs";
 import es from "../../content/messages/es.json";
 
@@ -28,8 +28,7 @@ for (const p of programs) {
       const dates = await page.locator("time[datetime]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
       for (const d of dates) expect(d > today, `${d} is in the past`).toBe(true);
 
-      const { violations } = await new AxeBuilder({ page }).withTags(["wcag2a", "wcag2aa", "wcag21a", "wcag21aa", "wcag22aa"]).analyze();
-      expect(violations.map((v) => v.id)).toEqual([]);
+      expect(await axeViolations(page)).toEqual([]);
       expect(errors).toEqual([]);
     });
   }

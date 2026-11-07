@@ -120,7 +120,8 @@
       "miami": "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
       "london": "Londres — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU",
       "contact": "Contacto",
-      "rights": "© {year} Coded. Todos los derechos reservados."
+      "rights": "© {year} Coded. Todos los derechos reservados.",
+      "explore": "Explora"
     }
   },
   "styleguide": {
@@ -304,6 +305,176 @@
       "edinburgh": "Edimburgo y Liverpool",
       "londonExtra": "Actividades extra en Londres",
       "osakaKyoto": "Osaka y Kioto"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "Sobre Coded",
+      "metaDescription": "Coded, la escuela STEAM sin fronteras: misión, método, credenciales y oficinas.",
+      "intro": "Somos una escuela STEAM sin fronteras: la Academia del Mañana. Llevamos estudiantes de Latinoamérica a aprender donde el futuro se construye.",
+      "sections": [
+        {
+          "title": "Nuestra misión",
+          "body": "Empoderar a los líderes e innovadores del mañana a través de experiencias transformadoras de educación tecnológica."
+        },
+        {
+          "title": "Cómo enseñamos",
+          "body": "Un método de cuatro pasos que va del aula al proyecto:",
+          "items": [
+            "Expertos en tecnología",
+            "Talleres en vivo",
+            "Aprendizaje basado en proyectos",
+            "Programación"
+          ]
+        },
+        {
+          "title": "Credenciales",
+          "items": [
+            "Agencia de viajes registrada en Florida · Seller of Travel N.º ST46325",
+            "Reconocimientos de STEM.org: «STEM Educational Program» y «Best in STEM»",
+            "Estudiantes de más de 20 países"
+          ]
+        },
+        {
+          "title": "Oficinas",
+          "items": [
+            "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
+            "Londres — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU"
+          ]
+        }
+      ]
+    },
+    "safety": {
+      "title": "Seguridad",
+      "metaDescription": "Cómo cuidamos a cada estudiante: guardián personal, salud, alojamiento y comunicación con las familias.",
+      "intro": "Cada programa está pensado para que los estudiantes aprendan lejos de casa y las familias estén tranquilas.",
+      "sections": [
+        {
+          "title": "Un guardián por estudiante",
+          "body": "Cada estudiante tiene un guardián personal que comparte novedades y fotos con la familia todos los días."
+        },
+        {
+          "title": "Qué hace el guardián",
+          "items": [
+            "Orientación",
+            "Coordinación",
+            "Asistencia",
+            "Cumplimiento de las normas",
+            "Comunicación con las familias",
+            "Respuesta ante emergencias"
+          ]
+        },
+        {
+          "title": "Salud",
+          "items": [
+            "Médico en sitio",
+            "Seguro médico",
+            "Contactos de emergencia",
+            "Acuerdos con centros de salud locales",
+            "Acompañamiento y apoyo entre pares si extrañan su casa"
+          ]
+        },
+        {
+          "title": "Alojamiento",
+          "items": [
+            "Acceso con clave en Londres y con tarjeta en Orlando",
+            "Personal en el lugar las 24 horas"
+          ]
+        },
+        {
+          "title": "Comunicación",
+          "items": [
+            "App de navegación 360",
+            "Novedades y fotos diarias del guardián",
+            "Para World Citizens: un grupo de chat para estudiantes y otro para padres"
+          ]
+        },
+        {
+          "title": "Salidas independientes",
+          "body": "Cuando un estudiante sale por su cuenta, seguimos tres pasos:",
+          "items": [
+            "Deja sus datos de contacto y su plan de recorrido",
+            "Recibe orientación y preparación previas",
+            "Al volver, el guardián lo acompaña en el registro y lo confirma con fotos en el grupo"
+          ]
+        }
+      ]
+    },
+    "worldCitizens": {
+      "title": "World Citizens",
+      "metaDescription": "Programas STEAM internacionales para estudiantes que viajan por su cuenta, sin su colegio.",
+      "intro": "Para estudiantes que quieren vivir un programa Coded por su cuenta, aunque su colegio no viaje.",
+      "sections": [
+        {
+          "title": "Cómo postular",
+          "items": [
+            "Agenda una consulta",
+            "Conversa en línea con nuestro equipo de desarrollo de negocios",
+            "Recibe tu carta de aceptación"
+          ]
+        },
+        {
+          "title": "Acompañamiento",
+          "body": "Cada estudiante tiene un guardián personal. Las familias reciben novedades y fotos todos los días, y hay un grupo de chat para estudiantes y otro para padres."
+        },
+        {
+          "title": "Inscripción y pago",
+          "items": [
+            "Registro en línea y elección de la fecha",
+            "Pago de la inscripción con tarjeta",
+            "Planes de cuotas",
+            "Klarna, donde esté disponible"
+          ]
+        },
+        {
+          "title": "Formularios del Portal de Padres",
+          "items": [
+            "Formulario médico",
+            "Talla de camiseta",
+            "Autorización de uso de imagen",
+            "Autorización de retiro"
+          ]
+        }
+      ]
+    },
+    "faq": {
+      "title": "Preguntas frecuentes",
+      "metaDescription": "Edades, inscripción, formularios, salud y qué incluye cada programa Coded.",
+      "intro": "Si no encuentras tu respuesta, agenda una llamada y te ayudamos.",
+      "items": [
+        {
+          "q": "¿Para qué edades son los programas?",
+          "a": "Para estudiantes de 11 a 17 años."
+        },
+        {
+          "q": "¿Cómo se organizan las clases?",
+          "a": "Los estudiantes se agrupan por edad en Junior y Senior, en clases de niveles mixtos."
+        },
+        {
+          "q": "¿Reciben un certificado?",
+          "a": "Sí, al completar su proyecto."
+        },
+        {
+          "q": "¿Cómo me inscribo?",
+          "a": "Te registras en línea, eliges la fecha y pagas la inscripción con tarjeta. Hay planes de cuotas y, donde está disponible, Klarna."
+        },
+        {
+          "q": "¿Qué formularios hay que completar?",
+          "a": "En el Portal de Padres: formulario médico, talla de camiseta, autorización de uso de imagen y autorización de retiro."
+        },
+        {
+          "q": "¿Los vuelos están incluidos?",
+          "a": "No, los vuelos no están incluidos."
+        },
+        {
+          "q": "¿Qué pasa si un estudiante necesita atención médica?",
+          "a": "Hay médico en sitio, seguro médico y acuerdos con centros de salud locales."
+        },
+        {
+          "q": "¿Hay que llevar computadora?",
+          "a": "En Orlando STEAM League, sí: cada estudiante trae su laptop."
+        }
+      ]
     }
   }
 }

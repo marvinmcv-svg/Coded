@@ -51,7 +51,7 @@ async function cohortErrors(): Promise<string[]> {
 }
 
 async function main() {
-  const errors = [...i18nErrors(es, en), ...(await cohortErrors())];
+  const errors = [...i18nErrors(es as unknown as Tree, en as unknown as Tree), ...(await cohortErrors())];
   if (errors.length) {
     console.error(`content:check failed (${errors.length}):\n  ${errors.join("\n  ")}`);
     process.exit(1);

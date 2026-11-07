@@ -31,7 +31,7 @@ function List({ items }: { items: string[] }) {
   return (
     <ul className="grid gap-x-8 gap-y-2 sm:grid-cols-2">
       {items.map((i) => (
-        <li key={i} className="flex gap-3"><span aria-hidden className="text-accent">—</span>{i}</li>
+        <li key={i} className="flex gap-3"><span aria-hidden className="text-accent-soft">—</span>{i}</li>
       ))}
     </ul>
   );

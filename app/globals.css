@@ -10,6 +10,7 @@
   --color-paper: #f6f4ef;
   --color-mist: #c9ccd3;
   --color-accent: #3d5afe;
+  --color-accent-soft: #9aa8ff; /* accent for text on ink: AA contrast */
   --color-steam-s: #22c3a6; /* Science */
   --color-steam-t: #3d5afe; /* Technology */
   --color-steam-e: #ff8a00; /* Engineering */
