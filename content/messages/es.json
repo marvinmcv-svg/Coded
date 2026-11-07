@@ -77,7 +77,14 @@
       "body": "Las 20 escuelas ganadoras de las ligas anteriores se preparan durante seis meses y presentan su proyecto en Tokio. El equipo ganador recibe un premio en efectivo y el apoyo de Coded para hacerlo realidad.",
       "frequency": "Se realiza cada dos años.",
       "dateLabel": "Próxima edición",
-      "cta": "Quiero saber más"
+      "cta": "Quiero saber más",
+      "countdown": {
+        "days": "días",
+        "hours": "horas",
+        "minutes": "min",
+        "seconds": "seg",
+        "sr": "Faltan {days} días para el campeonato."
+      }
     },
     "trust": {
       "eyebrow": "Seguridad",

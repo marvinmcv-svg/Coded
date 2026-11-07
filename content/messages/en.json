@@ -77,7 +77,14 @@
       "body": "The top 20 winning schools from past leagues prepare for six months and present their project in Tokyo. The winning team gets a cash prize and Coded's support to make it real.",
       "frequency": "Held every two years.",
       "dateLabel": "Next edition",
-      "cta": "Tell me more"
+      "cta": "Tell me more",
+      "countdown": {
+        "days": "days",
+        "hours": "hours",
+        "minutes": "min",
+        "seconds": "sec",
+        "sr": "{days} days until the championship."
+      }
     },
     "trust": {
       "eyebrow": "Safety",
