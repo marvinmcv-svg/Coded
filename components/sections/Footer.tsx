@@ -6,7 +6,7 @@ export async function Footer() {
   const t = await getTranslations("home.footer");
   const tp = await getTranslations("pages");
   const tn = await getTranslations("home.nav");
-  const links = [["/programs", tn("programs")], ["/world-citizens", tp("worldCitizens.title")], ["/safety", tp("safety.title")], ["/about", tp("about.title")], ["/faq", tp("faq.title")]] as const;
+  const links = [["/programs", tn("programs")], ["/world-citizens", tp("worldCitizens.title")], ["/safety", tp("safety.title")], ["/about", tp("about.title")], ["/faq", tp("faq.title")], ["/contact", tp("contact.title")]] as const;
   return (
     <footer className="border-t border-mist/10">
       <div className="mx-auto grid max-w-6xl gap-10 px-6 py-16 md:grid-cols-4">

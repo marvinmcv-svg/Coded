@@ -501,6 +501,22 @@
           "a": "En Orlando STEAM League, sí: cada estudiante trae su laptop."
         }
       ]
+    },
+    "contact": {
+      "title": "Contacto",
+      "metaDescription": "Habla con Coded: agenda una llamada, escríbenos o visita nuestras oficinas en Miami y Londres.",
+      "intro": "¿Tienes preguntas sobre un programa, las fechas o cómo inscribir a tu colegio? Estamos para ayudarte.",
+      "call": {
+        "title": "Agenda una llamada",
+        "body": "En una consulta en línea con nuestro equipo te contamos los programas, las fechas y los precios, y resolvemos tus dudas.",
+        "button": "Agenda una llamada"
+      },
+      "write": {
+        "title": "Escríbenos o llámanos",
+        "email": "Correo",
+        "phone": "Teléfono"
+      },
+      "sellerOfTravel": "Registrados como Seller of Travel en Florida, N.º ST46325."
     }
   },
   "media": {
