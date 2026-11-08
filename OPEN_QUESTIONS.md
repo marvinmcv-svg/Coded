@@ -42,16 +42,26 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 20. Partner school logos with permission (search shows Colegio Granadino, Interamerican School, Academia Merici). Can we cite Colegio Granadino's 3rd place and the Mexican press feature (link?)?
 21. Venue logos: assume **none** authorised (text-only mentions of NASA, Disney, Universal, etc.). Confirm. "Performing Arts Workshop by Disney" — is that an official Disney program name we may use?
 22. Brand rule: "Coded" wordmark + "Coding Education" legal/domain — or "CODED" all-caps?
+32. **Teachers per program.** Program pages don't list teachers yet: the .com bios only place Rayan Took and Carolina Capelo Garcia (London & Tokyo). Who teaches on each program?
+33. **Media for Europe, AI and Tokyo.** Instagram's recent feed is mostly Orlando. Reels/photos from the UK and Tokyo editions (or the IG export, Q1) would give those pages a "last edition" diary like Orlando's.
 31. **Brand palette & logo files.** No colour spec exists; `/styleguide` uses a provisional palette. The live favicon is violet — is there a brand guide (hex values, logo SVG, wordmark rules)? *(blocks P2 visual design)*
 
 ## P1 — integrations (block P5)
 23. WhatsApp number (is +1 954 868 2367 WhatsApp-enabled, or a LATAM number?).
-24. HubSpot: portal ID, which form + pipeline, the meetings link per audience (genesis25 only?).
+24. HubSpot: portal ID, which form + pipeline, the meetings link per audience (genesis25 only?). *Built (P5):* set `HUBSPOT_PORTAL_ID` +
+    `HUBSPOT_FORM_ID` and /consultation also posts each lead to that form. The form needs fields `firstname`, `lastname`, `email`,
+    `country`, `message` (audience/program go in `message` until custom properties exist; UTMs come from the landing URL as pageUri).
 25. Reviews: Trustindex account access or Google Place ID for the Places API?
 26. Analytics: existing GA4 / Meta Pixel IDs? Keep the Facebook domain-verification tag `px2ciu7qho5obgj4pnnn0fzgizmw03`.
+    *Built (P5):* set `NEXT_PUBLIC_GA_ID` and a consent banner appears; GA4 loads only after "Accept". Unset ⇒ no banner, no analytics.
 27. Store (`store.codingeducation.us`) and Sojourn Travel link — keep both in footer?
 
 ## P2
+34. **Blog posts held or edited in migration (P6).** 24 of 27 posts are live at /en/blog/<slug>. Held (old URL → blog index) because
+    they state 🔴 Coded facts: *Reimagining the Classroom* (13-day program, Florida Film Academy, "Disney Codeillusion"),
+    *The Magic of Coded* (Vancouver program, "over 10 countries", "9-day", a school named in a photo credit), *Time to Play*
+    ("Coded's Esports Academy"). One phrase redacted in each of: *What Is STEAM Education* ("9-day" → removed),
+    *Behind the Scenes* ("21 schools" → "schools"), *The Magic of Power Skills* (CodeIllusion mention). Confirm, fix or drop.
 28. Portuguese at launch?
 29. Blog: migrate all 28 posts on both locales (EN only today) — translate to ES or ES-only for new posts?
 30. Staging host: Vercel team/project name; who owns DNS?

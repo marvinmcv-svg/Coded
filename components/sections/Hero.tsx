@@ -5,7 +5,8 @@ import { SplitWords } from "@/components/motion/SplitWords";
 import { VideoLoop } from "@/components/motion/VideoLoop";
 import { buttonClass } from "@/components/ui/Button";
 import { clip, photo } from "@/content/media";
-import { CONSULTATION_URL } from "@/lib/links";
+import { Link } from "@/lib/i18n/navigation";
+import { consultationHref } from "@/lib/links";
 
 const letters = [
   ["S", "text-steam-s"], ["T", "text-steam-t"], ["E", "text-steam-e"], ["A", "text-steam-a"], ["M", "text-steam-m"],
@@ -44,7 +45,7 @@ export async function Hero() {
           <p className="intro-fade max-w-xl text-lg text-mist md:text-xl" style={{ "--d": "650ms" } as React.CSSProperties}>{t("sub")}</p>
           <div className="intro-fade flex flex-wrap items-center gap-4" style={{ "--d": "800ms" } as React.CSSProperties}>
             <Magnetic>
-              <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{t("ctaPrimary")}</a>
+              <Link prefetch={false} href={consultationHref()} className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{t("ctaPrimary")}</Link>
             </Magnetic>
             <a href="#programs" className={buttonClass("ghost")}>{t("ctaSecondary")}</a>
           </div>

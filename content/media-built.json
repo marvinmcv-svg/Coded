@@ -209,6 +209,127 @@
     1200
    ]
   },
+  "orl-tablet": {
+   "source": "site/2025_11_DSC00587-scaled-2.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1600,
+    2000
+   ]
+  },
+  "orl-sketch": {
+   "source": "site/2025_11_coded3-1.png",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1114,
+    1392
+   ]
+  },
+  "orl-colony": {
+   "source": "site/2025_11_coded6-1.png",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    757,
+    946
+   ]
+  },
+  "uk-talk": {
+   "source": "site/2025_11_profesionals.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    720,
+    900
+   ]
+  },
+  "uk-lecture": {
+   "source": "site/2025_11_profesionals-2.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    720,
+    900
+   ]
+  },
+  "tokyo-portrait": {
+   "source": "site/2026_07_tokyo-gallery_0000_coded-2-ago-123.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "tokyo-friends": {
+   "source": "site/2026_07_tokyo-gallery_0004_coded-2-ago-108.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "tokyo-team": {
+   "source": "site/2026_07_tokyo-gallery_0002_coded-2-ago-092.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "tokyo-museum": {
+   "source": "site/2026_07_tokyo_0003_coded-2-ago-087.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1080,
+    1350
+   ]
+  },
+  "tokyo-metro": {
+   "source": "site/2026_03_TOKYO2.png",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    720,
+    900
+   ]
+  },
+  "tokyo-gate": {
+   "source": "site/2026_07_IMG_0832.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    720,
+    900
+   ]
+  },
   "t-kay-hill": {
    "source": "site/2026_08_images-1.jpeg",
    "widths": [

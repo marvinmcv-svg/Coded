@@ -3,6 +3,8 @@
  * `programs.<slug>`. 🔴 values are null and never render: Orlando & AI days (9/10, 12/14), English level,
  * prices (not shown: Marvin 2026-11-07 → "ask us about pricing"), Orlando July 2027 date (Jul 8 vs 9). Used by the site AND scripts/seed.ts.
  */
+import type { BuiltImage, BuiltVideo } from "./media";
+
 export type Extension = { key: "paris" | "edinburgh" | "londonExtra" | "osakaKyoto"; timing: "pre" | "post" | null; days: number | null };
 
 export type Program = {
@@ -14,6 +16,10 @@ export type Program = {
   ages: [number, number];
   cohorts: string[]; // ISO start dates
   extensions: Extension[];
+  /** Coded photos published on this program's page (scripts/build-media.py). Alt text: messages `media.<key>`. */
+  gallery: BuiltImage[];
+  /** Reels from the last edition, in order; captions in messages `programs.<slug>.diary` (same length). */
+  diary: BuiltVideo[];
 };
 
 const ukExtensions: Extension[] = [
@@ -23,10 +29,10 @@ const ukExtensions: Extension[] = [
 ];
 
 export const programs: Program[] = [
-  { slug: "orlando-steam-league", name: "Orlando STEAM League", status: "live", accent: "steam-e", days: null, ages: [11, 17], cohorts: ["2027-01-22", "2027-10-30"], extensions: [] },
-  { slug: "europe-steam-league", name: "Europe STEAM League", status: "live", accent: "steam-t", days: 12, ages: [11, 17], cohorts: ["2027-03-30"], extensions: ukExtensions },
-  { slug: "steam-league-ai", name: "STEAM League AI", status: "live", accent: "steam-m", days: null, ages: [11, 17], cohorts: ["2027-07-09"], extensions: ukExtensions },
-  { slug: "tokyo-steam-championship", name: "Tokyo STEAM Championship", status: "upcoming", accent: "steam-a", days: 11, ages: [11, 17], cohorts: ["2027-08-02"], extensions: [{ key: "osakaKyoto", timing: "post", days: 2 }] },
+  { slug: "orlando-steam-league", name: "Orlando STEAM League", status: "live", accent: "steam-e", days: null, ages: [11, 17], cohorts: ["2027-01-22", "2027-10-30"], extensions: [], gallery: ["orl-tablet", "orl-sketch", "worksheet", "orl-colony", "tablets", "laptops-room"], diary: ["workshop-make", "workshop-class", "coding-tablet", "pitch-stage"] },
+  { slug: "europe-steam-league", name: "Europe STEAM League", status: "live", accent: "steam-t", days: 12, ages: [11, 17], cohorts: ["2027-03-30"], extensions: ukExtensions, gallery: ["class-laptops", "vr", "lab", "activity", "lab-coat", "student-laptop", "boys-laptop", "london-steps"], diary: [] },
+  { slug: "steam-league-ai", name: "STEAM League AI", status: "live", accent: "steam-m", days: null, ages: [11, 17], cohorts: ["2027-07-09"], extensions: ukExtensions, gallery: ["presenting", "uk-talk", "uk-lecture", "laptops-room"], diary: [] },
+  { slug: "tokyo-steam-championship", name: "Tokyo STEAM Championship", status: "upcoming", accent: "steam-a", days: 11, ages: [11, 17], cohorts: ["2027-08-02"], extensions: [{ key: "osakaKyoto", timing: "post", days: 2 }], gallery: ["tokyo-portrait", "tokyo-build", "tokyo-museum", "tokyo-friends", "tokyo-metro", "tokyo-cap", "tokyo-gate", "tokyo-team", "tokyo-temple"], diary: [] },
 ];
 
 export function getProgram(slug: string) {

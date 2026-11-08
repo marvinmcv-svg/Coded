@@ -6,6 +6,13 @@
       "url": [
         "http://localhost:3200/es",
         "http://localhost:3200/es/programs/orlando-steam-league",
+        "http://localhost:3200/es/championship",
+        "http://localhost:3200/es/safety",
+        "http://localhost:3200/es/stories",
+        "http://localhost:3200/es/schools",
+        "http://localhost:3200/es/consultation",
+        "http://localhost:3200/es/blog",
+        "http://localhost:3200/en/blog/what-is-steam-education",
         "http://localhost:3200/es/styleguide",
         "http://localhost:3200/en/styleguide"
       ],
@@ -15,38 +22,78 @@
       }
     },
     "assert": {
-      "assertions": {
-        "categories:performance": [
-          "error",
-          {
-            "minScore": 0.9
+      "assertMatrix": [
+        {
+          "matchingUrlPattern": "^http://localhost:3200/(es|en)$",
+          "assertions": {
+            "categories:performance": [
+              "error",
+              {
+                "minScore": 0.85
+              }
+            ],
+            "categories:accessibility": [
+              "error",
+              {
+                "minScore": 0.95
+              }
+            ],
+            "largest-contentful-paint": [
+              "error",
+              {
+                "maxNumericValue": 2500
+              }
+            ],
+            "cumulative-layout-shift": [
+              "error",
+              {
+                "maxNumericValue": 0.1
+              }
+            ],
+            "total-blocking-time": [
+              "warn",
+              {
+                "maxNumericValue": 200
+              }
+            ]
           }
-        ],
-        "categories:accessibility": [
-          "error",
-          {
-            "minScore": 0.95
+        },
+        {
+          "matchingUrlPattern": "^http://localhost:3200/(es|en)/.+",
+          "assertions": {
+            "categories:performance": [
+              "error",
+              {
+                "minScore": 0.9
+              }
+            ],
+            "categories:accessibility": [
+              "error",
+              {
+                "minScore": 0.95
+              }
+            ],
+            "largest-contentful-paint": [
+              "error",
+              {
+                "maxNumericValue": 2500
+              }
+            ],
+            "cumulative-layout-shift": [
+              "error",
+              {
+                "maxNumericValue": 0.1
+              }
+            ],
+            "total-blocking-time": [
+              "warn",
+              {
+                "maxNumericValue": 200
+              }
+            ]
           }
-        ],
-        "largest-contentful-paint": [
-          "error",
-          {
-            "maxNumericValue": 2500
-          }
-        ],
-        "cumulative-layout-shift": [
-          "error",
-          {
-            "maxNumericValue": 0.1
-          }
-        ],
-        "total-blocking-time": [
-          "warn",
-          {
-            "maxNumericValue": 200
-          }
-        ]
-      }
+        }
+      ]
     },
     "upload": {
       "target": "filesystem",

@@ -5,7 +5,8 @@ import { TextReveal } from "@/components/motion/TextReveal";
 import { VideoLoop } from "@/components/motion/VideoLoop";
 import { buttonClass } from "@/components/ui/Button";
 import { clip } from "@/content/media";
-import { CONSULTATION_URL, EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
+import { Link } from "@/lib/i18n/navigation";
+import { consultationHref, EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
 
 /** Closing call: pitch-day clip behind a dark scrim, giant word reveal, magnetic button. */
 export async function CTA() {
@@ -22,7 +23,7 @@ export async function CTA() {
         </TextReveal>
         <p className="max-w-xl text-lg text-mist md:text-xl">{t("body")}</p>
         <Magnetic strength={0.45}>
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={`${buttonClass("primary")} min-h-16 px-10 text-lg shadow-[0_10px_50px_-10px_rgb(118_0_231/.9)]`}>{t("button")}</a>
+          <Link prefetch={false} href={consultationHref()} className={`${buttonClass("primary")} min-h-16 px-10 text-lg shadow-[0_10px_50px_-10px_rgb(118_0_231/.9)]`}>{t("button")}</Link>
         </Magnetic>
         <p className="text-mist">
           {t("or")}: <a href={`mailto:${EMAIL}`} className="text-paper underline underline-offset-4">{EMAIL}</a>

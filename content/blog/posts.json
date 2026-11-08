@@ -1,0 +1,268 @@
+{
+  "held": [
+    "reimagining-the-classroom",
+    "the-magic-of-coded-what-makes-our-programs-so-special",
+    "time-to-play-videogames-in-education"
+  ],
+  "posts": [
+    {
+      "slug": "skills-preparing-students-for-a-future-that-keeps-changing",
+      "title": "Beyond Technical Skills: Preparing Students for a Future That Keeps Changing",
+      "date": "2026-08-25",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "As technology continues to transform education, workplaces, and everyday life, preparing students for the future requires more than teaching them how to use digital tools.…",
+      "source": "https://codingeducation.us/skills-preparing-students-for-a-future-that-keeps-changing/"
+    },
+    {
+      "slug": "beyond-the-factory-floor-how-robotics-and-automation-are-transforming-industries-and-reshaping-education",
+      "title": "Beyond the Factory Floor: How Robotics and Automation Are Transforming Industries and Reshaping Education",
+      "date": "2026-07-08",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "Robotics and automation are no longer confined to manufacturing plants or highly specialized industries. Today, automated systems and intelligent machines play a significant…",
+      "source": "https://codingeducation.us/beyond-the-factory-floor-how-robotics-and-automation-are-transforming-industries-and-reshaping-education/"
+    },
+    {
+      "slug": "why-womens-in-steam-matters-for-education",
+      "title": "Closing the Gap, Expanding the Future: Why Increasing Women’s Participation in STEAM Matters for Education and Society",
+      "date": "2026-06-08",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "The technologies shaping the future—from artificial intelligence and robotics to biotechnology and sustainable engineering—will influence nearly every aspect of society. Yet…",
+      "source": "https://codingeducation.us/why-womens-in-steam-matters-for-education/"
+    },
+    {
+      "slug": "learning-by-doing-why-project-based-learning-prepares-students-for-real-world-challenges",
+      "title": "Learning by Doing: Why Project-Based Learning Prepares Students for Real-World Challenges",
+      "date": "2026-05-12",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "Project-Based Learning (PBL) has emerged as a key pedagogical approach for bridging the gap between theoretical knowledge and real-world application. In the context of rapidly…",
+      "source": "https://codingeducation.us/learning-by-doing-why-project-based-learning-prepares-students-for-real-world-challenges/"
+    },
+    {
+      "slug": "preparing-students-for-future-careers",
+      "title": "Teaching for the Unknown: Preparing Students for Careers That Didn’t Exist a Decade Ago",
+      "date": "2026-04-06",
+      "categories": [],
+      "description": "Education has traditionally been designed to prepare students for known professions—medicine, law, engineering, teaching. However, the pace of technological advancement has…",
+      "source": "https://codingeducation.us/preparing-students-for-future-careers/"
+    },
+    {
+      "slug": "ai-what-students-need-to-understand-today",
+      "title": "Artificial Intelligence in Everyday Life: What Students Need to Understand Today",
+      "date": "2026-03-09",
+      "categories": [
+        "Ai",
+        "STEAM Education"
+      ],
+      "description": "Artificial Intelligence (AI) is no longer a futuristic concept confined to research labs or science fiction films. It is embedded in everyday tools, platforms, and services…",
+      "source": "https://codingeducation.us/ai-what-students-need-to-understand-today/"
+    },
+    {
+      "slug": "the-teachers-role-for-the-future-workforce",
+      "title": "Why STEAM Matters: The Teacher’s Role in Preparing Students for the Future Workforce",
+      "date": "2026-03-09",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "Education is facing a critical moment. Technological advances, automation, and the rapid evolution of industries are transforming the skills students will need to succeed.…",
+      "source": "https://codingeducation.us/the-teachers-role-for-the-future-workforce/"
+    },
+    {
+      "slug": "steam-school",
+      "title": "What Makes a Great STEAM School? A Complete Guide for Parents, Educators, and Future-Ready Students",
+      "date": "2025-11-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "The world is changing at a speed never seen before. Technology, automation, global collaboration, and digital problem-solving are transforming the future of work and redefining…",
+      "source": "https://codingeducation.us/steam-school/"
+    },
+    {
+      "slug": "what-is-steam-education",
+      "title": "What Is STEAM Education",
+      "date": "2025-10-23",
+      "categories": [
+        "STEAM",
+        "STEAM Education"
+      ],
+      "description": "The question “ what is STEAM education? ” has become one of the most common among parents, educators, and young learners who want to understand how integrating different…",
+      "source": "https://codingeducation.us/what-is-steam-education/"
+    },
+    {
+      "slug": "can-we-truly-learn-while-you-sleep",
+      "title": "Can We Truly Learn While You Sleep?",
+      "date": "2025-10-15",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "A Historical and Scientific Perspective on Sleep-Based Learning",
+      "source": "https://codingeducation.us/can-we-truly-learn-while-you-sleep/"
+    },
+    {
+      "slug": "the-impact-of-gender-on-steam-education-in-elementary-school",
+      "title": "The Impact of Gender on STEAM Education in Elementary School",
+      "date": "2025-09-12",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "At Coding Education, we believe that STEAM education has the power to transform how children see themselves and the world.",
+      "source": "https://codingeducation.us/the-impact-of-gender-on-steam-education-in-elementary-school/"
+    },
+    {
+      "slug": "beyond-the-classroom-the-transformative-power-of-experience-based-learning",
+      "title": "Beyond the Classroom: The Transformative Power of Experience-Based Learning",
+      "date": "2025-04-25",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "In an educational landscape dominated by standardized testing, experience-based learning—where students engage with real-world challenges through immersive, hands-on…",
+      "source": "https://codingeducation.us/beyond-the-classroom-the-transformative-power-of-experience-based-learning/"
+    },
+    {
+      "slug": "the-essential-role-of-steam-in-preparing-students-for-future-careers",
+      "title": "The Essential Role of STEAM in Preparing Students for Future Careers",
+      "date": "2024-11-24",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "In an era defined by rapid technological advancement and an evolving global workforce, one thing is clear: education must keep pace to equip students with the skills required…",
+      "source": "https://codingeducation.us/the-essential-role-of-steam-in-preparing-students-for-future-careers/"
+    },
+    {
+      "slug": "codeds-ai-integration-journey-unveiled",
+      "title": "Coded’s AI Integration Journey Unveiled",
+      "date": "2024-03-25",
+      "categories": [
+        "STEAM",
+        "STEAM School"
+      ],
+      "description": "We all know that AI stands as a beacon of innovation, offering unprecedented opportunities to revolutionize the educational paradigm. For some, AI might be a threat or a…",
+      "source": "https://codingeducation.us/codeds-ai-integration-journey-unveiled/"
+    },
+    {
+      "slug": "fostering-innovation-at-coded",
+      "title": "FOSTERING INNOVATION AT CODED",
+      "date": "2024-02-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "The integration of STEAM (Science, Technology, Engineering, Arts, and Mathematics) has emerged as a powerhouse in education, shaping the way young minds engage with the world.…",
+      "source": "https://codingeducation.us/fostering-innovation-at-coded/"
+    },
+    {
+      "slug": "coding-horizons-changing-the-world-with-innovation",
+      "title": "Coding Horizons: Changing the World with Innovation",
+      "date": "2024-01-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "Welcome back to another compelling edition of the CodedMINDS blog! As we immerse ourselves in the first month of the year, let’s delve deeper into how Coding Education is not…",
+      "source": "https://codingeducation.us/coding-horizons-changing-the-world-with-innovation/"
+    },
+    {
+      "slug": "meet-our-4s-learning-path",
+      "title": "Meet Our 4S Learning Path",
+      "date": "2023-12-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "In this blog post, we’ll explore how our four-steps learning approach, combining experts delivered, project-based learning (PBL), live workshops at the parks, and extended…",
+      "source": "https://codingeducation.us/meet-our-4s-learning-path/"
+    },
+    {
+      "slug": "behind-the-scenes-how-coded-transforms-an-orlando-experience-into-an-unforgettable-memory",
+      "title": "Behind the Scenes: How Coded Transforms an Orlando Experience into an Unforgettable Memory.",
+      "date": "2023-11-25",
+      "categories": [],
+      "description": "As we stand at the culmination of this thrilling journey that brought together schools from Latin America to experience the magic of Orlando, our hearts are brimming with…",
+      "source": "https://codingeducation.us/behind-the-scenes-how-coded-transforms-an-orlando-experience-into-an-unforgettable-memory/"
+    },
+    {
+      "slug": "a-collaborative-perspective-about-gaming-in-education",
+      "title": "A Collaborative Perspective about Gaming in Education",
+      "date": "2023-10-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education",
+        "STEAM School"
+      ],
+      "description": "One topic that has been gaining significant attention in recent months is the use of gaming in education. To provide a fresh perspective on this intriguing subject, Joaquin,…",
+      "source": "https://codingeducation.us/a-collaborative-perspective-about-gaming-in-education/"
+    },
+    {
+      "slug": "the-magic-of-power-skills",
+      "title": "The Magic of Power Skills",
+      "date": "2023-09-25",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "known as POWER SKILLS, are crucial for success in an increasingly interconnected and changing world. Today, we will explore the importance of power skills in the…",
+      "source": "https://codingeducation.us/the-magic-of-power-skills/"
+    },
+    {
+      "slug": "the-wonder-of-steam-at-home",
+      "title": "The Wonder of STEAM at home!",
+      "date": "2023-06-25",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "STEAM skills have become increasingly essential for our children’s future success. While schools play a crucial role in nurturing these skills, we firmly believe that learning…",
+      "source": "https://codingeducation.us/the-wonder-of-steam-at-home/"
+    },
+    {
+      "slug": "empowering-students-for-the-digital-age-a-discussion-with-gabriel-rshaid",
+      "title": "Empowering Students for the Digital Age: A Discussion with Gabriel Rshaid",
+      "date": "2023-06-01",
+      "categories": [
+        "STEAM"
+      ],
+      "description": "Are you interested in the future of education?",
+      "source": "https://codingeducation.us/empowering-students-for-the-digital-age-a-discussion-with-gabriel-rshaid/"
+    },
+    {
+      "slug": "the-importance-of-steam-education-in-the-ai-era",
+      "title": "The Importance of STEAM Education in the AI Era.",
+      "date": "2023-05-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education"
+      ],
+      "description": "Welcome to CODEDMinds , where we delve into the exciting world of Science, Technology, Engineering, Arts, and Mathematics (STEAM) and Coding. In this episode, we’ll explore how…",
+      "source": "https://codingeducation.us/the-importance-of-steam-education-in-the-ai-era/"
+    },
+    {
+      "slug": "coded-minds-unlocking-the-power-of-a-tech-mindset",
+      "title": "CODED Minds: Unlocking the Power of a Tech Mindset",
+      "date": "2023-04-25",
+      "categories": [
+        "STEAM",
+        "STEAM Education"
+      ],
+      "description": "Welcome to the world of codedMINDS, where together we will unlock the power of a tech mindset, and a world full of possibilities. I am Patricia Bischoff, an education…",
+      "source": "https://codingeducation.us/coded-minds-unlocking-the-power-of-a-tech-mindset/"
+    }
+  ]
+}

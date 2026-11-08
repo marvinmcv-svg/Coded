@@ -12,16 +12,23 @@
     "localeName": "Español",
     "otherLocaleName": "English",
     "pause": "Pausar",
-    "play": "Reanudar"
+    "play": "Reanudar",
+    "bookCall": "Agenda una llamada",
+    "consent": {
+      "text": "Usamos cookies de analítica para entender cómo se usa el sitio, solo si las aceptas.",
+      "accept": "Aceptar",
+      "decline": "Rechazar"
+    }
   },
   "home": {
     "nav": {
       "label": "Principal",
       "programs": "Programas",
-      "method": "Método",
       "championship": "Campeonato",
       "safety": "Seguridad",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "schools": "Colegios",
+      "worldCitizens": "World Citizens"
     },
     "hero": {
       "eyebrow": "Escuela STEAM sin fronteras",
@@ -224,7 +231,10 @@
     "index": {
       "title": "Programas",
       "intro": "Cuatro programas STEAM para estudiantes de 11 a 17 años. Cada uno termina con un proyecto propio presentado en el destino.",
-      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI y Tokyo STEAM Championship: fechas, destinos y contenidos."
+      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI y Tokyo STEAM Championship: fechas, destinos y contenidos.",
+      "calendarEyebrow": "Calendario",
+      "calendarTitle": "Próximas salidas",
+      "view": "Ver programa"
     },
     "detail": {
       "back": "Todos los programas",
@@ -249,7 +259,14 @@
       "price": "Precio",
       "priceOnRequest": "Consúltanos el precio y las formas de pago.",
       "cta": "Agenda una llamada",
-      "ctaBody": "Te contamos fechas, cupos y cómo inscribirte."
+      "ctaBody": "Te contamos fechas, cupos y cómo inscribirte.",
+      "nextDeparture": "Próxima salida: {date}",
+      "pathwayTitle": "De la idea a la creación, letra por letra",
+      "diaryEyebrow": "Última edición",
+      "diaryTitle": "Así se vive una semana en Orlando",
+      "galleryEyebrow": "En el destino",
+      "galleryTitle": "Estudiantes de Coded en este programa",
+      "more": "Otros programas"
     },
     "orlando-steam-league": {
       "tagline": "¡Crea tu propia colonia espacial!",
@@ -281,7 +298,29 @@
       "notIncluded": [
         "Vuelos"
       ],
-      "rooms": "Habitaciones separadas por género, de 2 a 4 estudiantes (hasta 5 en suites). Toque de queda a las 10 p. m."
+      "rooms": "Habitaciones separadas por género, de 2 a 4 estudiantes (hasta 5 en suites). Toque de queda a las 10 p. m.",
+      "diary": [
+        {
+          "when": "Día 1",
+          "title": "Aterrizamos en Orlando",
+          "body": "Mochilas personalizadas, caras nuevas y los primeros equipos."
+        },
+        {
+          "when": "Día 3",
+          "title": "Campus y después estudios",
+          "body": "Clases en la universidad por la mañana y Disney’s Hollywood Studios por la tarde."
+        },
+        {
+          "when": "Día 5",
+          "title": "La ingeniería se vuelve aventura",
+          "body": "La ciencia de cómo se mueven los vehículos y, después, verla en acción en la atracción de Transformers en Universal."
+        },
+        {
+          "when": "Pitch Day",
+          "title": "En el escenario de la NASA",
+          "body": "Después de días construyendo y mejorando, los estudiantes presentan sus propios proyectos en la NASA."
+        }
+      ]
     },
     "europe-steam-league": {
       "tagline": "Portafolio digital de carreras STEAM",
@@ -380,49 +419,25 @@
   "pages": {
     "about": {
       "title": "Sobre Coded",
-      "metaDescription": "Coded, la escuela STEAM sin fronteras: misión, método, credenciales y oficinas.",
-      "intro": "Somos una escuela STEAM sin fronteras: la Academia del Mañana. Llevamos estudiantes de Latinoamérica a aprender donde el futuro se construye.",
-      "sections": [
-        {
-          "title": "Nuestra misión",
-          "body": "Empoderar a los líderes e innovadores del mañana a través de experiencias transformadoras de educación tecnológica."
-        },
-        {
-          "title": "Cómo enseñamos",
-          "body": "Un método de cuatro pasos que va del aula al proyecto:",
-          "items": [
-            "Expertos en tecnología",
-            "Talleres en vivo",
-            "Aprendizaje basado en proyectos",
-            "Programación"
-          ]
-        },
-        {
-          "title": "Credenciales",
-          "items": [
-            "Agencia de viajes registrada en Florida · Seller of Travel N.º ST46325",
-            "Reconocimientos de STEM.org: «STEM Educational Program» y «Best in STEM»",
-            "Estudiantes de más de 20 países"
-          ]
-        },
-        {
-          "title": "Oficinas",
-          "items": [
-            "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
-            "Londres — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU"
-          ]
-        }
-      ]
+      "metaDescription": "Coded, la escuela STEAM sin fronteras: misión, método, docentes, credenciales y oficinas.",
+      "eyebrow": "Sobre Coded",
+      "heroTitle": "Una escuela STEAM sin fronteras.",
+      "intro": "Somos la Academia del Mañana: llevamos estudiantes de Latinoamérica a aprender donde el futuro se construye.",
+      "missionLabel": "Nuestra misión",
+      "mission": "Empoderar a los líderes e innovadores del mañana a través de experiencias transformadoras de educación tecnológica.",
+      "whereEyebrow": "Dónde enseñamos",
+      "whereTitle": "El mundo es el aula",
+      "contactLink": "Contacto"
     },
     "safety": {
       "title": "Seguridad",
       "metaDescription": "Cómo cuidamos a cada estudiante: guardián personal, salud, alojamiento y comunicación con las familias.",
+      "eyebrow": "Seguridad",
+      "heroTitle": "Aprenden lejos de casa. Las familias, tranquilas.",
       "intro": "Cada programa está pensado para que los estudiantes aprendan lejos de casa y las familias estén tranquilas.",
-      "sections": [
-        {
-          "title": "Un guardián por estudiante",
-          "body": "Cada estudiante tiene un guardián personal que comparte novedades y fotos con la familia todos los días."
-        },
+      "guardianTitle": "Un guardián por estudiante",
+      "guardianBody": "Cada estudiante tiene un guardián personal que comparte novedades y fotos con la familia todos los días.",
+      "groups": [
         {
           "title": "Qué hace el guardián",
           "items": [
@@ -448,7 +463,8 @@
           "title": "Alojamiento",
           "items": [
             "Acceso con clave en Londres y con tarjeta en Orlando",
-            "Personal en el lugar las 24 horas"
+            "Personal en el lugar las 24 horas",
+            "Coordinadores de actividades dedicados"
           ]
         },
         {
@@ -458,59 +474,83 @@
             "Novedades y fotos diarias del guardián",
             "Para World Citizens: un grupo de chat para estudiantes y otro para padres"
           ]
-        },
-        {
-          "title": "Salidas independientes",
-          "body": "Cuando un estudiante sale por su cuenta, seguimos tres pasos:",
-          "items": [
-            "Deja sus datos de contacto y su plan de recorrido",
-            "Recibe orientación y preparación previas",
-            "Al volver, el guardián lo acompaña en el registro y lo confirma con fotos en el grupo"
-          ]
         }
-      ]
+      ],
+      "outing": {
+        "title": "Salidas independientes",
+        "body": "Cuando un estudiante sale por su cuenta, seguimos tres pasos:",
+        "steps": [
+          "Deja sus datos de contacto y su plan de recorrido",
+          "Recibe orientación y preparación previas",
+          "Al volver, el guardián lo acompaña en el registro y lo confirma con fotos en el grupo"
+        ]
+      },
+      "ctaTitle": "¿Tienes más preguntas sobre seguridad?",
+      "ctaBody": "Te contamos en detalle cómo trabajamos en cada destino.",
+      "cta": "Agenda una llamada"
     },
     "worldCitizens": {
       "title": "World Citizens",
       "metaDescription": "Programas STEAM internacionales para estudiantes que viajan por su cuenta, sin su colegio.",
+      "eyebrow": "World Citizens · para familias",
+      "heroTitle": "Tu colegio no viaja. Tú sí puedes.",
       "intro": "Para estudiantes que quieren vivir un programa Coded por su cuenta, aunque su colegio no viaje.",
-      "sections": [
+      "cta": "Agenda una llamada",
+      "howToApply": "Cómo postular",
+      "applyEyebrow": "Cómo postular",
+      "applyTitle": "Tres pasos para sumarte",
+      "steps": [
         {
-          "title": "Cómo postular",
-          "items": [
-            "Agenda una consulta",
-            "Conversa en línea con nuestro equipo de desarrollo de negocios",
-            "Recibe tu carta de aceptación"
-          ]
+          "title": "Agenda una consulta",
+          "body": "Elige un horario que te acomode."
         },
         {
-          "title": "Acompañamiento",
-          "body": "Cada estudiante tiene un guardián personal. Las familias reciben novedades y fotos todos los días, y hay un grupo de chat para estudiantes y otro para padres."
+          "title": "Conversa con nuestro equipo",
+          "body": "En una consulta en línea con nuestro equipo de desarrollo de negocios te contamos los programas y las fechas, y resolvemos tus dudas."
         },
         {
-          "title": "Inscripción y pago",
-          "items": [
-            "Registro en línea y elección de la fecha",
-            "Pago de la inscripción con tarjeta",
-            "Planes de cuotas",
-            "Klarna, donde esté disponible"
-          ]
-        },
-        {
-          "title": "Formularios del Portal de Padres",
-          "items": [
-            "Formulario médico",
-            "Talla de camiseta",
-            "Autorización de uso de imagen",
-            "Autorización de retiro"
-          ]
+          "title": "Recibe tu carta de aceptación",
+          "body": "Con la carta, ya puedes inscribirte y elegir tu fecha."
         }
-      ]
+      ],
+      "careEyebrow": "Acompañamiento",
+      "careTitle": "Lejos de casa, nunca solos",
+      "careBody": "Cada estudiante tiene un guardián personal, y las familias saben cómo va todo, día a día.",
+      "careItems": [
+        "Novedades y fotos del guardián todos los días",
+        "Un grupo de chat para estudiantes",
+        "Otro grupo de chat para padres",
+        "Médico en sitio y seguro médico"
+      ],
+      "safetyLink": "Cómo cuidamos a cada estudiante",
+      "enrollEyebrow": "Inscripción",
+      "enrollTitle": "Inscribirse es simple",
+      "payTitle": "Inscripción y pago",
+      "payItems": [
+        "Registro en línea y elección de la fecha",
+        "Pago de la inscripción con tarjeta",
+        "Planes de cuotas",
+        "Klarna, donde esté disponible"
+      ],
+      "price": "Consúltanos el precio y las opciones de pago.",
+      "formsTitle": "Formularios del Portal de Padres",
+      "formsItems": [
+        "Formulario médico",
+        "Talla de camiseta",
+        "Autorización de uso de imagen",
+        "Autorización de retiro"
+      ],
+      "faqLink": "Preguntas frecuentes"
     },
     "faq": {
       "title": "Preguntas frecuentes",
-      "metaDescription": "Edades, inscripción, formularios, salud y qué incluye cada programa Coded.",
+      "metaDescription": "Edades, inscripción, precios, formularios, salud, alojamiento y qué incluye cada programa Coded.",
+      "eyebrow": "Preguntas frecuentes",
+      "heroTitle": "Todo lo que las familias nos preguntan.",
       "intro": "Si no encuentras tu respuesta, agenda una llamada y te ayudamos.",
+      "askTitle": "¿Te quedó alguna duda?",
+      "askBody": "Te respondemos en una llamada corta o por correo.",
+      "cta": "Agenda una llamada",
       "items": [
         {
           "q": "¿Para qué edades son los programas?",
@@ -525,6 +565,14 @@
           "a": "Sí, al completar su proyecto."
         },
         {
+          "q": "¿Puede ir un estudiante sin su colegio?",
+          "a": "Sí, con World Citizens. Cada estudiante tiene un guardián personal, y hay un grupo de chat para estudiantes y otro para padres."
+        },
+        {
+          "q": "¿Cuánto cuesta un programa?",
+          "a": "Consúltanos el precio: en una llamada te contamos el valor de cada programa y las opciones de pago."
+        },
+        {
           "q": "¿Cómo me inscribo?",
           "a": "Te registras en línea, eliges la fecha y pagas la inscripción con tarjeta. Hay planes de cuotas y, donde está disponible, Klarna."
         },
@@ -537,12 +585,24 @@
           "a": "No, los vuelos no están incluidos."
         },
         {
+          "q": "¿Dónde se alojan?",
+          "a": "En Orlando, en habitaciones separadas por género, de 2 a 4 estudiantes (hasta 5 en suites). En el Reino Unido, en residencias de colegios privados. Hay acceso con clave o tarjeta y personal en el lugar las 24 horas."
+        },
+        {
+          "q": "¿Cómo sabe la familia cómo va todo?",
+          "a": "El guardián de cada estudiante comparte novedades y fotos con la familia todos los días."
+        },
+        {
           "q": "¿Qué pasa si un estudiante necesita atención médica?",
           "a": "Hay médico en sitio, seguro médico y acuerdos con centros de salud locales."
         },
         {
           "q": "¿Hay que llevar computadora?",
           "a": "En Orlando STEAM League, sí: cada estudiante trae su laptop."
+        },
+        {
+          "q": "¿Cómo se llega al Tokyo STEAM Championship?",
+          "a": "Los 20 colegios ganadores de las ligas anteriores se preparan durante seis meses y presentan su proyecto en Tokio. Se realiza cada dos años."
         }
       ]
     },
@@ -595,7 +655,182 @@
         }
       },
       "groupsTitle": "Cómo se organizan",
-      "groupsBody": "Los estudiantes se agrupan por edad en Junior y Senior, en clases de niveles mixtos, y reciben un certificado al completar su proyecto."
+      "groupsBody": "Los estudiantes se agrupan por edad en Junior y Senior, en clases de niveles mixtos, y reciben un certificado al completar su proyecto.",
+      "heroTitle": "Del aula al proyecto, en cuatro pasos."
+    },
+    "championship": {
+      "metaTitle": "Tokyo STEAM Championship",
+      "metaDescription": "Cómo se llega de una STEAM League a Tokio: los 20 mejores colegios se preparan seis meses y presentan soluciones para ciudades mejores. Próxima edición: agosto de 2027.",
+      "programLink": "Ver el programa",
+      "roadEyebrow": "Cómo funciona",
+      "roadTitle": "El camino a Tokio",
+      "steps": {
+        "league": {
+          "title": "Participa en una STEAM League",
+          "body": "Los colegios empiezan en una de las ligas de Coded: Orlando, Europa o IA. Orlando es solo el comienzo."
+        },
+        "qualify": {
+          "title": "Clasifican los 20 mejores",
+          "body": "Los 20 colegios ganadores de las ligas anteriores se ganan su lugar en Tokio."
+        },
+        "prepare": {
+          "title": "Seis meses de preparación",
+          "body": "Los equipos dedican seis meses a desarrollar y pulir su proyecto antes de viajar."
+        },
+        "present": {
+          "title": "Presentan en Tokio",
+          "body": "Cada equipo presenta en Tokio su solución para ciudades y comunidades mejores."
+        },
+        "win": {
+          "title": "Hacerlo realidad",
+          "body": "El equipo ganador recibe un premio en efectivo y el apoyo de Coded para llevar su proyecto a la práctica. Se evalúa qué tan viable es dentro del presupuesto."
+        }
+      },
+      "countriesEyebrow": "Orlando, edición 2026",
+      "countriesTitle": "Colegios de estos países ya van camino a Tokio",
+      "countries": [
+        "México",
+        "Honduras",
+        "Argentina",
+        "República Dominicana",
+        "Ecuador",
+        "Guatemala",
+        "Costa Rica",
+        "El Salvador",
+        "Panamá",
+        "Brasil"
+      ],
+      "themeEyebrow": "El reto",
+      "themeBody": "Cada equipo diseña una solución para ciudades y comunidades mejores, a partir de cinco áreas:",
+      "cityEyebrow": "Tokio como aula",
+      "cityTitle": "Tecnología, cultura e industria, en el lugar",
+      "ctaTitle": "¿Tu colegio va camino a Tokio?",
+      "ctaBody": "Te contamos cómo las ligas llevan a Tokio y cómo será la próxima edición."
+    },
+    "schools": {
+      "title": "Para colegios",
+      "metaDescription": "Programas STEAM de grupo para colegios: estudiantes de 11 a 17 años aprenden en Orlando, el Reino Unido y Tokio, y presentan su propio proyecto en el destino.",
+      "eyebrow": "Para colegios",
+      "heroTitle": "Lleva tu colegio a aprender donde el futuro se construye.",
+      "intro": "Programas STEAM de grupo para estudiantes de 11 a 17 años. Aprenden con expertos, trabajan en equipo y presentan un proyecto propio en el destino.",
+      "cta": "Agenda una llamada",
+      "seePrograms": "Ver los programas",
+      "factsLabel": "Coded en cifras",
+      "facts": [
+        {
+          "value": "4",
+          "label": "programas en tres destinos"
+        },
+        {
+          "value": "11–17",
+          "label": "años de edad"
+        },
+        {
+          "value": "+20",
+          "label": "países con estudiantes Coded"
+        },
+        {
+          "value": "1",
+          "label": "proyecto propio por equipo"
+        }
+      ],
+      "structureEyebrow": "Un programa por dentro",
+      "structureTitle": "Del aterrizaje al escenario",
+      "days": [
+        {
+          "when": "Día 1",
+          "title": "Llegada",
+          "body": "El grupo llega al destino y se instala."
+        },
+        {
+          "when": "Días 2–6",
+          "title": "Un taller por letra",
+          "body": "Ciencia, tecnología, ingeniería, artes y matemáticas, con recorridos STEAM 360 por los lugares donde la tecnología pasa de verdad."
+        },
+        {
+          "when": "Día 7",
+          "title": "La ciudad como aula",
+          "body": "Un recorrido por la ciudad."
+        },
+        {
+          "when": "Día 9",
+          "title": "Día de proyecto",
+          "body": "Cada equipo termina y afina su solución."
+        },
+        {
+          "when": "Día 10",
+          "title": "Presentación",
+          "body": "Los equipos presentan su proyecto y cierran con la ceremonia de clausura."
+        },
+        {
+          "when": "Día 11",
+          "title": "Regreso",
+          "body": "Vuelta a casa, con un certificado por el proyecto completado."
+        }
+      ],
+      "structureNote": "Ejemplo de un programa de 11 días: cada destino tiene su propio itinerario. Los estudiantes se agrupan por edad en Junior y Senior, en clases de niveles mixtos."
+    },
+    "stories": {
+      "title": "Historias",
+      "metaDescription": "Reseñas de familias y educadores, y lo que compartimos desde cada edición de Coded.",
+      "eyebrow": "Historias",
+      "heroTitle": "Lo que pasa cuando el mundo es el aula.",
+      "intro": "Lo que cuentan las familias y los educadores, y lo que compartimos desde cada edición.",
+      "roadBody": "Después de Orlando, los colegios de la liga siguen camino al Tokyo STEAM Championship.",
+      "roadLink": "El camino a Tokio"
+    },
+    "consultation": {
+      "title": "Agenda una llamada",
+      "metaDescription": "Cuéntanos quién eres y qué programa te interesa, y agenda una consulta en línea con el equipo de Coded.",
+      "eyebrow": "Agenda una llamada",
+      "heroTitle": "Hablemos de tu próximo proyecto.",
+      "intro": "Cuéntanos quién eres y qué programa te interesa. Después eliges el horario para una consulta en línea con nuestro equipo.",
+      "audienceLegend": "Soy…",
+      "audience": {
+        "school": "Un colegio",
+        "parent": "Mamá, papá o tutor",
+        "student": "Estudiante"
+      },
+      "name": "Nombre y apellido",
+      "email": "Correo electrónico",
+      "country": "País",
+      "program": "Programa de interés",
+      "unsure": "Aún no lo sé",
+      "submit": "Continuar y elegir horario",
+      "sending": "Enviando…",
+      "privacy": "Usamos estos datos solo para preparar tu consulta y contactarte sobre los programas de Coded.",
+      "errorSummary": "Revisa estos campos:",
+      "errors": {
+        "audience": "Elige una opción.",
+        "name": "Escribe tu nombre y apellido.",
+        "email": "Escribe un correo válido.",
+        "country": "Escribe tu país.",
+        "program": "Elige un programa."
+      },
+      "bookTitle": "Elige el horario de tu llamada",
+      "bookBody": "¡Gracias! Elige el día y la hora que te acomoden; tus datos ya vienen completados.",
+      "bookFrame": "Calendario para agendar la llamada con Coded",
+      "bookFallback": "¿No ves el calendario? Ábrelo en una pestaña nueva",
+      "nextTitle": "Qué pasa después",
+      "steps": [
+        "Eliges un horario para la consulta en línea",
+        "Conversas con nuestro equipo sobre programas, fechas y precios, y resolvemos tus dudas",
+        "Te enviamos los siguientes pasos para inscribirte"
+      ],
+      "orWrite": "¿Prefieres escribirnos?"
+    },
+    "blog": {
+      "title": "Blog",
+      "metaDescription": "Artículos del Departamento Académico de Coded sobre educación STEAM, inteligencia artificial y aprendizaje basado en proyectos (en inglés).",
+      "eyebrow": "Blog",
+      "heroTitle": "Ideas para educar el futuro.",
+      "intro": "Artículos del Departamento Académico de Coded sobre educación STEAM, IA y aprendizaje basado en proyectos. Por ahora están en inglés.",
+      "read": "Leer artículo",
+      "back": "Todos los artículos",
+      "byline": "Departamento Académico de Coded",
+      "englishOnly": "Este artículo está disponible solo en inglés.",
+      "ctaTitle": "¿Quieres vivir esto en un programa Coded?",
+      "cta": "Agenda una llamada"
     }
   },
   "media": {
@@ -621,6 +856,17 @@
     "london-steps": "Grupo de Coded en las escalinatas de un edificio histórico de Londres",
     "lab-coat": "Estudiante con bata de laboratorio haciendo un experimento",
     "worksheet": "Estudiantes resolviendo una hoja de trabajo en equipo",
-    "presenting": "Estudiante presentando su proyecto"
+    "presenting": "Estudiante presentando su proyecto",
+    "orl-tablet": "Estudiante dibujando con lápiz digital en una tableta",
+    "orl-sketch": "Estudiantes dibujando planos juntos en una mesa",
+    "orl-colony": "Tableta con un modelo 3D de una ciudad",
+    "uk-talk": "Un ponente habla con los estudiantes durante un taller",
+    "uk-lecture": "Estudiantes escuchando una charla en un aula",
+    "tokyo-portrait": "Estudiante con gorra morada de Coded en Tokio",
+    "tokyo-friends": "Dos estudiantes sonriendo en Tokio",
+    "tokyo-team": "Grupo de estudiantes de Coded frente a un templo en Tokio",
+    "tokyo-museum": "Estudiantes en la entrada del Mori Art Museum, Tokio",
+    "tokyo-metro": "Estudiantes con gorras de Coded en una escalera mecánica de una estación de Tokio",
+    "tokyo-gate": "Portal de un templo en Tokio con el grupo al frente"
   }
 }

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { Departures } from "@/components/program/Departures";
 import { Programs } from "@/components/sections/Programs";
 import { pageMetadata } from "@/lib/seo/meta";
 
@@ -18,6 +19,7 @@ export default async function ProgramsPage({ params }: { params: Promise<{ local
   return (
     <main id="main">
       <Programs asPage />
+      <Departures />
     </main>
   );
 }

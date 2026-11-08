@@ -1,0 +1,23 @@
+known as POWER SKILLS, are crucial for success in an increasingly interconnected and changing world. Today, we will explore the importance of power skills in the teaching-learning process and how our Coded programs have become fertile ground for their development.
+
+POWER SKILLS, also known as “soft skills”, or long before “social skills”, are abilities that transcend the barriers of technical knowledge and focus on the ability to interact, communicate, and collaborate effectively with others. These skills are essential today as companies and academic institutions seek individuals who can adapt to different situations, work in teams, and creatively solve problems.
+
+Coding Education asserts that acquiring technical knowledge is foundational. However, the real advantage lies in how this knowledge is combined with POWER SKILLS. Problem-solving, clear communication, collaboration, and critical thinking are essential power skills that enhance the quality of designers and programmers’ work, and help them stand out in a competitive job market.
+
+The magic of POWER SKILLS lies in their transformative nature. They empower individuals to navigate complex scenarios with finesse, turning challenges into opportunities **. These skills conjure an aura of adaptability, enabling students to thrive in an ever-changing landscape. Just as a magician wields an assortment of spells, each designed for a specific enchantment, POWER SKILLS equip students with an arsenal of competencies to tackle various professional feats.**
+
+In the realm of academia, the integration of POWER SKILLS within content scenarios adds a profound layer of enrichment. Consider a student delving into a challenging scientific concept. The ability to effectively communicate the intricate details of the concept to peers demonstrates a mastery of POWER SKILLS like clear articulation and effective information transfer. Similarly, collaborative research projects demand cohesive teamwork, underlining the importance of skills such as cooperation and contribution. The prowess to dissect intricate problems logically and approach them systematically, hallmarks of POWER SKILLS, can lead to the unraveling of profound academic breakthroughs.
+
+Our programs offer a conducive environment for the development of these POWER SKILLS, and here is how:
+
+- Our **coding approach** allows students to develop their critical thinking and problem solving skills, as it requires programming to analyze complex problems and break them down into smaller parts to find solutions. Students learn to approach challenges logically and systematically.
+- Our student’s projects are carried out in teams and through **differentiated opportunities**. But when students design their **challenged based projects**, they learn to communicate effectively among themselves, share ideas respectfully, and contribute to collective success while collaborating and creating teamwork memories throughout their STEAM learning fusion content alchemy experiences.
+- The ability to communicate effectively, explaining their developed creative **STEAM projects**, pitching off their presentations and documenting their learning processes are essential key components of every Coded experience.
+- Our students often need to develop skills that will help them find innovative solutions to unexpected challenges. They are invited to see themselves as programmers who fosters creativity and adaptability in a constantly changing environment, while **programming their future.**
+- Students learn to manage their time effectively to meet the challenge through their **project-based learning experiences**. They understand and develop organizational skills as well as planning their time effectively to meet deadlines.
+
+POWER SKILLS emerge as an invaluable catalyst. The ability to assimilate complex ideas, communicate them cogently, and collaborate harmoniously propels students toward academic excellence.
+
+Coded goes beyond the traditional education expectations and believes that educating students through a foundation of POWER SKILLS besides the mere acquisition of content itself, is the reason that enables students to excel in a dynamic and competitive reality. **In Coding Education, the fusion of technical knowledge with POWER SKILLS ignites a beacon of holistic growth, one that not only enriches professional trajectories but also primes students for a dynamic, knowledge-driven world.**
+
+By empowering both technical and power skills, we are preparing the next generation to face the challenges and opportunities of the future with confidence and success.

@@ -73,6 +73,14 @@ Paula Mariana Danilewicz (ES) · jhenny Monroy (EN) · Hector Figarella (EN) · 
 ## 8. Legal (for migration, counsel review)
 Media-release clause grants Coded use of student photos/video for marketing (refund policy). Custodial-supervision disclaimer (C16). Policies partly template-derived.
 
+## 9a. Coded's own Instagram captions 🟡 (@coded.education, pulled 2026-11-08 via Firecrawl influencers-club)
+Orlando edition, Oct–Nov 2026 (rendered as the "last edition" diary on /programs/orlando-steam-league, with the matching reels):
+- Day 1 "Touchdown in Orlando" — customised backpacks, new faces (DfKkDx9Rb2L).
+- Day 3 — learning at the university, then Disney's Hollywood Studios (DfQLA45RBdz). *Not used:* "5 years of CODED" and the Mickey Mouse visit (mark).
+- Day 5 — science of vehicle movement, then the Transformers ride at Universal (DfXsAfuM4Fy).
+- Pitch Day — students presented their projects on stage at NASA (Dfa_esyR0wN).
+- "The road to Tokyo": Orlando League schools go on to the #STEAMTokyoChampionship; tagged schools from MX, HN, AR, DO, EC, GT, CR, SV, PA, BR. *Not used:* school names/logos need permission (Q20).
+
 ## 9. Social / third-party (search-snippet level, **unverified**) 🔴
 - IG @coded.education: "Students from across Latin America spent nine immersive days designing their own Space Colonies" (supports 9 days); "Coded Star Nicco" welcomes Europe League (Apr 12 2025); Academia Merici team (Orlando, Jul 2025); Interamerican School students in STEAM League AI London.
 - LinkedIn: Colegio Granadino students won **3rd place** in STEAM League Orlando; "CODED students win international recognition for AI project" featured in Mexican media; Europe League wrap-up post.

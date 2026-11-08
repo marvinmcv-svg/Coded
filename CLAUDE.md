@@ -1,7 +1,14 @@
 # CLAUDE.md — Coded 2.0 (codingeducation.us / codededucation.com rebuild)
 
 ## Status
-P0 approved 2026-11-07. P1 (foundation) shipped to `main`. Phase **P2 (home)** in progress on `claude/p2-home`: premium motion pass in (all home sections, globe, IG reels, teachers); see OPEN_QUESTIONS for decisions.
+P0 approved 2026-11-07. P1 (foundation) shipped to `main`. P2 (home) premium pass merged. P3 (programs): program pages, departures
+calendar, /championship. Phase **P4 (audience/trust)** built: /schools and /stories (new), and world-citizens, safety, about,
+faq, method rebuilt on `PageHero`. Gated until answered: STEAM Lab 360 (Q16), founders (Q19), school names/results (Q20),
+supervision wording (Q11), vision text, UN partnership (Q14). **P5 (funnels)** built: every "Book a call" → `/consultation`
+(5-field qualifier → prefilled HubSpot booking; HubSpot Forms API when `HUBSPOT_PORTAL_ID`/`HUBSPOT_FORM_ID` are set, Q24),
+UTM capture, phone sticky pill, consent-gated GA4 (`NEXT_PUBLIC_GA_ID`, Q26). Waiting: Enroll/app domain (Q0), WhatsApp (Q23).
+**P6 (migration)** built: 24 blog posts at `/en/blog/<slug>` (`python3 -I scripts/build-blog.py` regenerates content/blog from
+the crawl; 3 held + 3 redactions, Q34), legacy post/archive/category/author URLs 301, zero-broken-links e2e. Next: launch (Q0 domain, DNS).
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)
@@ -41,6 +48,7 @@ assets/manifest.json         media index (raw files in assets/raw/, gitignored)
 - One ease set (`expo.out`, `power3.inOut`, `coded` cubic-bezier) and token durations. GSAP is the only animation lib.
 - Exception: the above-the-fold hero intro is CSS keyframes (`.intro-*` in globals.css) so it runs on first paint without JS.
   On phones the hero h1 is the LCP element: render it as ONE plain text block (no word spans) below `md`.
+  Inner pages use `components/sections/PageHero` (photo shows from `md` up only, so phones keep the h1 as LCP; `calm` for safety).
 - Motion kit (components/motion): SplitWords+TextReveal (headings), ClipReveal (media), Marquee (pausable, WCAG 2.2.2),
   Magnetic, Cursor, VideoLoop (in-view only), HorizontalPin (full tier), SlideRows, Wordmark, LazyImg (IO-deferred images).
 - Media: `python3 -I scripts/build-media.py` rebuilds public/media from assets/raw (site crawl + @coded.education IG).
