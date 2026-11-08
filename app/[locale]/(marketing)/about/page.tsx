@@ -43,7 +43,7 @@ export default async function AboutPage({ params }: Params) {
           {t("missionLabel")}
         </p>
         <TextReveal>
-          <blockquote className="max-w-6xl font-display text-[clamp(2rem,4.5vw,4rem)] leading-[1.08] font-semibold tracking-tight">
+          <blockquote className="max-w-6xl font-display text-[clamp(1.625rem,4.5vw,4rem)] leading-[1.08] font-semibold tracking-tight">
             <SplitWords text={t("mission")} />
           </blockquote>
         </TextReveal>

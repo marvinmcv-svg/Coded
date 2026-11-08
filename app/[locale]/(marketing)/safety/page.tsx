@@ -53,9 +53,9 @@ export default async function SafetyPage({ params }: Params) {
             ))}
           </ul>
 
-          <Reveal calm className="flex flex-col gap-8 rounded-[var(--radius-card)] bg-ink/5 p-8 md:p-12">
+          <Reveal calm className="flex flex-col gap-8 rounded-[var(--radius-card)] bg-ink/5 p-6 sm:p-8 md:p-12">
             <div className="flex flex-col gap-3">
-              <h2 className="font-display text-3xl font-semibold">{outing.title}</h2>
+              <h2 className="font-display text-[1.375rem] font-semibold sm:text-3xl">{outing.title}</h2>
               <p className="text-lg text-ink/75">{outing.body}</p>
             </div>
             <ol className="grid gap-6 md:grid-cols-3">
