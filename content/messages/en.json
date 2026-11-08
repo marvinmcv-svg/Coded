@@ -868,5 +868,22 @@
     "tokyo-museum": "Students at the entrance of the Mori Art Museum, Tokyo",
     "tokyo-metro": "Students in Coded caps on an escalator in a Tokyo station",
     "tokyo-gate": "Temple gate in Tokyo with the group in front"
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "Error 404",
+      "title": "This page isn't on the itinerary",
+      "body": "The link may be old, or the page may have moved. You can get back on track from here.",
+      "home": "Go to the home page",
+      "programs": "See programs",
+      "metaTitle": "Page not found — Coded"
+    },
+    "error": {
+      "eyebrow": "Something went wrong",
+      "title": "We couldn't load this page",
+      "body": "The problem is on our side. Please try again in a few seconds.",
+      "retry": "Try again",
+      "home": "Go to the home page"
+    }
   }
 }

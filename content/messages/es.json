@@ -868,5 +868,22 @@
     "tokyo-museum": "Estudiantes en la entrada del Mori Art Museum, Tokio",
     "tokyo-metro": "Estudiantes con gorras de Coded en una escalera mecánica de una estación de Tokio",
     "tokyo-gate": "Portal de un templo en Tokio con el grupo al frente"
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "Error 404",
+      "title": "Esta página no está en el itinerario",
+      "body": "Puede que el enlace sea viejo o que la página haya cambiado de lugar. Desde aquí puedes volver a la ruta.",
+      "home": "Ir al inicio",
+      "programs": "Ver programas",
+      "metaTitle": "Página no encontrada — Coded"
+    },
+    "error": {
+      "eyebrow": "Algo falló",
+      "title": "No pudimos cargar esta página",
+      "body": "Fue un error de nuestro lado. Vuelve a intentarlo en unos segundos.",
+      "retry": "Intentar de nuevo",
+      "home": "Ir al inicio"
+    }
   }
 }
