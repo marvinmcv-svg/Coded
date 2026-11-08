@@ -249,7 +249,14 @@
       "price": "Precio",
       "priceOnRequest": "Consúltanos el precio y las formas de pago.",
       "cta": "Agenda una llamada",
-      "ctaBody": "Te contamos fechas, cupos y cómo inscribirte."
+      "ctaBody": "Te contamos fechas, cupos y cómo inscribirte.",
+      "nextDeparture": "Próxima salida: {date}",
+      "pathwayTitle": "De la idea a la creación, letra por letra",
+      "diaryEyebrow": "Última edición",
+      "diaryTitle": "Así se vive una semana en Orlando",
+      "galleryEyebrow": "En el destino",
+      "galleryTitle": "Estudiantes de Coded en este programa",
+      "more": "Otros programas"
     },
     "orlando-steam-league": {
       "tagline": "¡Crea tu propia colonia espacial!",
@@ -281,7 +288,29 @@
       "notIncluded": [
         "Vuelos"
       ],
-      "rooms": "Habitaciones separadas por género, de 2 a 4 estudiantes (hasta 5 en suites). Toque de queda a las 10 p. m."
+      "rooms": "Habitaciones separadas por género, de 2 a 4 estudiantes (hasta 5 en suites). Toque de queda a las 10 p. m.",
+      "diary": [
+        {
+          "when": "Día 1",
+          "title": "Aterrizamos en Orlando",
+          "body": "Mochilas personalizadas, caras nuevas y los primeros equipos."
+        },
+        {
+          "when": "Día 3",
+          "title": "Campus y después estudios",
+          "body": "Clases en la universidad por la mañana y Disney’s Hollywood Studios por la tarde."
+        },
+        {
+          "when": "Día 5",
+          "title": "La ingeniería se vuelve aventura",
+          "body": "La ciencia de cómo se mueven los vehículos y, después, verla en acción en la atracción de Transformers en Universal."
+        },
+        {
+          "when": "Pitch Day",
+          "title": "En el escenario de la NASA",
+          "body": "Después de días construyendo y mejorando, los estudiantes presentan sus propios proyectos en la NASA."
+        }
+      ]
     },
     "europe-steam-league": {
       "tagline": "Portafolio digital de carreras STEAM",
@@ -621,6 +650,17 @@
     "london-steps": "Grupo de Coded en las escalinatas de un edificio histórico de Londres",
     "lab-coat": "Estudiante con bata de laboratorio haciendo un experimento",
     "worksheet": "Estudiantes resolviendo una hoja de trabajo en equipo",
-    "presenting": "Estudiante presentando su proyecto"
+    "presenting": "Estudiante presentando su proyecto",
+    "orl-tablet": "Estudiante dibujando con lápiz digital en una tableta",
+    "orl-sketch": "Estudiantes dibujando planos juntos en una mesa",
+    "orl-colony": "Tableta con un modelo 3D de una ciudad",
+    "uk-talk": "Un ponente habla con los estudiantes durante un taller",
+    "uk-lecture": "Estudiantes escuchando una charla en un aula",
+    "tokyo-portrait": "Estudiante con gorra morada de Coded en Tokio",
+    "tokyo-friends": "Dos estudiantes sonriendo en Tokio",
+    "tokyo-team": "Grupo de estudiantes de Coded frente a un templo en Tokio",
+    "tokyo-museum": "Estudiantes en la entrada del Mori Art Museum, Tokio",
+    "tokyo-metro": "Estudiantes con gorras de Coded en una escalera mecánica de una estación de Tokio",
+    "tokyo-gate": "Portal de un templo en Tokio con el grupo al frente"
   }
 }

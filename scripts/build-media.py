@@ -32,6 +32,18 @@ IMAGES = {
     "worksheet":       ("site/2025_11_slo2.jpg", None, "4:5", [480, 900]),
     "presenting":      ("site/2025_11_profesionals-3.jpg", None, "4:5", [480, 900]),
     "hero-portrait":   ("site/2025_11_imagen-4-scaled-1.jpg", None, "3:4", [600, 900]),
+    # program-page galleries (photos published on that program's page on codededucation.com / codingeducation.us)
+    "orl-tablet":      ("site/2025_11_DSC00587-scaled-2.jpg", None, "4:5", [480, 900]),
+    "orl-sketch":      ("site/2025_11_coded3-1.png", None, "4:5", [480, 900]),
+    "orl-colony":      ("site/2025_11_coded6-1.png", None, "4:5", [480, 900]),
+    "uk-talk":         ("site/2025_11_profesionals.jpg", None, "4:5", [480, 900]),
+    "uk-lecture":      ("site/2025_11_profesionals-2.jpg", None, "4:5", [480, 900]),
+    "tokyo-portrait":  ("site/2026_07_tokyo-gallery_0000_coded-2-ago-123.jpg", None, "4:5", [480, 900]),
+    "tokyo-friends":   ("site/2026_07_tokyo-gallery_0004_coded-2-ago-108.jpg", None, "4:5", [480, 900]),
+    "tokyo-team":      ("site/2026_07_tokyo-gallery_0002_coded-2-ago-092.jpg", None, "4:5", [480, 900]),
+    "tokyo-museum":    ("site/2026_07_tokyo_0003_coded-2-ago-087.jpg", None, "4:5", [480, 900]),
+    "tokyo-metro":     ("site/2026_03_TOKYO2.png", None, "4:5", [480, 900]),
+    "tokyo-gate":      ("site/2026_07_IMG_0832.jpg", None, "4:5", [480, 900]),
     # teachers (codededucation.com) — square portraits, cropped to the teacher
     "t-kay-hill":      ("site/2026_08_images-1.jpeg", None, "1:1", [400]),
     "t-tom-caruth":    ("site/2026_06_team6.png", None, "1:1", [400]),

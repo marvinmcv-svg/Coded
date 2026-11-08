@@ -42,6 +42,8 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 20. Partner school logos with permission (search shows Colegio Granadino, Interamerican School, Academia Merici). Can we cite Colegio Granadino's 3rd place and the Mexican press feature (link?)?
 21. Venue logos: assume **none** authorised (text-only mentions of NASA, Disney, Universal, etc.). Confirm. "Performing Arts Workshop by Disney" — is that an official Disney program name we may use?
 22. Brand rule: "Coded" wordmark + "Coding Education" legal/domain — or "CODED" all-caps?
+32. **Teachers per program.** Program pages don't list teachers yet: the .com bios only place Rayan Took and Carolina Capelo Garcia (London & Tokyo). Who teaches on each program?
+33. **Media for Europe, AI and Tokyo.** Instagram's recent feed is mostly Orlando. Reels/photos from the UK and Tokyo editions (or the IG export, Q1) would give those pages a "last edition" diary like Orlando's.
 31. **Brand palette & logo files.** No colour spec exists; `/styleguide` uses a provisional palette. The live favicon is violet — is there a brand guide (hex values, logo SVG, wordmark rules)? *(blocks P2 visual design)*
 
 ## P1 — integrations (block P5)

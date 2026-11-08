@@ -19,7 +19,7 @@ for (const p of programs) {
       page.on("console", (msg) => msg.type() === "error" && errors.push(msg.text()));
 
       await page.goto(`/${locale}/programs/${p.slug}`);
-      await expect(page.getByRole("heading", { level: 1 })).toHaveText(p.name);
+      await expect(page.getByRole("heading", { level: 1 })).toHaveAccessibleName(p.name);
 
       const ld = JSON.parse((await page.locator('script[type="application/ld+json"]').textContent())!);
       expect(ld["@type"]).toBe("Course");

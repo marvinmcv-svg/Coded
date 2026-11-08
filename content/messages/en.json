@@ -249,7 +249,14 @@
       "price": "Price",
       "priceOnRequest": "Ask us about pricing and payment plans.",
       "cta": "Book a call",
-      "ctaBody": "We'll walk you through dates, places and how to enroll."
+      "ctaBody": "We'll walk you through dates, places and how to enroll.",
+      "nextDeparture": "Next departure: {date}",
+      "pathwayTitle": "From concept to creation, letter by letter",
+      "diaryEyebrow": "Last edition",
+      "diaryTitle": "What a week in Orlando looks like",
+      "galleryEyebrow": "On location",
+      "galleryTitle": "Coded students, on this program",
+      "more": "Other programs"
     },
     "orlando-steam-league": {
       "tagline": "Create your own space colony!",
@@ -281,7 +288,29 @@
       "notIncluded": [
         "Flights"
       ],
-      "rooms": "Gender-split rooms of 2–4 students (up to 5 in suites). 10 pm curfew."
+      "rooms": "Gender-split rooms of 2–4 students (up to 5 in suites). 10 pm curfew.",
+      "diary": [
+        {
+          "when": "Day 1",
+          "title": "Touchdown in Orlando",
+          "body": "Customised backpacks, new faces and the first team-ups."
+        },
+        {
+          "when": "Day 3",
+          "title": "Campus, then studios",
+          "body": "Learning at the university in the morning, Disney’s Hollywood Studios in the afternoon."
+        },
+        {
+          "when": "Day 5",
+          "title": "Engineering meets adventure",
+          "body": "The science behind how vehicles move, then seeing it in action on the Transformers ride at Universal."
+        },
+        {
+          "when": "Pitch Day",
+          "title": "On stage at NASA",
+          "body": "After days of building and refining, students present their own projects at NASA."
+        }
+      ]
     },
     "europe-steam-league": {
       "tagline": "STEAM Digital Career Portfolio",
@@ -621,6 +650,17 @@
     "london-steps": "A Coded group on the steps of a historic building in London",
     "lab-coat": "A student in a lab coat running an experiment",
     "worksheet": "Students solving a worksheet together",
-    "presenting": "A student presenting a project"
+    "presenting": "A student presenting a project",
+    "orl-tablet": "Student sketching with a stylus on a tablet",
+    "orl-sketch": "Students drawing plans together at a table",
+    "orl-colony": "Tablet showing a 3D city model",
+    "uk-talk": "A presenter speaks to students during a workshop",
+    "uk-lecture": "Students listening to a talk in a lecture room",
+    "tokyo-portrait": "Student in a purple Coded cap in Tokyo",
+    "tokyo-friends": "Two students smiling in Tokyo",
+    "tokyo-team": "Group of Coded students outside a temple in Tokyo",
+    "tokyo-museum": "Students at the entrance of the Mori Art Museum, Tokyo",
+    "tokyo-metro": "Students in Coded caps on an escalator in a Tokyo station",
+    "tokyo-gate": "Temple gate in Tokyo with the group in front"
   }
 }
