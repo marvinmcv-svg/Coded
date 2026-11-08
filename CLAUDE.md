@@ -6,7 +6,9 @@ calendar, /championship. Phase **P4 (audience/trust)** built: /schools and /stor
 faq, method rebuilt on `PageHero`. Gated until answered: STEAM Lab 360 (Q16), founders (Q19), school names/results (Q20),
 supervision wording (Q11), vision text, UN partnership (Q14). **P5 (funnels)** built: every "Book a call" → `/consultation`
 (5-field qualifier → prefilled HubSpot booking; HubSpot Forms API when `HUBSPOT_PORTAL_ID`/`HUBSPOT_FORM_ID` are set, Q24),
-UTM capture, phone sticky pill, consent-gated GA4 (`NEXT_PUBLIC_GA_ID`, Q26). Waiting: Enroll/app domain (Q0), WhatsApp (Q23). Next: P6 migration.
+UTM capture, phone sticky pill, consent-gated GA4 (`NEXT_PUBLIC_GA_ID`, Q26). Waiting: Enroll/app domain (Q0), WhatsApp (Q23).
+**P6 (migration)** built: 24 blog posts at `/en/blog/<slug>` (`python3 -I scripts/build-blog.py` regenerates content/blog from
+the crawl; 3 held + 3 redactions, Q34), legacy post/archive/category/author URLs 301, zero-broken-links e2e. Next: launch (Q0 domain, DNS).
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)

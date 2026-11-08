@@ -1,0 +1,15 @@
+As we stand at the culmination of this thrilling journey that brought together schools from Latin America to experience the magic of Orlando, our hearts are brimming with gratitude and wonder. The laughter that echoed through the parks, the lessons we’ve learned, and the moments we’ve shared have woven a tapestry of memories that will stay with us forever.
+
+But have you ever wondered about the hard work behind the scenes that makes this adventure possible? Today, we invite you to peek behind the curtains and discover the amazing efforts put in by the dedicated team at Coded to turn this journey into cherished memories for all.
+
+At the heart of this extraordinary journey lies meticulous planning. The Coded team, with unwavering dedication, designs an educational program that combines fun and learning seamlessly. Every activity, workshop, and excursion is thoughtfully chosen, ensuring that students embark on a transformative STEAM learning adventure. It’s a journey where knowledge expands, and curiosity blooms integrating the different areas of learning through a magical authentic experience.
+
+Coded is more than just an organizer; it’s a supportive community. From the moment students, parents, and teachers sign up, they become part of our close-knit family. Our mentors, experienced and compassionate, stand as pillars of support. They address questions, build meaningful connections, and make sure every student feels valued and welcomed in this unique educational venture. Even after the program, the community continues to grow through a variety of opportunities where learning never stops.
+
+The real magic of these programs lies in the profound connections that form between students, mentors, and participating schools. Coded nurtures an environment where collaboration, empathy, and camaraderie thrive. Lifelong friendships are forged, transcending geographical boundaries and cultural differences. These connections, rooted in shared experiences, highlight the incredible power of education and human bonds.
+
+From choosing accommodations to organizing recreational activities, the Coded team puts in immense effort to perfect every detail. They create a seamless blend of comfort and adventure, ensuring students embark on a safe and enjoyable journey. Special moments like themed parties and interactive sessions with experts are meticulously planned, adding a touch of magic to the whole experience.
+
+This journey reminds us that education goes beyond classroom walls, embracing diverse cultures, ideas, and perspectives. We extend our heartfelt gratitude to the tireless efforts of the Coded team, whose passion and dedication have turned our vision into a life-changing experience for our students. Every shared laugh, every lesson learned, and every friendship formed has become a part of a story that will echo in our memories for years to come.
+
+As we bid farewell to this October 2023 chapter, we carry invaluable lessons, lifelong friendships, and cherished memories. Thank you for being a part of this incredible adventure. We eagerly anticipate more transformative journeys and treasured moments in our future.

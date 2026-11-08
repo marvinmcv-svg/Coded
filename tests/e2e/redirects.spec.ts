@@ -7,6 +7,9 @@ const samples: [string, string][] = [
   ["/program/orlando-steam-league-october-2027/", "/es/programs/orlando-steam-league"],
   ["/program/europe-steam-league-easter-2026/", "/es/programs/europe-steam-league"],
   ["/program/steam-league-ai-summer-2026/", "/es/programs/steam-league-ai"],
+  ["/2023/09/25/", "/en/blog"],
+  ["/category/steam/steam-education/", "/en/blog"],
+  ["/author/coded/", "/en/blog"],
 ];
 
 test.skip(({ isMobile }) => isMobile, "server behaviour, device-independent");

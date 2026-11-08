@@ -818,6 +818,19 @@
         "Te enviamos los siguientes pasos para inscribirte"
       ],
       "orWrite": "¿Prefieres escribirnos?"
+    },
+    "blog": {
+      "title": "Blog",
+      "metaDescription": "Artículos del Departamento Académico de Coded sobre educación STEAM, inteligencia artificial y aprendizaje basado en proyectos (en inglés).",
+      "eyebrow": "Blog",
+      "heroTitle": "Ideas para educar el futuro.",
+      "intro": "Artículos del Departamento Académico de Coded sobre educación STEAM, IA y aprendizaje basado en proyectos. Por ahora están en inglés.",
+      "read": "Leer artículo",
+      "back": "Todos los artículos",
+      "byline": "Departamento Académico de Coded",
+      "englishOnly": "Este artículo está disponible solo en inglés.",
+      "ctaTitle": "¿Quieres vivir esto en un programa Coded?",
+      "cta": "Agenda una llamada"
     }
   },
   "media": {

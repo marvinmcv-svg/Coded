@@ -818,6 +818,19 @@
         "We send you the next steps to enroll"
       ],
       "orWrite": "Prefer to write to us?"
+    },
+    "blog": {
+      "title": "Blog",
+      "metaDescription": "Articles from the Coded Academic Department on STEAM education, artificial intelligence and project-based learning.",
+      "eyebrow": "Blog",
+      "heroTitle": "Ideas for educating the future.",
+      "intro": "Articles from the Coded Academic Department on STEAM education, AI and project-based learning.",
+      "read": "Read article",
+      "back": "All articles",
+      "byline": "Coded Academic Department",
+      "englishOnly": "This article is available in English only.",
+      "ctaTitle": "Want to live this on a Coded program?",
+      "cta": "Book a call"
     }
   },
   "media": {

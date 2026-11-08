@@ -57,6 +57,11 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 27. Store (`store.codingeducation.us`) and Sojourn Travel link — keep both in footer?
 
 ## P2
+34. **Blog posts held or edited in migration (P6).** 24 of 27 posts are live at /en/blog/<slug>. Held (old URL → blog index) because
+    they state 🔴 Coded facts: *Reimagining the Classroom* (13-day program, Florida Film Academy, "Disney Codeillusion"),
+    *The Magic of Coded* (Vancouver program, "over 10 countries", "9-day", a school named in a photo credit), *Time to Play*
+    ("Coded's Esports Academy"). One phrase redacted in each of: *What Is STEAM Education* ("9-day" → removed),
+    *Behind the Scenes* ("21 schools" → "schools"), *The Magic of Power Skills* (CodeIllusion mention). Confirm, fix or drop.
 28. Portuguese at launch?
 29. Blog: migrate all 28 posts on both locales (EN only today) — translate to ES or ES-only for new posts?
 30. Staging host: Vercel team/project name; who owns DNS?

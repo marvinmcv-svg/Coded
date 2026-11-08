@@ -1,5 +1,5 @@
 import { expect, test } from "@playwright/test";
-import { PATHS } from "../../app/sitemap";
+import { PATHS, POST_PATHS } from "../../app/sitemap";
 
 test.describe.configure({ mode: "parallel" });
 test.skip(({ isMobile }) => isMobile, "same HTML on every device");
@@ -31,7 +31,18 @@ test("robots.txt blocks crawling before launch", async ({ request }) => {
 test("sitemap lists every route in both locales and each resolves", async ({ request }) => {
   const xml = await (await request.get("/sitemap.xml")).text();
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => new URL(m[1]!).pathname);
-  expect(locs.sort()).toEqual(PATHS.flatMap((p) => [`/es${p}`, `/en${p}`]).sort());
+  expect(locs.sort()).toEqual([...PATHS.flatMap((p) => [`/es${p}`, `/en${p}`]), ...POST_PATHS].sort());
   for (const loc of locs) expect((await request.get(loc)).status(), loc).toBe(200);
   expect(xml).toContain('hreflang="x-default"');
+});
+
+test("blog posts: one English canonical from both locales, no hreflang pair, article metadata", async ({ page }) => {
+  const path = POST_PATHS[0]!;
+  for (const url of [path, path.replace(/^\/en/, "/es")]) {
+    await page.goto(url);
+    expect(new URL((await page.locator('link[rel="canonical"]').getAttribute("href"))!).pathname).toBe(path);
+    await expect(page.locator('link[rel="alternate"][hreflang]')).toHaveCount(0);
+    await expect(page.locator('meta[property="og:type"]')).toHaveAttribute("content", "article");
+    await expect(page.locator("article")).toHaveAttribute("lang", "en");
+  }
 });
