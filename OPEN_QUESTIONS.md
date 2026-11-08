@@ -56,6 +56,12 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
     *Built (P5):* set `NEXT_PUBLIC_GA_ID` and a consent banner appears; GA4 loads only after "Accept". Unset ⇒ no banner, no analytics.
 27. Store (`store.codingeducation.us`) and Sojourn Travel link — keep both in footer?
 
+## P1 — Cody (AI receptionist)
+35. **Cody API key + model.** Set `ANTHROPIC_API_KEY` (and optionally `CODY_MODEL`) in Vercel. Default model is Claude Opus 5.5 at low
+    effort; a cheaper model (e.g. `claude-haiku-5-5`) is a one-variable change if cost matters more than answer quality — your call.
+    Cody only repeats what the site publishes, so every 🔴 item stays unanswered (it hands over to the team). Should chats be logged
+    (HubSpot, Supabase) for the sales team? Not built: needs a privacy-policy line first.
+
 ## P2
 34. **Blog posts held or edited in migration (P6).** 24 of 27 posts are live at /en/blog/<slug>. Held (old URL → blog index) because
     they state 🔴 Coded facts: *Reimagining the Classroom* (13-day program, Florida Film Academy, "Disney Codeillusion"),

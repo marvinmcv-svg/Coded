@@ -19,6 +19,8 @@ The site is built so launch day only needs a domain, environment variables and D
 | `SITE_INDEXING` | `on` | **Production only.** Unset ⇒ every page is `noindex` and robots.txt disallows all (previews stay unindexed). |
 | `NEXT_PUBLIC_GA_ID` | `G-…` | Optional (Q26). Shows the consent banner; GA4 loads only after "Accept". Needs a rebuild. |
 | `HUBSPOT_PORTAL_ID`, `HUBSPOT_FORM_ID` | from HubSpot | Optional (Q24). Form fields: `firstname`, `lastname`, `email`, `country`, `message`. |
+| `ANTHROPIC_API_KEY` | from console.anthropic.com | Optional (Q35). Turns Cody (the chat receptionist) from FAQ-matching into Claude answers grounded in the site copy. Server-only; no rebuild needed. Unset or invalid ⇒ Cody still answers from the FAQ. |
+| `CODY_MODEL` | e.g. `claude-opus-5-5` | Optional. Model Cody uses (default `claude-opus-5-5`, effort `low`). |
 | `DATABASE_URL` | Supabase Postgres | Only for `content:check` past-cohort check and `db:*` scripts; pages don't read it. |
 
 ## Launch steps

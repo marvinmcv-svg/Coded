@@ -885,5 +885,29 @@
       "retry": "Try again",
       "home": "Go to the home page"
     }
+  },
+  "cody": {
+    "label": "Ask Cody",
+    "open": "Ask Cody, our AI receptionist",
+    "close": "Close chat",
+    "title": "Cody",
+    "status": "AI receptionist · online",
+    "statusOffline": "Quick answers",
+    "greeting": "Hi, I'm Cody 👋 I can answer questions about Coded's programs, dates, safety and how to enroll. What would you like to know?",
+    "placeholder": "Ask me anything about Coded…",
+    "send": "Send",
+    "thinking": "Cody is typing",
+    "error": "Something went wrong. Please try again, or book a call with the team.",
+    "limit": "You've sent a lot of messages. Take a breather, or book a call with the team.",
+    "disclaimer": "Cody is an AI and can make mistakes. For anything important, confirm with the team.",
+    "handover": "Talk to a person",
+    "suggestions": [
+      "What ages are the programs for?",
+      "Are flights included?",
+      "Can a student join without their school?",
+      "How much does a program cost?"
+    ],
+    "offlineMore": "Anything else? I can also connect you with the team.",
+    "offlineHandover": "Good question. I don't have that answer yet, but the team does: book a call, write to {email} or phone {phone}."
   }
 }

@@ -885,5 +885,29 @@
       "retry": "Intentar de nuevo",
       "home": "Ir al inicio"
     }
+  },
+  "cody": {
+    "label": "Pregúntale a Cody",
+    "open": "Pregúntale a Cody, nuestro recepcionista con IA",
+    "close": "Cerrar chat",
+    "title": "Cody",
+    "status": "Recepcionista IA · en línea",
+    "statusOffline": "Respuestas rápidas",
+    "greeting": "¡Hola! Soy Cody 👋 Te ayudo con dudas sobre los programas de Coded, fechas, seguridad y cómo inscribirte. ¿Qué te gustaría saber?",
+    "placeholder": "Pregúntame sobre Coded…",
+    "send": "Enviar",
+    "thinking": "Cody está escribiendo",
+    "error": "Algo salió mal. Inténtalo de nuevo o agenda una llamada con el equipo.",
+    "limit": "Enviaste muchos mensajes seguidos. Tómate un respiro o agenda una llamada con el equipo.",
+    "disclaimer": "Cody es una IA y puede equivocarse. Para algo importante, confírmalo con el equipo.",
+    "handover": "Hablar con una persona",
+    "suggestions": [
+      "¿Para qué edades son los programas?",
+      "¿Los vuelos están incluidos?",
+      "¿Puede ir un estudiante sin su colegio?",
+      "¿Cuánto cuesta un programa?"
+    ],
+    "offlineMore": "¿Algo más? También puedo ponerte en contacto con el equipo.",
+    "offlineHandover": "Buena pregunta. Todavía no tengo esa respuesta, pero el equipo sí: agenda una llamada, escribe a {email} o llama al {phone}."
   }
 }
