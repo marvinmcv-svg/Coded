@@ -41,3 +41,21 @@ test("footer links reach every content page", async ({ page }) => {
   const footer = page.locator("footer");
   for (const [path] of pages) await expect(footer.locator(`a[href="/es/${path}"]`)).toHaveCount(1);
 });
+
+for (const [locale, m] of Object.entries({ es, en })) {
+  test(`/${locale}/championship: renders, axe clean, future date only, no console errors`, async ({ page }) => {
+    const errors: string[] = [];
+    page.on("pageerror", (err) => errors.push(err.message));
+    page.on("console", (msg) => msg.type() === "error" && errors.push(msg.text()));
+
+    await page.goto(`/${locale}/championship`);
+    await expect(page.getByRole("heading", { level: 1 })).toHaveAccessibleName(m.home.championship.title);
+    await expect(page.getByRole("heading", { level: 3 })).toHaveCount(5); // the five road-to-Tokyo steps
+    const today = new Date().toISOString().slice(0, 10);
+    for (const d of await page.locator("time[datetime]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!))) {
+      expect(d > today, `${d} is in the past`).toBe(true);
+    }
+    expect(await axeViolations(page)).toEqual([]);
+    expect(errors).toEqual([]);
+  });
+}

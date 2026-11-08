@@ -18,7 +18,7 @@ export async function Header() {
         <nav aria-label={t("label")} className="hidden lg:block">
           <ul className="flex gap-6 text-sm text-mist">
             {anchors.map((a) => (
-              <li key={a}><Link href={a === "programs" ? "/programs" : a === "safety" ? "/safety" : a === "contact" ? "/contact" : a === "method" ? "/method" : `/#${a}`} className="hover:text-paper">{t(a)}</Link></li>
+              <li key={a}><Link href={a === "programs" ? "/programs" : a === "safety" ? "/safety" : a === "contact" ? "/contact" : a === "method" ? "/method" : a === "championship" ? "/championship" : `/#${a}`} className="hover:text-paper">{t(a)}</Link></li>
             ))}
           </ul>
         </nav>

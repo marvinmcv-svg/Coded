@@ -2,7 +2,7 @@
 
 ## Status
 P0 approved 2026-11-07. P1 (foundation) shipped to `main`. P2 (home) premium pass merged. Phase **P3 (programs)** in progress: program pages have photo hero, STEAM rows, galleries, Orlando
-"last edition" diary (IG reels + captions). Next: programs index calendar, /championship; see OPEN_QUESTIONS 32–33.
+"last edition" diary; /programs has a departures calendar; /championship (road to Tokyo) is live. Next: P4 audience pages; see OPEN_QUESTIONS 32–33.
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)

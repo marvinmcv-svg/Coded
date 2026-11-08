@@ -106,5 +106,9 @@ for key, parts in VIDEOS.items():
          str(OUT / f"{key}-poster.webp")])
     manifest["videos"][key] = {"sources": [p[0] for p in parts], "ratio": [3, 4]}
 
+# Phone backdrop for /championship: ~1 KB pre-blurred still (low-entropy, so Chrome skips it as LCP and the h1 stays the LCP).
+run(["convert", str(RAW / IMAGES["tokyo-group"][0]), "-auto-orient", "-resize", "96x", "-blur", "0x2", "-strip", "-quality", "50",
+     str(OUT / "tokyo-group-blur.webp")])
+
 pathlib.Path("content/media-built.json").write_text(json.dumps(manifest, indent=1) + "\n")
 print(len(manifest["images"]), "images,", len(manifest["videos"]), "videos")

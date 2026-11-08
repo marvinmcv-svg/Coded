@@ -224,7 +224,10 @@
     "index": {
       "title": "Programas",
       "intro": "Cuatro programas STEAM para estudiantes de 11 a 17 años. Cada uno termina con un proyecto propio presentado en el destino.",
-      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI y Tokyo STEAM Championship: fechas, destinos y contenidos."
+      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI y Tokyo STEAM Championship: fechas, destinos y contenidos.",
+      "calendarEyebrow": "Calendario",
+      "calendarTitle": "Próximas salidas",
+      "view": "Ver programa"
     },
     "detail": {
       "back": "Todos los programas",
@@ -625,6 +628,55 @@
       },
       "groupsTitle": "Cómo se organizan",
       "groupsBody": "Los estudiantes se agrupan por edad en Junior y Senior, en clases de niveles mixtos, y reciben un certificado al completar su proyecto."
+    },
+    "championship": {
+      "metaTitle": "Tokyo STEAM Championship",
+      "metaDescription": "Cómo se llega de una STEAM League a Tokio: los 20 mejores colegios se preparan seis meses y presentan soluciones para ciudades mejores. Próxima edición: agosto de 2027.",
+      "programLink": "Ver el programa",
+      "roadEyebrow": "Cómo funciona",
+      "roadTitle": "El camino a Tokio",
+      "steps": {
+        "league": {
+          "title": "Participa en una STEAM League",
+          "body": "Los colegios empiezan en una de las ligas de Coded: Orlando, Europa o IA. Orlando es solo el comienzo."
+        },
+        "qualify": {
+          "title": "Clasifican los 20 mejores",
+          "body": "Los 20 colegios ganadores de las ligas anteriores se ganan su lugar en Tokio."
+        },
+        "prepare": {
+          "title": "Seis meses de preparación",
+          "body": "Los equipos dedican seis meses a desarrollar y pulir su proyecto antes de viajar."
+        },
+        "present": {
+          "title": "Presentan en Tokio",
+          "body": "Cada equipo presenta en Tokio su solución para ciudades y comunidades mejores."
+        },
+        "win": {
+          "title": "Hacerlo realidad",
+          "body": "El equipo ganador recibe un premio en efectivo y el apoyo de Coded para llevar su proyecto a la práctica. Se evalúa qué tan viable es dentro del presupuesto."
+        }
+      },
+      "countriesEyebrow": "Orlando, edición 2026",
+      "countriesTitle": "Colegios de estos países ya van camino a Tokio",
+      "countries": [
+        "México",
+        "Honduras",
+        "Argentina",
+        "República Dominicana",
+        "Ecuador",
+        "Guatemala",
+        "Costa Rica",
+        "El Salvador",
+        "Panamá",
+        "Brasil"
+      ],
+      "themeEyebrow": "El reto",
+      "themeBody": "Cada equipo diseña una solución para ciudades y comunidades mejores, a partir de cinco áreas:",
+      "cityEyebrow": "Tokio como aula",
+      "cityTitle": "Tecnología, cultura e industria, en el lugar",
+      "ctaTitle": "¿Tu colegio va camino a Tokio?",
+      "ctaBody": "Te contamos cómo las ligas llevan a Tokio y cómo será la próxima edición."
     }
   },
   "media": {

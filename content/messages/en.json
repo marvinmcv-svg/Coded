@@ -224,7 +224,10 @@
     "index": {
       "title": "Programs",
       "intro": "Four STEAM programs for students aged 11–17. Each one ends with the students' own project, presented on location.",
-      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI and Tokyo STEAM Championship: dates, destinations and content."
+      "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI and Tokyo STEAM Championship: dates, destinations and content.",
+      "calendarEyebrow": "Calendar",
+      "calendarTitle": "Upcoming departures",
+      "view": "View program"
     },
     "detail": {
       "back": "All programs",
@@ -625,6 +628,55 @@
       },
       "groupsTitle": "How groups work",
       "groupsBody": "Students are grouped by age into Junior and Senior, in mixed-level classes, and receive a certificate when they complete their project."
+    },
+    "championship": {
+      "metaTitle": "Tokyo STEAM Championship",
+      "metaDescription": "How students get from a STEAM League to Tokyo: the top 20 schools prepare for six months and present solutions for better cities. Next edition: August 2027.",
+      "programLink": "Program details",
+      "roadEyebrow": "How it works",
+      "roadTitle": "The road to Tokyo",
+      "steps": {
+        "league": {
+          "title": "Take part in a STEAM League",
+          "body": "Schools start in one of Coded’s leagues: Orlando, Europe or AI. Orlando is just the beginning."
+        },
+        "qualify": {
+          "title": "The top 20 qualify",
+          "body": "The 20 winning schools from past leagues earn their place in Tokyo."
+        },
+        "prepare": {
+          "title": "Six months of preparation",
+          "body": "Teams spend six months developing and refining their project before they travel."
+        },
+        "present": {
+          "title": "Present in Tokyo",
+          "body": "Each team presents its solution for better cities and communities, in Tokyo."
+        },
+        "win": {
+          "title": "Make it real",
+          "body": "The winning team gets a cash prize and Coded’s support to put its project into practice. Projects are judged on how feasible they are within budget."
+        }
+      },
+      "countriesEyebrow": "Orlando, 2026 edition",
+      "countriesTitle": "Schools from these countries are on the road to Tokyo",
+      "countries": [
+        "Mexico",
+        "Honduras",
+        "Argentina",
+        "Dominican Republic",
+        "Ecuador",
+        "Guatemala",
+        "Costa Rica",
+        "El Salvador",
+        "Panama",
+        "Brazil"
+      ],
+      "themeEyebrow": "The challenge",
+      "themeBody": "Every team designs a solution for better cities and communities, drawing on five areas:",
+      "cityEyebrow": "Tokyo as a classroom",
+      "cityTitle": "Tech, culture and industry, on location",
+      "ctaTitle": "Is your school on the road?",
+      "ctaBody": "We’ll explain how the leagues lead to Tokyo and what the next edition looks like."
     }
   },
   "media": {
