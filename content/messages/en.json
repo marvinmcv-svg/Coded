@@ -18,10 +18,11 @@
     "nav": {
       "label": "Main",
       "programs": "Programs",
-      "method": "Method",
       "championship": "Championship",
       "safety": "Safety",
-      "contact": "Contact"
+      "contact": "Contact",
+      "schools": "Schools",
+      "worldCitizens": "World Citizens"
     },
     "hero": {
       "eyebrow": "The borderless STEAM school",
@@ -412,49 +413,25 @@
   "pages": {
     "about": {
       "title": "About Coded",
-      "metaDescription": "Coded, the borderless STEAM school: mission, method, credentials and offices.",
-      "intro": "We are a borderless STEAM school: the Academy of Tomorrow. We take students from Latin America to learn where the future is built.",
-      "sections": [
-        {
-          "title": "Our mission",
-          "body": "To empower the leaders and innovators of tomorrow, through transformative TechEd experiences."
-        },
-        {
-          "title": "How we teach",
-          "body": "A four-step method, from classroom to project:",
-          "items": [
-            "Expert delivered",
-            "Live workshops",
-            "Project-based learning",
-            "Coding"
-          ]
-        },
-        {
-          "title": "Credentials",
-          "items": [
-            "Florida Seller of Travel · Registration No. ST46325",
-            "STEM.org recognitions: “STEM Educational Program” and “Best in STEM”",
-            "Students from 20+ countries"
-          ]
-        },
-        {
-          "title": "Offices",
-          "items": [
-            "Miami — 255 Giralda Ave, Coral Gables, FL 33134",
-            "London — Studio 43, Great Western Studios, 65 Alfred Rd, London W2 5EU"
-          ]
-        }
-      ]
+      "metaDescription": "Coded, the borderless STEAM school: mission, method, teachers, credentials and offices.",
+      "eyebrow": "About Coded",
+      "heroTitle": "A borderless STEAM school.",
+      "intro": "We are the Academy of Tomorrow: we take students from Latin America to learn where the future is built.",
+      "missionLabel": "Our mission",
+      "mission": "To empower the leaders and innovators of tomorrow, through transformative TechEd experiences.",
+      "whereEyebrow": "Where we teach",
+      "whereTitle": "The world is the classroom",
+      "contactLink": "Contact"
     },
     "safety": {
       "title": "Safety",
-      "metaDescription": "How we look after every student: personal Guardian, health, accommodation and family communication.",
+      "metaDescription": "How we look after every student: a personal Guardian, health, accommodation and communication with families.",
+      "eyebrow": "Safety",
+      "heroTitle": "They learn far from home. Families stay at ease.",
       "intro": "Every program is designed so students can learn far from home while families stay at ease.",
-      "sections": [
-        {
-          "title": "A Guardian for every student",
-          "body": "Each student has a personal Guardian who shares updates and photos with the family every day."
-        },
+      "guardianTitle": "A Guardian for every student",
+      "guardianBody": "Every student has a personal Guardian who shares daily updates and photos with the family.",
+      "groups": [
         {
           "title": "What the Guardian does",
           "items": [
@@ -479,8 +456,9 @@
         {
           "title": "Accommodation",
           "items": [
-            "Passcode access in London, keypass in Orlando",
-            "On-site staff 24/7"
+            "Passcode access in London and keypass access in Orlando",
+            "Staff on site 24/7",
+            "Dedicated activity coordinators"
           ]
         },
         {
@@ -488,61 +466,85 @@
           "items": [
             "360 navigation app",
             "Daily updates and photos from the Guardian",
-            "For World Citizens: separate chat groups for students and for parents"
-          ]
-        },
-        {
-          "title": "Independent outings",
-          "body": "When a student goes out on their own, we follow three steps:",
-          "items": [
-            "They share contact details and a travel plan",
-            "They receive guidance and training beforehand",
-            "On return, the Guardian accompanies the check-in and confirms it with photos in the group chat"
+            "For World Citizens: one chat group for students and another for parents"
           ]
         }
-      ]
+      ],
+      "outing": {
+        "title": "Independent outings",
+        "body": "When a student goes out on their own, we follow three steps:",
+        "steps": [
+          "They share their contact details and travel plan",
+          "They receive guidance and training beforehand",
+          "On their return, the Guardian accompanies the check-in and confirms it with photos in the group chat"
+        ]
+      },
+      "ctaTitle": "More questions about safety?",
+      "ctaBody": "We'll walk you through how we work at each destination.",
+      "cta": "Book a call"
     },
     "worldCitizens": {
       "title": "World Citizens",
       "metaDescription": "International STEAM programs for students who travel on their own, without their school.",
+      "eyebrow": "World Citizens · for families",
+      "heroTitle": "Your school isn't going. You still can.",
       "intro": "For students who want to join a Coded program on their own, even if their school isn't traveling.",
-      "sections": [
+      "cta": "Book a call",
+      "howToApply": "How to apply",
+      "applyEyebrow": "How to apply",
+      "applyTitle": "Three steps to join",
+      "steps": [
         {
-          "title": "How to apply",
-          "items": [
-            "Schedule a consultation",
-            "Meet our business development team online",
-            "Receive your acceptance letter"
-          ]
+          "title": "Book a consultation",
+          "body": "Pick a time that suits you."
         },
         {
-          "title": "Support",
-          "body": "Every student has a personal Guardian. Families get updates and photos every day, with separate chat groups for students and for parents."
+          "title": "Talk to our team",
+          "body": "In an online consultation, our business development team walks you through the programs and dates and answers your questions."
         },
         {
-          "title": "Enrollment & payment",
-          "items": [
-            "Online registration and cohort selection",
-            "Enrollment fee by card",
-            "Installment plans",
-            "Klarna, where available"
-          ]
-        },
-        {
-          "title": "Parent Portal forms",
-          "items": [
-            "Medical form",
-            "T-shirt size",
-            "Release form",
-            "Pick-up authorization"
-          ]
+          "title": "Get your acceptance letter",
+          "body": "With the letter, you can enroll and choose your dates."
         }
-      ]
+      ],
+      "careEyebrow": "Care",
+      "careTitle": "Far from home, never on their own",
+      "careBody": "Every student has a personal Guardian, and families know how things are going, day by day.",
+      "careItems": [
+        "Daily updates and photos from the Guardian",
+        "A chat group for students",
+        "A separate chat group for parents",
+        "On-site doctor and health insurance"
+      ],
+      "safetyLink": "How we look after every student",
+      "enrollEyebrow": "Enrollment",
+      "enrollTitle": "Enrolling is simple",
+      "payTitle": "Enrollment and payment",
+      "payItems": [
+        "Online registration and date selection",
+        "Enrollment fee paid by card",
+        "Installment plans",
+        "Klarna, where available"
+      ],
+      "price": "Ask us about pricing and payment options.",
+      "formsTitle": "Parent Portal forms",
+      "formsItems": [
+        "Medical form",
+        "T-shirt size",
+        "Media release",
+        "Pick-up authorization"
+      ],
+      "faqLink": "Frequently asked questions"
     },
     "faq": {
-      "title": "Frequently asked questions",
-      "metaDescription": "Ages, enrollment, forms, health and what each Coded program includes.",
+      "title": "FAQ",
+      "metaDescription": "Ages, enrollment, pricing, forms, health, accommodation and what each Coded program includes.",
+      "eyebrow": "FAQ",
+      "heroTitle": "Everything families ask us.",
       "intro": "Can't find your answer? Book a call and we'll help.",
+      "askTitle": "Still have a question?",
+      "askBody": "We'll answer on a short call or by email.",
+      "cta": "Book a call",
       "items": [
         {
           "q": "What ages are the programs for?",
@@ -554,19 +556,35 @@
         },
         {
           "q": "Do students get a certificate?",
-          "a": "Yes, on completing their project."
+          "a": "Yes, when they complete their project."
+        },
+        {
+          "q": "Can a student join without their school?",
+          "a": "Yes, through World Citizens. Every student has a personal Guardian, and there is one chat group for students and another for parents."
+        },
+        {
+          "q": "How much does a program cost?",
+          "a": "Ask us about pricing: on a call we'll go through the cost of each program and the payment options."
         },
         {
           "q": "How do I enroll?",
-          "a": "Register online, pick a cohort and pay the enrollment fee by card. Installment plans are available, and Klarna where available."
+          "a": "Register online, choose your dates and pay the enrollment fee by card. Installment plans are available, and Klarna where available."
         },
         {
           "q": "Which forms do we need to fill in?",
-          "a": "In the Parent Portal: medical form, T-shirt size, release form and pick-up authorization."
+          "a": "In the Parent Portal: medical form, T-shirt size, media release and pick-up authorization."
         },
         {
           "q": "Are flights included?",
           "a": "No, flights are not included."
+        },
+        {
+          "q": "Where do students stay?",
+          "a": "In Orlando, in gender-split rooms of 2 to 4 students (up to 5 in suites). In the UK, in private-college dorms. Access is by passcode or keypass, with staff on site 24/7."
+        },
+        {
+          "q": "How do families know how things are going?",
+          "a": "Each student's Guardian shares updates and photos with the family every day."
         },
         {
           "q": "What if a student needs medical care?",
@@ -575,6 +593,10 @@
         {
           "q": "Do students need a laptop?",
           "a": "For Orlando STEAM League, yes: each student brings their own laptop."
+        },
+        {
+          "q": "How do schools reach the Tokyo STEAM Championship?",
+          "a": "The 20 winning schools from past leagues prepare for six months and present their project in Tokyo. It is held every two years."
         }
       ]
     },
@@ -627,7 +649,8 @@
         }
       },
       "groupsTitle": "How groups work",
-      "groupsBody": "Students are grouped by age into Junior and Senior, in mixed-level classes, and receive a certificate when they complete their project."
+      "groupsBody": "Students are grouped by age into Junior and Senior, in mixed-level classes, and receive a certificate when they complete their project.",
+      "heroTitle": "From classroom to project, in four steps."
     },
     "championship": {
       "metaTitle": "Tokyo STEAM Championship",
@@ -677,6 +700,78 @@
       "cityTitle": "Tech, culture and industry, on location",
       "ctaTitle": "Is your school on the road?",
       "ctaBody": "We’ll explain how the leagues lead to Tokyo and what the next edition looks like."
+    },
+    "schools": {
+      "title": "For schools",
+      "metaDescription": "Group STEAM programs for schools: students aged 11–17 learn in Orlando, the UK and Tokyo, and present their own project on location.",
+      "eyebrow": "For schools",
+      "heroTitle": "Take your school where the future is built.",
+      "intro": "Group STEAM programs for students aged 11 to 17. They learn from experts, work in teams and present their own project on location.",
+      "cta": "Book a call",
+      "seePrograms": "See the programs",
+      "factsLabel": "Coded in numbers",
+      "facts": [
+        {
+          "value": "4",
+          "label": "programs in three destinations"
+        },
+        {
+          "value": "11–17",
+          "label": "years old"
+        },
+        {
+          "value": "20+",
+          "label": "countries with Coded students"
+        },
+        {
+          "value": "1",
+          "label": "original project per team"
+        }
+      ],
+      "structureEyebrow": "Inside a program",
+      "structureTitle": "From touchdown to the stage",
+      "days": [
+        {
+          "when": "Day 1",
+          "title": "Arrival",
+          "body": "The group arrives and settles in."
+        },
+        {
+          "when": "Days 2–6",
+          "title": "One workshop per letter",
+          "body": "Science, technology, engineering, arts and maths, with STEAM 360 tours of the places where technology really happens."
+        },
+        {
+          "when": "Day 7",
+          "title": "The city as a classroom",
+          "body": "A tour of the city."
+        },
+        {
+          "when": "Day 9",
+          "title": "Project day",
+          "body": "Each team finishes and polishes its solution."
+        },
+        {
+          "when": "Day 10",
+          "title": "Presentation",
+          "body": "Teams present their project, followed by the closing ceremony."
+        },
+        {
+          "when": "Day 11",
+          "title": "Home",
+          "body": "Departures, with a certificate for the completed project."
+        }
+      ],
+      "structureNote": "An example 11-day program: each destination has its own itinerary. Students are grouped by age into Junior and Senior, in mixed-level classes."
+    },
+    "stories": {
+      "title": "Stories",
+      "metaDescription": "Reviews from families and educators, and what we share from every Coded edition.",
+      "eyebrow": "Stories",
+      "heroTitle": "What happens when the world is the classroom.",
+      "intro": "What families and educators say, and what we share from every edition.",
+      "roadBody": "After Orlando, the league's schools carry on towards the Tokyo STEAM Championship.",
+      "roadLink": "The road to Tokyo"
     }
   },
   "media": {

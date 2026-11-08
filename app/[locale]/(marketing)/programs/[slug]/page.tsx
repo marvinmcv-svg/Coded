@@ -6,10 +6,10 @@ import { Magnetic } from "@/components/motion/Magnetic";
 import { Reveal } from "@/components/motion/Reveal";
 import { SlideRows } from "@/components/motion/SlideRows";
 import { SplitWords } from "@/components/motion/SplitWords";
-import { VideoLoop } from "@/components/motion/VideoLoop";
+import { Diary } from "@/components/program/Diary";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { buttonClass } from "@/components/ui/Button";
-import { clip, photo, srcSet } from "@/content/media";
+import { photo, srcSet } from "@/content/media";
 import { getProgram, nextCohort, programs, upcomingCohorts } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
@@ -62,7 +62,6 @@ export default async function ProgramPage({ params }: Params) {
   const visits = tp.raw("visits") as string[];
   const inclusions = tp.raw("inclusions") as string[];
   const notIncluded = tp.raw("notIncluded") as string[];
-  const diary = p.diary.length ? (tp.raw("diary") as { when: string; title: string; body: string }[]) : [];
   const cohorts = upcomingCohorts(p);
   const next = nextCohort(p);
   const others = programs.filter((o) => o.slug !== p.slug);
@@ -163,23 +162,7 @@ export default async function ProgramPage({ params }: Params) {
       </section>
 
       {/* Last edition: Orlando reels with Coded's own Instagram captions (CONTENT_FACTS §9) */}
-      {diary.length ? (
-        <section aria-labelledby="diary-title" className="mx-auto flex max-w-7xl flex-col gap-12 px-6 pb-24">
-          <SectionHeading id="diary-title" eyebrow={t("diaryEyebrow")} title={t("diaryTitle")} />
-          <ol className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {p.diary.map((key, i) => (
-              <li key={key} className="flex flex-col gap-4">
-                <ClipReveal className="aspect-[3/4] rounded-3xl bg-ink-2" delay={i * 0.08}>
-                  <VideoLoop {...clip(key)} className="size-full" />
-                </ClipReveal>
-                <p className="font-mono text-xs tracking-widest text-accent-soft uppercase">{diary[i]?.when}</p>
-                <h3 className="font-display text-xl font-semibold">{diary[i]?.title}</h3>
-                <p className="text-mist">{diary[i]?.body}</p>
-              </li>
-            ))}
-          </ol>
-        </section>
-      ) : null}
+      <Diary program={p} />
 
       {/* Gallery — Coded's own photos from this program's pages */}
       <section aria-labelledby="gallery-title" className="mx-auto flex max-w-7xl flex-col gap-12 px-6 pb-24">

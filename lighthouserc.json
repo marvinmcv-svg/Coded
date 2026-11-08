@@ -7,6 +7,9 @@
         "http://localhost:3200/es",
         "http://localhost:3200/es/programs/orlando-steam-league",
         "http://localhost:3200/es/championship",
+        "http://localhost:3200/es/safety",
+        "http://localhost:3200/es/stories",
+        "http://localhost:3200/es/schools",
         "http://localhost:3200/es/styleguide",
         "http://localhost:3200/en/styleguide"
       ],

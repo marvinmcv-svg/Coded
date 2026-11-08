@@ -2,11 +2,14 @@ import { expect, test } from "@playwright/test";
 import { axeViolations } from "./helpers";
 import es from "../../content/messages/es.json";
 import en from "../../content/messages/en.json";
+import { reviews } from "../../content/reviews";
 
 const pages = [
+  ["schools", "schools"],
+  ["world-citizens", "worldCitizens"],
+  ["stories", "stories"],
   ["about", "about"],
   ["safety", "safety"],
-  ["world-citizens", "worldCitizens"],
   ["faq", "faq"],
   ["contact", "contact"],
   ["method", "method"],
@@ -20,7 +23,9 @@ for (const [locale, m] of Object.entries({ es, en })) {
       page.on("console", (msg) => msg.type() === "error" && errors.push(msg.text()));
 
       await page.goto(`/${locale}/${path}`);
-      await expect(page.getByRole("heading", { level: 1 })).toHaveText(m.pages[key].title);
+      const page_ = m.pages[key];
+      // P4 pages lead with a hero line (heroTitle); the h1 name comes from aria-label on split headings.
+      await expect(page.getByRole("heading", { level: 1 })).toHaveAccessibleName("heroTitle" in page_ ? page_.heroTitle : page_.title);
       expect(await axeViolations(page)).toEqual([]);
       expect(errors).toEqual([]);
     });
@@ -34,6 +39,27 @@ test("FAQ exposes FAQPage JSON-LD matching the visible questions", async ({ page
   expect(ld.mainEntity.map((q: { name: string }) => q.name)).toEqual(en.pages.faq.items.map((i) => i.q));
   await page.getByText(en.pages.faq.items[0]!.q).click();
   await expect(page.getByText(en.pages.faq.items[0]!.a)).toBeVisible();
+});
+
+test("header links reach the audience pages", async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.goto("/es");
+  const nav = page.getByRole("navigation", { name: es.home.nav.label });
+  for (const path of ["schools", "world-citizens"]) await expect(nav.locator(`a[href="/es/${path}"]`)).toHaveCount(1);
+});
+
+test("/es/stories renders every verbatim review and the four Orlando diary reels", async ({ page }) => {
+  await page.goto("/es/stories");
+  await expect(page.locator("blockquote[lang]")).toHaveCount(reviews.length);
+  await expect(page.locator(`section[aria-labelledby="diary-title"] ol > li`)).toHaveCount(es.programs["orlando-steam-league"].diary.length);
+});
+
+test("/es/schools lists only future departures", async ({ page }) => {
+  await page.goto("/es/schools");
+  const today = new Date().toISOString().slice(0, 10);
+  const dates = await page.locator("time[datetime]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
+  expect(dates.length).toBeGreaterThan(0);
+  for (const d of dates) expect(d > today, `${d} is in the past`).toBe(true);
 });
 
 test("footer links reach every content page", async ({ page }) => {
