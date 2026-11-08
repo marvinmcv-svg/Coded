@@ -12,7 +12,13 @@
     "localeName": "Español",
     "otherLocaleName": "English",
     "pause": "Pausar",
-    "play": "Reanudar"
+    "play": "Reanudar",
+    "bookCall": "Agenda una llamada",
+    "consent": {
+      "text": "Usamos cookies de analítica para entender cómo se usa el sitio, solo si las aceptas.",
+      "accept": "Aceptar",
+      "decline": "Rechazar"
+    }
   },
   "home": {
     "nav": {
@@ -772,6 +778,46 @@
       "intro": "Lo que cuentan las familias y los educadores, y lo que compartimos desde cada edición.",
       "roadBody": "Después de Orlando, los colegios de la liga siguen camino al Tokyo STEAM Championship.",
       "roadLink": "El camino a Tokio"
+    },
+    "consultation": {
+      "title": "Agenda una llamada",
+      "metaDescription": "Cuéntanos quién eres y qué programa te interesa, y agenda una consulta en línea con el equipo de Coded.",
+      "eyebrow": "Agenda una llamada",
+      "heroTitle": "Hablemos de tu próximo proyecto.",
+      "intro": "Cuéntanos quién eres y qué programa te interesa. Después eliges el horario para una consulta en línea con nuestro equipo.",
+      "audienceLegend": "Soy…",
+      "audience": {
+        "school": "Un colegio",
+        "parent": "Mamá, papá o tutor",
+        "student": "Estudiante"
+      },
+      "name": "Nombre y apellido",
+      "email": "Correo electrónico",
+      "country": "País",
+      "program": "Programa de interés",
+      "unsure": "Aún no lo sé",
+      "submit": "Continuar y elegir horario",
+      "sending": "Enviando…",
+      "privacy": "Usamos estos datos solo para preparar tu consulta y contactarte sobre los programas de Coded.",
+      "errorSummary": "Revisa estos campos:",
+      "errors": {
+        "audience": "Elige una opción.",
+        "name": "Escribe tu nombre y apellido.",
+        "email": "Escribe un correo válido.",
+        "country": "Escribe tu país.",
+        "program": "Elige un programa."
+      },
+      "bookTitle": "Elige el horario de tu llamada",
+      "bookBody": "¡Gracias! Elige el día y la hora que te acomoden; tus datos ya vienen completados.",
+      "bookFrame": "Calendario para agendar la llamada con Coded",
+      "bookFallback": "¿No ves el calendario? Ábrelo en una pestaña nueva",
+      "nextTitle": "Qué pasa después",
+      "steps": [
+        "Eliges un horario para la consulta en línea",
+        "Conversas con nuestro equipo sobre programas, fechas y precios, y resolvemos tus dudas",
+        "Te enviamos los siguientes pasos para inscribirte"
+      ],
+      "orWrite": "¿Prefieres escribirnos?"
     }
   },
   "media": {

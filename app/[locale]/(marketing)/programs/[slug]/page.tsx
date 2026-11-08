@@ -13,7 +13,7 @@ import { photo, srcSet } from "@/content/media";
 import { getProgram, nextCohort, programs, upcomingCohorts } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
-import { CONSULTATION_URL } from "@/lib/links";
+import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
 
 export const revalidate = 86400;
@@ -99,7 +99,7 @@ export default async function ProgramPage({ params }: Params) {
             <p className="intro-fade max-w-xl text-lg text-mist" style={{ "--d": "600ms" } as React.CSSProperties}>{tp("summary")}</p>
             <div className="intro-fade flex flex-wrap items-center gap-4" style={{ "--d": "750ms" } as React.CSSProperties}>
               <Magnetic>
-                <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{t("cta")}</a>
+                <Link prefetch={false} href={consultationHref({ program: p.slug })} className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{t("cta")}</Link>
               </Magnetic>
               {next ? <a href="#dates" className={buttonClass("ghost")}>{t("nextDeparture", { date: fmt(next) })}</a> : null}
             </div>
@@ -213,7 +213,7 @@ export default async function ProgramPage({ params }: Params) {
         <Reveal className="flex flex-col items-start gap-5 rounded-[var(--radius-card)] bg-accent/15 p-8 md:p-12">
           <h2 className="font-display text-3xl font-semibold">{t("price")}</h2>
           <p className="text-lg text-mist">{t("priceOnRequest")} {t("ctaBody")}</p>
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("primary")}>{t("cta")}</a>
+          <Link prefetch={false} href={consultationHref({ program: p.slug })} className={buttonClass("primary")}>{t("cta")}</Link>
         </Reveal>
       </div>
 

@@ -10,6 +10,7 @@
         "http://localhost:3200/es/safety",
         "http://localhost:3200/es/stories",
         "http://localhost:3200/es/schools",
+        "http://localhost:3200/es/consultation",
         "http://localhost:3200/es/styleguide",
         "http://localhost:3200/en/styleguide"
       ],

@@ -14,7 +14,7 @@ export const legacyRedirects: [source: string, destination: string][] = [
   ["/landing", "/es"],
   ["/contact-us", "/es/contact"],
   ["/contact", "/es/contact"],
-  ["/consultation", "/es/contact"],
+  ["/consultation", "/es/consultation"],
   ["/program/steam-league-orlando", `${P}/orlando-steam-league`],
   ["/program/orlando-steam-league-:edition", `${P}/orlando-steam-league`],
   ["/program/steam-league-europe", `${P}/europe-steam-league`],

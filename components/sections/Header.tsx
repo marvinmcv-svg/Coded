@@ -2,7 +2,7 @@ import { getTranslations } from "next-intl/server";
 import { LocaleSwitch } from "@/components/ui/LocaleSwitch";
 import { Link } from "@/lib/i18n/navigation";
 import { buttonClass } from "@/components/ui/Button";
-import { CONSULTATION_URL } from "@/lib/links";
+import { consultationHref } from "@/lib/links";
 
 const items = [
   ["programs", "/programs"],
@@ -31,9 +31,9 @@ export async function Header() {
         </nav>
         <div className="flex items-center gap-4">
           <LocaleSwitch label={tc("otherLocaleName")} title={tc("switchLocale")} />
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={`${buttonClass("primary")} hidden min-h-10 px-4 text-sm sm:inline-flex`}>
+          <Link prefetch={false} href={consultationHref()} className={`${buttonClass("primary")} hidden min-h-10 px-4 text-sm sm:inline-flex`}>
             {th("ctaPrimary")}
-          </a>
+          </Link>
         </div>
       </div>
     </header>

@@ -12,7 +12,7 @@ import { buttonClass } from "@/components/ui/Button";
 import { photo } from "@/content/media";
 import { getProgram, nextCohort } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
-import { CONSULTATION_URL } from "@/lib/links";
+import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
 
 export const revalidate = 86400;
@@ -77,7 +77,7 @@ export default async function ChampionshipPage({ params }: Params) {
           ) : null}
           <div className="intro-fade flex flex-wrap justify-center gap-4" style={{ "--d": "900ms" } as React.CSSProperties}>
             <Magnetic>
-              <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{th("cta")}</a>
+              <Link prefetch={false} href={consultationHref({ audience: "school", program: "tokyo-steam-championship" })} className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{th("cta")}</Link>
             </Magnetic>
             <Link href="/programs/tokyo-steam-championship" className={buttonClass("ghost")}>{t("programLink")}</Link>
           </div>
@@ -143,7 +143,7 @@ export default async function ChampionshipPage({ params }: Params) {
         <Reveal className="flex flex-col items-start gap-5 rounded-[var(--radius-card)] bg-accent/15 p-8 md:p-12">
           <h2 className="font-display text-3xl font-semibold">{t("ctaTitle")}</h2>
           <p className="text-lg text-mist">{t("ctaBody")}</p>
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("primary")}>{th("cta")}</a>
+          <Link prefetch={false} href={consultationHref({ audience: "school", program: "tokyo-steam-championship" })} className={buttonClass("primary")}>{th("cta")}</Link>
         </Reveal>
       </section>
     </main>

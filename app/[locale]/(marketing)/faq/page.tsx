@@ -3,7 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
 import { PageHero } from "@/components/sections/PageHero";
 import { buttonClass } from "@/components/ui/Button";
-import { CONSULTATION_URL, EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
+import { Link } from "@/lib/i18n/navigation";
+import { consultationHref, EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
 
 type Params = { params: Promise<{ locale: string }> };
@@ -51,7 +52,7 @@ export default async function FaqPage({ params }: Params) {
         <aside aria-labelledby="ask-title" className="flex flex-col items-start gap-5 rounded-[var(--radius-card)] bg-accent/15 p-8 lg:sticky lg:top-24">
           <h2 id="ask-title" className="font-display text-2xl font-semibold">{t("askTitle")}</h2>
           <p className="text-mist">{t("askBody")}</p>
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("primary")}>{t("cta")}</a>
+          <Link prefetch={false} href={consultationHref()} className={buttonClass("primary")}>{t("cta")}</Link>
           <p className="text-sm text-mist">
             <a href={`mailto:${EMAIL}`} className="text-paper underline underline-offset-4">{EMAIL}</a>
             {" · "}<a href={PHONE_HREF} className="text-paper underline underline-offset-4">{PHONE}</a>

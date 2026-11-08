@@ -11,7 +11,7 @@ import { SectionHeading } from "@/components/sections/SectionHeading";
 import { buttonClass } from "@/components/ui/Button";
 import { photo } from "@/content/media";
 import { Link } from "@/lib/i18n/navigation";
-import { CONSULTATION_URL } from "@/lib/links";
+import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
 
 export const revalidate = 86400;
@@ -45,7 +45,7 @@ export default async function WorldCitizensPage({ params }: Params) {
     <main id="main">
       <PageHero eyebrow={t("eyebrow")} title={t("heroTitle")} intro={t("intro")} image="tokyo-friends">
         <Magnetic>
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{t("cta")}</a>
+          <Link prefetch={false} href={consultationHref({ audience: "parent" })} className={`${buttonClass("primary")} shadow-[0_10px_40px_-10px_rgb(118_0_231/.8)]`}>{t("cta")}</Link>
         </Magnetic>
         <a href="#apply" className={buttonClass("ghost")}>{t("howToApply")}</a>
       </PageHero>

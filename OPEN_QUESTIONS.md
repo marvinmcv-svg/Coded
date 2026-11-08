@@ -48,9 +48,12 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 
 ## P1 — integrations (block P5)
 23. WhatsApp number (is +1 954 868 2367 WhatsApp-enabled, or a LATAM number?).
-24. HubSpot: portal ID, which form + pipeline, the meetings link per audience (genesis25 only?).
+24. HubSpot: portal ID, which form + pipeline, the meetings link per audience (genesis25 only?). *Built (P5):* set `HUBSPOT_PORTAL_ID` +
+    `HUBSPOT_FORM_ID` and /consultation also posts each lead to that form. The form needs fields `firstname`, `lastname`, `email`,
+    `country`, `message` (audience/program go in `message` until custom properties exist; UTMs come from the landing URL as pageUri).
 25. Reviews: Trustindex account access or Google Place ID for the Places API?
 26. Analytics: existing GA4 / Meta Pixel IDs? Keep the Facebook domain-verification tag `px2ciu7qho5obgj4pnnn0fzgizmw03`.
+    *Built (P5):* set `NEXT_PUBLIC_GA_ID` and a consent banner appears; GA4 loads only after "Accept". Unset ⇒ no banner, no analytics.
 27. Store (`store.codingeducation.us`) and Sojourn Travel link — keep both in footer?
 
 ## P2

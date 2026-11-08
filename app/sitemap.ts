@@ -4,7 +4,7 @@ import { routing } from "@/lib/i18n/routing";
 import { languageAlternates, SITE_URL } from "@/lib/seo/meta";
 
 /** Every public marketing route × locale, each listing its hreflang siblings. Styleguide is excluded (noindex). */
-export const PATHS = ["", "/programs", "/championship", ...programs.map((p) => `/programs/${p.slug}`), "/schools", "/world-citizens", "/stories", "/about", "/safety", "/faq", "/contact", "/method"];
+export const PATHS = ["", "/programs", "/championship", ...programs.map((p) => `/programs/${p.slug}`), "/schools", "/world-citizens", "/stories", "/about", "/safety", "/faq", "/contact", "/consultation", "/method"];
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const abs = (p: string) => `${SITE_URL}${p}`;

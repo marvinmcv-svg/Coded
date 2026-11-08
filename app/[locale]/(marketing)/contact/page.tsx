@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
 import { buttonClass } from "@/components/ui/Button";
-import { CONSULTATION_URL, EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
+import { Link } from "@/lib/i18n/navigation";
+import { consultationHref, EMAIL, PHONE, PHONE_HREF } from "@/lib/links";
 import { pageMetadata, SITE_URL } from "@/lib/seo/meta";
 
 type Params = { params: Promise<{ locale: string }> };
@@ -46,7 +47,7 @@ export default async function ContactPage({ params }: Params) {
       <Reveal className="flex flex-col items-start gap-4 rounded-[var(--radius-card)] bg-accent/15 p-8">
         <h2 className="font-display text-2xl font-semibold">{t("call.title")}</h2>
         <p className="text-lg text-mist">{t("call.body")}</p>
-        <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("primary")}>{t("call.button")}</a>
+        <Link prefetch={false} href={consultationHref()} className={buttonClass("primary")}>{t("call.button")}</Link>
       </Reveal>
 
       <Reveal className="flex flex-col gap-4 border-t border-mist/20 pt-8">

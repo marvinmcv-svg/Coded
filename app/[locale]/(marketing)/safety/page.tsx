@@ -3,7 +3,8 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Reveal } from "@/components/motion/Reveal";
 import { PageHero } from "@/components/sections/PageHero";
 import { buttonClass } from "@/components/ui/Button";
-import { CONSULTATION_URL } from "@/lib/links";
+import { Link } from "@/lib/i18n/navigation";
+import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
 
 type Params = { params: Promise<{ locale: string }> };
@@ -78,7 +79,7 @@ export default async function SafetyPage({ params }: Params) {
           <Reveal calm className="flex flex-col items-start gap-5 rounded-[var(--radius-card)] bg-ink p-8 text-paper md:p-12">
             <h2 className="font-display text-3xl font-semibold">{t("ctaTitle")}</h2>
             <p className="text-lg text-mist">{t("ctaBody")}</p>
-            <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("primary")}>{t("cta")}</a>
+            <Link prefetch={false} href={consultationHref()} className={buttonClass("primary")}>{t("cta")}</Link>
           </Reveal>
         </div>
       </div>

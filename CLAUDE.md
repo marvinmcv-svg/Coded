@@ -4,7 +4,9 @@
 P0 approved 2026-11-07. P1 (foundation) shipped to `main`. P2 (home) premium pass merged. P3 (programs): program pages, departures
 calendar, /championship. Phase **P4 (audience/trust)** built: /schools and /stories (new), and world-citizens, safety, about,
 faq, method rebuilt on `PageHero`. Gated until answered: STEAM Lab 360 (Q16), founders (Q19), school names/results (Q20),
-supervision wording (Q11), vision text, UN partnership (Q14). Next: P5 funnels.
+supervision wording (Q11), vision text, UN partnership (Q14). **P5 (funnels)** built: every "Book a call" → `/consultation`
+(5-field qualifier → prefilled HubSpot booking; HubSpot Forms API when `HUBSPOT_PORTAL_ID`/`HUBSPOT_FORM_ID` are set, Q24),
+UTM capture, phone sticky pill, consent-gated GA4 (`NEXT_PUBLIC_GA_ID`, Q26). Waiting: Enroll/app domain (Q0), WhatsApp (Q23). Next: P6 migration.
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)

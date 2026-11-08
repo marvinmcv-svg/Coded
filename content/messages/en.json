@@ -12,7 +12,13 @@
     "localeName": "English",
     "otherLocaleName": "Español",
     "pause": "Pause",
-    "play": "Play"
+    "play": "Play",
+    "bookCall": "Book a call",
+    "consent": {
+      "text": "We use analytics cookies to understand how the site is used, only if you accept them.",
+      "accept": "Accept",
+      "decline": "Decline"
+    }
   },
   "home": {
     "nav": {
@@ -772,6 +778,46 @@
       "intro": "What families and educators say, and what we share from every edition.",
       "roadBody": "After Orlando, the league's schools carry on towards the Tokyo STEAM Championship.",
       "roadLink": "The road to Tokyo"
+    },
+    "consultation": {
+      "title": "Book a call",
+      "metaDescription": "Tell us who you are and which program interests you, and book an online consultation with the Coded team.",
+      "eyebrow": "Book a call",
+      "heroTitle": "Let's talk about your next project.",
+      "intro": "Tell us who you are and which program interests you. Then pick a time for an online consultation with our team.",
+      "audienceLegend": "I am…",
+      "audience": {
+        "school": "A school",
+        "parent": "A parent or guardian",
+        "student": "A student"
+      },
+      "name": "Full name",
+      "email": "Email",
+      "country": "Country",
+      "program": "Program of interest",
+      "unsure": "Not sure yet",
+      "submit": "Continue and pick a time",
+      "sending": "Sending…",
+      "privacy": "We only use these details to prepare your consultation and to contact you about Coded programs.",
+      "errorSummary": "Please check these fields:",
+      "errors": {
+        "audience": "Choose an option.",
+        "name": "Enter your full name.",
+        "email": "Enter a valid email.",
+        "country": "Enter your country.",
+        "program": "Choose a program."
+      },
+      "bookTitle": "Pick a time for your call",
+      "bookBody": "Thank you! Choose a day and time that suit you; your details are already filled in.",
+      "bookFrame": "Calendar to book your call with Coded",
+      "bookFallback": "Can't see the calendar? Open it in a new tab",
+      "nextTitle": "What happens next",
+      "steps": [
+        "You pick a time for the online consultation",
+        "You talk to our team about programs, dates and pricing, and we answer your questions",
+        "We send you the next steps to enroll"
+      ],
+      "orWrite": "Prefer to write to us?"
     }
   },
   "media": {

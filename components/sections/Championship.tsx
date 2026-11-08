@@ -8,7 +8,8 @@ import { TextReveal } from "@/components/motion/TextReveal";
 import { photo } from "@/content/media";
 import { buttonClass } from "@/components/ui/Button";
 import { nextCohort, programs } from "@/content/programs";
-import { CONSULTATION_URL } from "@/lib/links";
+import { Link } from "@/lib/i18n/navigation";
+import { consultationHref } from "@/lib/links";
 import { Countdown } from "./Countdown";
 
 export async function Championship() {
@@ -46,7 +47,7 @@ export async function Championship() {
         ) : null}
         {date ? <Countdown date={date} labels={t.raw("countdown")} /> : null}
         <Magnetic>
-          <a href={CONSULTATION_URL} target="_blank" rel="noopener" className={buttonClass("secondary")}>{t("cta")}</a>
+          <Link prefetch={false} href={consultationHref()} className={buttonClass("secondary")}>{t("cta")}</Link>
         </Magnetic>
       </Reveal>
     </section>
