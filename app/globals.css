@@ -123,3 +123,19 @@ body {
   .cody-live { animation: cody-live 2s ease-in-out infinite; }
 }
 @media (prefers-reduced-motion: reduce) { .cody-panel { transform: none; clip-path: none; } }
+
+/* Hero tech layer: perspective grid floor + HUD frame (components/sections/Hero). Transform/opacity only. */
+.hero-grid { perspective: 520px; -webkit-mask-image: linear-gradient(to top, #000 10%, transparent 95%); mask-image: linear-gradient(to top, #000 10%, transparent 95%); }
+.hero-grid-plane { position: absolute; inset: -60% -40% 0; transform: rotateX(64deg); transform-origin: 50% 100%; background-image: linear-gradient(rgb(197 187 253 / .16) 1px, transparent 1px), linear-gradient(90deg, rgb(197 187 253 / .16) 1px, transparent 1px); background-size: 64px 64px; }
+.hud span { position: absolute; width: 18px; height: 18px; border-color: rgb(246 244 239 / .75); }
+.hud span:nth-child(1) { top: 0; left: 0; border-top: 1.5px solid; border-left: 1.5px solid; border-top-left-radius: 14px; }
+.hud span:nth-child(2) { top: 0; right: 0; border-top: 1.5px solid; border-right: 1.5px solid; border-top-right-radius: 14px; }
+.hud span:nth-child(3) { bottom: 0; left: 0; border-bottom: 1.5px solid; border-left: 1.5px solid; border-bottom-left-radius: 14px; }
+.hud span:nth-child(4) { bottom: 0; right: 0; border-bottom: 1.5px solid; border-right: 1.5px solid; border-bottom-right-radius: 14px; }
+.hud-scan { opacity: 0; }
+@keyframes grid-stream { from { transform: rotateX(64deg) translateY(0); } to { transform: rotateX(64deg) translateY(64px); } }
+@keyframes hud-scan { 0% { transform: translateY(-100%); opacity: 0; } 10% { opacity: 1; } 60% { opacity: 1; } 75%, 100% { transform: translateY(560%); opacity: 0; } }
+@media (prefers-reduced-motion: no-preference) {
+  .hero-grid-plane { animation: grid-stream 2.8s linear infinite; }
+  .hud-scan { animation: hud-scan 5.5s var(--ease-power3-in-out) 1.6s infinite; }
+}

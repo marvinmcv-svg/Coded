@@ -12,6 +12,9 @@ the crawl; 3 held + 3 redactions, Q34), legacy post/archive/category/author URLs
 **P7 (launch readiness)** built: localized 404 + error boundary, security headers/CSP (`security-headers.ts` — add an origin
 there for any new embed), per-page OG cards, device-matrix e2e (320/768/1024, no overflow). Launch = `LAUNCH.md` runbook;
 blocked on Q0 domain + DNS (Q30).
+**Cody** (AI receptionist, `components/cody` + `app/api/cody`): answers only from `content/messages` + `content/programs.ts`
+(`lib/cody/knowledge.ts`); Claude when `ANTHROPIC_API_KEY` is set, published-FAQ matching otherwise (Q35). Panel lazy-loads on first
+intent. Design review + roadmap: `DESIGN_REVIEW.md`.
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`, `LAUNCH.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)
