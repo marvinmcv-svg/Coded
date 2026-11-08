@@ -14,6 +14,24 @@ export const INDEXABLE = process.env.SITE_INDEXING === "on";
 
 const OG_LOCALE = { es: "es_LA", en: "en_US" } as const;
 
+/** Link-preview card per page (`public/media/og-*.jpg`, built by scripts/build-media.py); anything else uses og-home.jpg. */
+const OG_IMAGES: Record<string, string> = {
+  "/programs/orlando-steam-league": "orlando-steam-league",
+  "/programs/europe-steam-league": "europe-steam-league",
+  "/programs/steam-league-ai": "steam-league-ai",
+  "/programs/tokyo-steam-championship": "championship",
+  "/championship": "championship",
+  "/schools": "schools",
+  "/world-citizens": "world-citizens",
+  "/stories": "stories",
+  "/method": "method",
+  "/about": "about",
+};
+
+export function ogImage(path: string) {
+  return { url: `/media/og-${OG_IMAGES[path] ?? "home"}.jpg`, width: 1200, height: 630 };
+}
+
 /** `path` without locale, "" for home, e.g. "/programs/orlando-steam-league". */
 export function languageAlternates(path: string) {
   return {
@@ -25,7 +43,7 @@ export function languageAlternates(path: string) {
 /** Title/description + canonical, hreflang, Open Graph and Twitter card for one localized page. */
 export function pageMetadata(locale: string, path: string, title: string, description: string): Metadata {
   const url = `/${locale}${path}`;
-  const images = [{ url: "/media/og-home.jpg", width: 1200, height: 630 }];
+  const images = [ogImage(path)];
   return {
     title,
     description,

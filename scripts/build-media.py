@@ -110,5 +110,22 @@ for key, parts in VIDEOS.items():
 run(["convert", str(RAW / IMAGES["tokyo-group"][0]), "-auto-orient", "-resize", "96x", "-blur", "0x2", "-strip", "-quality", "50",
      str(OUT / "tokyo-group-blur.webp")])
 
+# Open Graph cards: 1200x630 JPG (what every link preview accepts), centre crop of a landscape original >= 1200 px wide.
+# Pages map to these in lib/seo/meta.ts (OG_IMAGES); pages without one use og-home.jpg.
+OG = {
+    "orlando-steam-league": "site/2026_04_codeduni.jpg",
+    "europe-steam-league": "site/2026_04_sle-scaled-e1784558625724.jpg",
+    "steam-league-ai": "site/2026_04_sl.jpg",
+    "championship": "site/2026_07_coded-2-ago-073.jpg",
+    "schools": IMAGES["classroom"][0],
+    "world-citizens": IMAGES["tokyo-temple"][0],
+    "stories": IMAGES["presenting"][0],
+    "method": IMAGES["lab"][0],
+    "about": IMAGES["uk-lecture"][0],
+}
+for key, src in OG.items():
+    run(["convert", f"{RAW / src}[0]", "-auto-orient", "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630",
+         "-strip", "-interlace", "Plane", "-quality", "78", str(OUT / f"og-{key}.jpg")])
+
 pathlib.Path("content/media-built.json").write_text(json.dumps(manifest, indent=1) + "\n")
 print(len(manifest["images"]), "images,", len(manifest["videos"]), "videos")
