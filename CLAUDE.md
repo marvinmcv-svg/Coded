@@ -8,8 +8,11 @@ supervision wording (Q11), vision text, UN partnership (Q14). **P5 (funnels)** b
 (5-field qualifier → prefilled HubSpot booking; HubSpot Forms API when `HUBSPOT_PORTAL_ID`/`HUBSPOT_FORM_ID` are set, Q24),
 UTM capture, phone sticky pill, consent-gated GA4 (`NEXT_PUBLIC_GA_ID`, Q26). Waiting: Enroll/app domain (Q0), WhatsApp (Q23).
 **P6 (migration)** built: 24 blog posts at `/en/blog/<slug>` (`python3 -I scripts/build-blog.py` regenerates content/blog from
-the crawl; 3 held + 3 redactions, Q34), legacy post/archive/category/author URLs 301, zero-broken-links e2e. Next: launch (Q0 domain, DNS).
-Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`.
+the crawl; 3 held + 3 redactions, Q34), legacy post/archive/category/author URLs 301, zero-broken-links e2e.
+**P7 (launch readiness)** built: localized 404 + error boundary, security headers/CSP (`security-headers.ts` — add an origin
+there for any new embed), per-page OG cards, device-matrix e2e (320/768/1024, no overflow). Launch = `LAUNCH.md` runbook;
+blocked on Q0 domain + DNS (Q30).
+Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`, `LAUNCH.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)
 Next.js App Router · TypeScript strict · Tailwind 4 · shadcn/ui (restyled to tokens) · Supabase + Drizzle ·
