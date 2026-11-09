@@ -11,6 +11,7 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
   blue `#3a9fd6`. Later, separate proposal: a black / grey / red direction (not started).
 - **Q18 teachers:** ✅ show the teachers with names and photos. Delivery-partner names (Blueshift, Florida Film & STEM Academy) still unconfirmed → not shown.
 - **Media:** ✅ Instagram @coded.education reels/photos may be used (same consent as the sites). Pulled via Firecrawl (influencers-club posts provider) into assets/raw/instagram.
+- **Q7 durations/dates:** ✅ (2026-11-09) Orlando = 9 days, STEAM League AI = 12 days, Orlando July cohort = **Jul 9 2027**.
 - **On hold:** WhatsApp (Q23), domain (Q0), legal pages (later). Prototype focus = UX/UI and motion.
 - **Recommendations:** Marvin approved the remaining proposals (assumed: Supabase `/admin` for Q4, Next 16 for Q3, as already built).
 
@@ -24,7 +25,7 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 ## P1 — facts (block P2/P3 copy)
 5. English level per program: B1 or B2?
 6. School count: +200, +210 or +250? Countries list behind "+20". Source for "+55 % girls" and "+95 % satisfaction".
-7. Orlando: 9 or 10 days? AI League: 12 or 14 days? Orlando July cohort: Jul 8 or Jul 9 2027?
+7. ~~Orlando: 9 or 10 days? AI League: 12 or 14 days? Orlando July cohort: Jul 8 or Jul 9 2027?~~ ✅ answered 2026-11-09 (see Decisions).
 8. Orlando hotels per cohort (Stella Nova / Terra Luna / Cabana Bay)?
 9. Tokyo workshop venue: Japanese school, United Nations University, or both? Tokyo price/duration (11 days?). Past Tokyo winners/projects we can show?
 10. Cancellation policy: the program-page table and the FAQ disagree (120+ vs 60+ days, Semi-Flex vs Flex). Which is legally current?
