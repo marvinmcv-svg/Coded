@@ -57,7 +57,7 @@ export function GlobeRouteClient({ stops, children }: { stops: Stop[]; children:
     <div ref={root} className="grid gap-12 md:grid-cols-2" data-active-stop={active}>
       <div aria-hidden className="relative hidden md:block">
         <div className="sticky top-[15svh] h-[70svh] w-full">
-          <div className={`absolute top-1/2 left-1/2 aspect-square h-[74%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,rgb(197_187_253/.35),rgb(118_0_231/.25)_45%,rgb(26_30_39)_75%)] transition-opacity duration-700 ${enabled ? "opacity-0" : "opacity-100"}`} />
+          <div className={`absolute top-1/2 left-1/2 aspect-square w-[min(100%,52svh)] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle_at_35%_30%,rgb(197_187_253/.35),rgb(118_0_231/.25)_45%,rgb(26_30_39)_75%)] transition-opacity duration-700 ${enabled ? "opacity-0" : "opacity-100"}`} />
           {enabled ? <GlobeView stops={stops} active={active} className="absolute inset-0" /> : null}
         </div>
       </div>

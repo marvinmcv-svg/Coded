@@ -234,7 +234,11 @@
       "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI y Tokyo STEAM Championship: fechas, destinos y contenidos.",
       "calendarEyebrow": "Calendario",
       "calendarTitle": "Próximas salidas",
-      "view": "Ver programa"
+      "view": "Ver programa",
+      "pastEyebrow": "Trayectoria",
+      "pastTitle": "Ediciones recientes",
+      "pastIntro": "Ediciones que ya se realizaron. Cada una cerró con los estudiantes presentando su propio proyecto.",
+      "completed": "Realizada"
     },
     "detail": {
       "back": "Todos los programas",
@@ -266,7 +270,8 @@
       "diaryTitle": "Así se vive una semana en Orlando",
       "galleryEyebrow": "En el destino",
       "galleryTitle": "Estudiantes de Coded en este programa",
-      "more": "Otros programas"
+      "more": "Otros programas",
+      "pastEditions": "Ediciones anteriores"
     },
     "orlando-steam-league": {
       "tagline": "¡Crea tu propia colonia espacial!",
@@ -868,5 +873,46 @@
     "tokyo-museum": "Estudiantes en la entrada del Mori Art Museum, Tokio",
     "tokyo-metro": "Estudiantes con gorras de Coded en una escalera mecánica de una estación de Tokio",
     "tokyo-gate": "Portal de un templo en Tokio con el grupo al frente"
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "Error 404",
+      "title": "Esta página no está en el itinerario",
+      "body": "Puede que el enlace sea viejo o que la página haya cambiado de lugar. Desde aquí puedes volver a la ruta.",
+      "home": "Ir al inicio",
+      "programs": "Ver programas",
+      "metaTitle": "Página no encontrada — Coded"
+    },
+    "error": {
+      "eyebrow": "Algo falló",
+      "title": "No pudimos cargar esta página",
+      "body": "Fue un error de nuestro lado. Vuelve a intentarlo en unos segundos.",
+      "retry": "Intentar de nuevo",
+      "home": "Ir al inicio"
+    }
+  },
+  "cody": {
+    "label": "Pregúntale a Cody",
+    "open": "Pregúntale a Cody, nuestro recepcionista con IA",
+    "close": "Cerrar chat",
+    "title": "Cody",
+    "status": "Recepcionista IA · en línea",
+    "statusOffline": "Respuestas rápidas",
+    "greeting": "¡Hola! Soy Cody 👋 Te ayudo con dudas sobre los programas de Coded, fechas, seguridad y cómo inscribirte. ¿Qué te gustaría saber?",
+    "placeholder": "Pregúntame sobre Coded…",
+    "send": "Enviar",
+    "thinking": "Cody está escribiendo",
+    "error": "Algo salió mal. Inténtalo de nuevo o agenda una llamada con el equipo.",
+    "limit": "Enviaste muchos mensajes seguidos. Tómate un respiro o agenda una llamada con el equipo.",
+    "disclaimer": "Cody es una IA y puede equivocarse. Para algo importante, confírmalo con el equipo.",
+    "handover": "Hablar con una persona",
+    "suggestions": [
+      "¿Para qué edades son los programas?",
+      "¿Los vuelos están incluidos?",
+      "¿Puede ir un estudiante sin su colegio?",
+      "¿Cuánto cuesta un programa?"
+    ],
+    "offlineMore": "¿Algo más? También puedo ponerte en contacto con el equipo.",
+    "offlineHandover": "Buena pregunta. Todavía no tengo esa respuesta, pero el equipo sí: agenda una llamada, escribe a {email} o llama al {phone}."
   }
 }

@@ -33,13 +33,20 @@ Sources: `.us` = codingeducation.us, `.com` = codededucation.com, scraped 2026-1
 ## 3. Programs (cohorts after today 2026-11-06 only)
 | Program | Location | Days | Ages | English | Price (USD) | Next cohorts | Status |
 |---|---|---|---|---|---|---|---|
-| Orlando STEAM League — "Create your own space colony!" | Orlando, 5 parks + NASA KSC + UCF | **9 (.us) / 10 (.com)** 🔴 | 11–17 | B1/B2 🔴 | **$4,590** (.com) 🔴 publish? | Jan 22 2027 · Jul 9 2027 (.us; .com says Jul 8) 🔴 · Oct 30 2027 | |
+| Orlando STEAM League — "Create your own space colony!" | Orlando, 5 parks + NASA KSC + UCF | **9** ✅ (Marvin 2026-11-09) | 11–17 | B1/B2 🔴 | **$4,590** (.com) 🔴 publish? | Jan 22 2027 · Jul 9 2027 ✅ · Oct 30 2027 | |
 | Europe STEAM League — "STEAM Digital Career Portfolio" | London/UK, Woldingham School campus (.us 2027); Oxford excursion | 12 | 11–17 | B1/B2 🔴 | **$6,490** (.com) | Mar 30 2027 | |
-| STEAM League AI — "AI Innovation Studio" (SDG-aligned) | Bradfield College (UK) | **12 (.us) / 14 (.com)** 🔴 | 11–17 | B1 | **$6,490** (.com) | Jul 9 2027 | |
+| STEAM League AI — "AI Innovation Studio" (SDG-aligned) | Bradfield College (UK) | **12** ✅ (Marvin 2026-11-09) | 11–17 | B1 | **$6,490** (.com) | Jul 9 2027 | |
 | Tokyo STEAM Championship — "Building Solutions for Better Cities and Communities" | Tokyo; "authentic Japanese school" (.us) / "United Nations University" (.com) 🔴 | 11 (.com) | 11–17 | ? | not shown | Aug 2 2027 | |
 
 Extensions (.com, prices USD): Paris (pre, $1,790), Edinburgh & Liverpool (post, 3 days, $2,090), London extra activities ($500) — Europe & AI. Osaka & Kyoto (post, 2 days, $1,987) — Tokyo.
 Coded Flex Pass $500 non-refundable (.com FAQ). Cancellation tiers conflict 🔴 (AUDIT C10).
+
+### 3a. Past editions 🟡 (start dates on codingeducation.us program pages, scraped 2026-11-06) — rendered as "Recent editions"
+Europe STEAM League Easter 2026: **Mar 28 2026** (`program/europe-steam-league-easter-2026`) · Orlando STEAM League 2026: **Jul 26 2026**
+(`program/orlando-steam-league-2026`) · STEAM League AI Summer 2026: **Aug 1 2026** (`program/steam-league-ai-summer-2026`) ·
+Orlando STEAM League October 2026: **Oct 30 2026** (`program/orlando-steam-league-october-2026`). Upcoming cohorts join this list
+automatically once their start date passes (`pastEditions()` in content/programs.ts). Not used: Colegio Granadino's FB "June 2026"
+for Orlando (third-party, conflicts with the site's Jul 26).
 
 ### Program details 🟡 (from .com unless noted)
 - **Orlando pathway:** S Coding at the Digital Hub / Physics of Disney Hollywood Studios · T 6-degrees-of-freedom workshop at Universal; Robotics with Ozobots · E Environmental engineering at Epic Universe; VelociCoaster creation (Islands of Adventure) · A Art of Animation: colony layout & space-suit design · M AI & ML coding chatbots. Two full academic days on UCF campus.

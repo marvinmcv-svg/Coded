@@ -234,7 +234,11 @@
       "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI and Tokyo STEAM Championship: dates, destinations and content.",
       "calendarEyebrow": "Calendar",
       "calendarTitle": "Upcoming departures",
-      "view": "View program"
+      "view": "View program",
+      "pastEyebrow": "Track record",
+      "pastTitle": "Recent editions",
+      "pastIntro": "Editions already completed. Each one closed with the students presenting their own project.",
+      "completed": "Completed"
     },
     "detail": {
       "back": "All programs",
@@ -266,7 +270,8 @@
       "diaryTitle": "What a week in Orlando looks like",
       "galleryEyebrow": "On location",
       "galleryTitle": "Coded students, on this program",
-      "more": "Other programs"
+      "more": "Other programs",
+      "pastEditions": "Past editions"
     },
     "orlando-steam-league": {
       "tagline": "Create your own space colony!",
@@ -868,5 +873,46 @@
     "tokyo-museum": "Students at the entrance of the Mori Art Museum, Tokyo",
     "tokyo-metro": "Students in Coded caps on an escalator in a Tokyo station",
     "tokyo-gate": "Temple gate in Tokyo with the group in front"
+  },
+  "errors": {
+    "notFound": {
+      "eyebrow": "Error 404",
+      "title": "This page isn't on the itinerary",
+      "body": "The link may be old, or the page may have moved. You can get back on track from here.",
+      "home": "Go to the home page",
+      "programs": "See programs",
+      "metaTitle": "Page not found — Coded"
+    },
+    "error": {
+      "eyebrow": "Something went wrong",
+      "title": "We couldn't load this page",
+      "body": "The problem is on our side. Please try again in a few seconds.",
+      "retry": "Try again",
+      "home": "Go to the home page"
+    }
+  },
+  "cody": {
+    "label": "Ask Cody",
+    "open": "Ask Cody, our AI receptionist",
+    "close": "Close chat",
+    "title": "Cody",
+    "status": "AI receptionist · online",
+    "statusOffline": "Quick answers",
+    "greeting": "Hi, I'm Cody 👋 I can answer questions about Coded's programs, dates, safety and how to enroll. What would you like to know?",
+    "placeholder": "Ask me anything about Coded…",
+    "send": "Send",
+    "thinking": "Cody is typing",
+    "error": "Something went wrong. Please try again, or book a call with the team.",
+    "limit": "You've sent a lot of messages. Take a breather, or book a call with the team.",
+    "disclaimer": "Cody is an AI and can make mistakes. For anything important, confirm with the team.",
+    "handover": "Talk to a person",
+    "suggestions": [
+      "What ages are the programs for?",
+      "Are flights included?",
+      "Can a student join without their school?",
+      "How much does a program cost?"
+    ],
+    "offlineMore": "Anything else? I can also connect you with the team.",
+    "offlineHandover": "Good question. I don't have that answer yet, but the team does: book a call, write to {email} or phone {phone}."
   }
 }

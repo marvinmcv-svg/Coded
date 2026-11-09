@@ -19,7 +19,7 @@ export async function Header() {
   const th = await getTranslations("home.hero");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-mist/10 bg-ink/80 backdrop-blur">
+    <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/60 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-3">
         <Link href="/" className="font-display text-xl font-semibold tracking-tight">coded</Link>
         <nav aria-label={t("label")} className="hidden lg:block">

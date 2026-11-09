@@ -32,7 +32,7 @@ export async function GlobeRoute() {
             <li key={s.key} data-stop={i} className="flex min-h-[60vh] flex-col justify-center border-t border-mist/20 py-10 md:min-h-[70vh]">
               <Reveal className="flex flex-col gap-4">
                 <span aria-hidden className="font-mono text-sm text-accent-soft">0{i + 1}</span>
-                <h3 className="font-display text-4xl font-semibold tracking-tight md:text-6xl">{t(`stops.${s.key}.title`)}</h3>
+                <h3 className="font-display text-3xl font-semibold tracking-tight sm:text-4xl lg:text-5xl xl:text-6xl">{t(`stops.${s.key}.title`)}</h3>
                 <ClipReveal className="aspect-[16/10] max-w-lg rounded-3xl" from={i % 2 ? "left" : "right"}>
                   <LazyImg {...photo(s.img)} sizes="(min-width: 768px) 32rem, 90vw" alt={tm(s.img)} className="size-full object-cover" />
                 </ClipReveal>

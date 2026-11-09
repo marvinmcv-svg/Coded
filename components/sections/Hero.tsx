@@ -29,6 +29,8 @@ export async function Hero() {
     <section className="relative overflow-hidden">
       <div aria-hidden className="pointer-events-none absolute inset-0 -z-10 [background:radial-gradient(55%_45%_at_78%_18%,rgb(118_0_231/.55),transparent),radial-gradient(40%_40%_at_8%_85%,rgb(206_54_223/.25),transparent),radial-gradient(35%_35%_at_55%_100%,rgb(58_159_214/.22),transparent)]" />
       <div aria-hidden className="grain pointer-events-none absolute inset-0 -z-10 opacity-[0.07]" />
+      {/* Futuristic floor: a perspective grid that streams toward the viewer (CSS transform loop, static under reduced motion). */}
+      <div aria-hidden className="hero-grid pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[46%] overflow-hidden"><div className="hero-grid-plane" /></div>
       <HeroScrub className="mx-auto grid min-h-[92svh] max-w-7xl items-center gap-14 px-6 pt-20 pb-28 md:grid-cols-[1.25fr_0.75fr] md:pt-16">
         <div data-hero-copy className="flex flex-col gap-8">
           <p className="intro-fade flex items-center gap-3 font-mono text-sm text-mist" style={{ "--d": "60ms" } as React.CSSProperties}>
@@ -37,7 +39,7 @@ export async function Hero() {
             </span>
             {t("eyebrow")}
           </p>
-          <h1 className="intro-words max-w-4xl font-display text-[clamp(2.75rem,7.2vw,6.25rem)] leading-[0.98] font-semibold tracking-tight">
+          <h1 className="intro-words max-w-4xl font-display text-[clamp(2.75rem,5.8vw,5.5rem)] leading-[0.98] font-semibold tracking-tight">
             {/* Phones: one plain text block = one LCP candidate (word spans would each count alone). ≥ md: split + reveal. */}
             <span className="md:hidden">{t("headline")}</span>
             <span className="hidden md:inline"><SplitWords text={t("headline")} /></span>
@@ -57,6 +59,9 @@ export async function Hero() {
             <img {...img} sizes="(min-width: 768px) 34vw, 55vw" alt={tm("hero")} fetchPriority="high" decoding="async" className="absolute inset-0 size-full object-cover" />
             <VideoLoop {...reel} eager showPoster={false} className="absolute inset-0" />
             <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/70 to-transparent" />
+            {/* HUD frame: corner brackets + a slow scan line over the reel. */}
+            <div aria-hidden className="hud pointer-events-none absolute inset-3"><span /><span /><span /><span /></div>
+            <div aria-hidden className="hud-scan pointer-events-none absolute inset-x-0 top-0 h-24 bg-gradient-to-b from-transparent via-accent-soft/15 to-transparent" />
             <p aria-hidden className="absolute bottom-5 left-5 font-mono text-xs tracking-widest text-paper/90 uppercase">{places}</p>
           </div>
           <div data-hero-float className="intro-fade absolute -bottom-10 -left-8 hidden w-36 rotate-[-7deg] overflow-hidden rounded-2xl border-4 border-ink shadow-2xl md:block lg:-left-16 lg:w-44" style={{ "--d": "900ms" } as React.CSSProperties}>
