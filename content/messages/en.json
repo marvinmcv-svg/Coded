@@ -234,7 +234,11 @@
       "metaDescription": "Orlando STEAM League, Europe STEAM League, STEAM League AI and Tokyo STEAM Championship: dates, destinations and content.",
       "calendarEyebrow": "Calendar",
       "calendarTitle": "Upcoming departures",
-      "view": "View program"
+      "view": "View program",
+      "pastEyebrow": "Track record",
+      "pastTitle": "Recent editions",
+      "pastIntro": "Editions already completed. Each one closed with the students presenting their own project.",
+      "completed": "Completed"
     },
     "detail": {
       "back": "All programs",
@@ -266,7 +270,8 @@
       "diaryTitle": "What a week in Orlando looks like",
       "galleryEyebrow": "On location",
       "galleryTitle": "Coded students, on this program",
-      "more": "Other programs"
+      "more": "Other programs",
+      "pastEditions": "Past editions"
     },
     "orlando-steam-league": {
       "tagline": "Create your own space colony!",

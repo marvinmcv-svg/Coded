@@ -10,7 +10,7 @@ import { Diary } from "@/components/program/Diary";
 import { SectionHeading } from "@/components/sections/SectionHeading";
 import { buttonClass } from "@/components/ui/Button";
 import { photo, srcSet } from "@/content/media";
-import { getProgram, nextCohort, programs, upcomingCohorts } from "@/content/programs";
+import { getProgram, nextCohort, pastEditions, programs, upcomingCohorts } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { consultationHref } from "@/lib/links";
@@ -64,6 +64,7 @@ export default async function ProgramPage({ params }: Params) {
   const notIncluded = tp.raw("notIncluded") as string[];
   const cohorts = upcomingCohorts(p);
   const next = nextCohort(p);
+  const past = pastEditions(p);
   const others = programs.filter((o) => o.slug !== p.slug);
   const hero = srcSet(p.slug);
 
@@ -134,6 +135,14 @@ export default async function ProgramPage({ params }: Params) {
               </dd>
             </div>
           </dl>
+          {past.length > 0 && (
+            <p className="mt-4 flex flex-wrap items-center gap-x-3 gap-y-1 px-2 text-sm text-mist">
+              <span className="font-mono text-xs tracking-widest uppercase">{t("pastEditions")}</span>
+              {past.map((d) => (
+                <time key={d} dateTime={d} data-past="" className="rounded-full border border-mist/25 px-3 py-0.5">✓ {fmt(d)}</time>
+              ))}
+            </p>
+          )}
         </Reveal>
       </section>
 

@@ -19,6 +19,15 @@ test("departures calendar lists every upcoming cohort, in date order", async ({ 
   expect(dates).toEqual(expected);
 });
 
+test("recent editions list every past edition, newest first, all in the past and marked completed", async ({ page }) => {
+  await page.goto("/es/programs");
+  const today = new Date().toISOString().slice(0, 10);
+  const expected = [...new Set(programs.flatMap((p) => [...p.pastEditions, ...p.cohorts.filter((d) => d <= today)]))].sort().reverse();
+  const dates = await page.locator("#editions time[datetime]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
+  expect(dates).toEqual(expected);
+  await expect(page.locator("#editions li").first()).toContainText(es.programs.index.completed);
+});
+
 for (const p of programs) {
   for (const locale of ["es", "en"]) {
     test(`/${locale}/programs/${p.slug}: renders, axe clean, valid JSON-LD, no past dates`, async ({ page }) => {
@@ -33,8 +42,11 @@ for (const p of programs) {
       expect(ld["@type"]).toBe("Course");
 
       const today = new Date().toISOString().slice(0, 10);
-      const dates = await page.locator("time[datetime]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
+      // Upcoming dates must be in the future; the "past editions" line is the one deliberate exception.
+      const dates = await page.locator("time[datetime]:not([data-past])").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
       for (const d of dates) expect(d > today, `${d} is in the past`).toBe(true);
+      const past = await page.locator("time[data-past]").evaluateAll((els) => els.map((e) => e.getAttribute("datetime")!));
+      for (const d of past) expect(d <= today, `${d} is listed as past but is upcoming`).toBe(true);
 
       expect(await axeViolations(page)).toEqual([]);
       expect(errors).toEqual([]);

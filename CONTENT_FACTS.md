@@ -41,6 +41,13 @@ Sources: `.us` = codingeducation.us, `.com` = codededucation.com, scraped 2026-1
 Extensions (.com, prices USD): Paris (pre, $1,790), Edinburgh & Liverpool (post, 3 days, $2,090), London extra activities ($500) — Europe & AI. Osaka & Kyoto (post, 2 days, $1,987) — Tokyo.
 Coded Flex Pass $500 non-refundable (.com FAQ). Cancellation tiers conflict 🔴 (AUDIT C10).
 
+### 3a. Past editions 🟡 (start dates on codingeducation.us program pages, scraped 2026-11-06) — rendered as "Recent editions"
+Europe STEAM League Easter 2026: **Mar 28 2026** (`program/europe-steam-league-easter-2026`) · Orlando STEAM League 2026: **Jul 26 2026**
+(`program/orlando-steam-league-2026`) · STEAM League AI Summer 2026: **Aug 1 2026** (`program/steam-league-ai-summer-2026`) ·
+Orlando STEAM League October 2026: **Oct 30 2026** (`program/orlando-steam-league-october-2026`). Upcoming cohorts join this list
+automatically once their start date passes (`pastEditions()` in content/programs.ts). Not used: Colegio Granadino's FB "June 2026"
+for Orlando (third-party, conflicts with the site's Jul 26).
+
 ### Program details 🟡 (from .com unless noted)
 - **Orlando pathway:** S Coding at the Digital Hub / Physics of Disney Hollywood Studios · T 6-degrees-of-freedom workshop at Universal; Robotics with Ozobots · E Environmental engineering at Epic Universe; VelociCoaster creation (Islands of Adventure) · A Art of Animation: colony layout & space-suit design · M AI & ML coding chatbots. Two full academic days on UCF campus.
 - **Orlando inclusions:** meals during academic program (3 meals not included*), software/materials (own laptop), academic content, theme-park + NASA tickets, accommodation, private transport, medical insurance, tracking app, certificate. Flights excluded. Gender-split rooms, 10 pm curfew. 2–4 students/room (up to 5 in suites).

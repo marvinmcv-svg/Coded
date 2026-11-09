@@ -1,6 +1,6 @@
 import en from "@/content/messages/en.json";
 import es from "@/content/messages/es.json";
-import { programs, upcomingCohorts } from "@/content/programs";
+import { pastEditions, programs, upcomingCohorts } from "@/content/programs";
 import { EMAIL, PHONE } from "@/lib/links";
 
 /**
@@ -33,11 +33,13 @@ export function programFacts(now?: string): string {
   return programs
     .map((p) => {
       const dates = upcomingCohorts(p, now);
+      const past = pastEditions(p, now);
       return [
         `- ${p.name} (page /<locale>/programs/${p.slug})`,
         `  ages ${p.ages[0]}–${p.ages[1]}`,
         p.days ? `  ${p.days} days` : "  duration: ask the team",
         `  upcoming start dates: ${dates.length ? dates.join(", ") : "none published, ask the team"}`,
+        past.length ? `  past editions (already completed, not bookable): ${past.join(", ")}` : "",
         p.extensions.length ? `  optional extensions: ${p.extensions.map((e) => e.key).join(", ")}` : "",
       ]
         .filter(Boolean)
