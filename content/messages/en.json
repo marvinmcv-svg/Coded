@@ -271,7 +271,9 @@
       "galleryEyebrow": "On location",
       "galleryTitle": "Coded students, on this program",
       "more": "Other programs",
-      "pastEditions": "Past editions"
+      "pastEditions": "Past editions",
+      "english": "English level",
+      "englishValue": "{level} (intermediate) or higher"
     },
     "orlando-steam-league": {
       "tagline": "Create your own space colony!",
@@ -560,6 +562,10 @@
         {
           "q": "What ages are the programs for?",
           "a": "Students aged 11 to 17."
+        },
+        {
+          "q": "What English level do students need?",
+          "a": "B1 (intermediate) or higher, for every program."
         },
         {
           "q": "How are classes organized?",
@@ -872,7 +878,33 @@
     "tokyo-team": "Group of Coded students outside a temple in Tokyo",
     "tokyo-museum": "Students at the entrance of the Mori Art Museum, Tokyo",
     "tokyo-metro": "Students in Coded caps on an escalator in a Tokyo station",
-    "tokyo-gate": "Temple gate in Tokyo with the group in front"
+    "tokyo-gate": "Temple gate in Tokyo with the group in front",
+    "orl-park-guide": "Students with Coded backpacks listen to a guide at a theme park",
+    "orl-campus": "A Coded group walks across a university campus",
+    "orl-team-notes": "Students take notes together during a workshop",
+    "orl-classroom": "Students at laptops follow a teacher in a classroom",
+    "orl-coding": "A student writes code on a laptop",
+    "eu-mentor": "A mentor helps a student at her laptop",
+    "eu-oxford-walk": "Students with Coded backpacks walk through Oxford",
+    "eu-oxford-college": "The group outside an Oxford college",
+    "eu-oxford-gate": "Two students look through an ornate gate in Oxford",
+    "eu-st-pauls": "The group in front of St Paul's Cathedral in London",
+    "eu-thames": "A student looks out over the Thames",
+    "eu-river-portrait": "A student by the river in London",
+    "ai-workshop-pair": "Two students working on laptops side by side",
+    "ai-workshop-focus": "A student concentrates on her laptop in a workshop",
+    "ai-workshop-code": "A student reviews code on his screen",
+    "ai-workshop-team": "A team discusses their project around a table",
+    "ai-workshop-build": "Students in Coded caps build their project together",
+    "ai-oxford-talk": "A guide speaks to the group in Oxford",
+    "ai-tube": "The group on a London Underground platform",
+    "tokyo-crew": "A group of students together indoors in Tokyo",
+    "tokyo-forest": "Students take photos on a wooded path in Tokyo",
+    "tokyo-path": "The group walks along a shaded path",
+    "tokyo-shrine": "A student stands in front of a Japanese temple",
+    "tokyo-lantern": "Students under a large red lantern at a temple",
+    "tokyo-project": "Students show their project with a mentor",
+    "tokyo-night": "Students explore Tokyo's streets at night"
   },
   "errors": {
     "notFound": {

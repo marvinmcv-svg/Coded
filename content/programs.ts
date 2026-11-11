@@ -1,7 +1,8 @@
 /**
  * Non-text program facts (✅/🟡 in CONTENT_FACTS.md). All copy lives in content/messages/{es,en}.json under
- * `programs.<slug>`. 🔴 values are null and never render: English level, prices (not shown: Marvin 2026-11-07 →
- * "ask us about pricing"). Orlando 9 days, AI 12 days, Orlando Jul 9 2027: ✅ Marvin 2026-11-09 (Q7). Used by the site AND scripts/seed.ts.
+ * `programs.<slug>`. 🔴 values are null and never render: prices (not shown: Marvin 2026-11-07 →
+ * "ask us about pricing"). Orlando 9 days, AI 12 days, Orlando Jul 9 2027: ✅ Marvin 2026-11-09 (Q7);
+ * English B1 for every program: ✅ Marvin 2026-11-11 (Q5). Used by the site AND scripts/seed.ts.
  */
 import type { BuiltImage, BuiltVideo } from "./media";
 
@@ -14,6 +15,8 @@ export type Program = {
   accent: "steam-s" | "steam-t" | "steam-e" | "steam-a" | "steam-m";
   days: number | null;
   ages: [number, number];
+  /** Minimum English level (CEFR). */
+  englishLevel: "B1";
   cohorts: string[]; // ISO start dates
   /** Editions already run, as published on codingeducation.us program pages (CONTENT_FACTS §3a). Passed cohorts join these automatically. */
   pastEditions: string[];
@@ -31,10 +34,10 @@ const ukExtensions: Extension[] = [
 ];
 
 export const programs: Program[] = [
-  { slug: "orlando-steam-league", name: "Orlando STEAM League", status: "live", accent: "steam-e", days: 9, ages: [11, 17], cohorts: ["2027-01-22", "2027-07-09", "2027-10-30"], pastEditions: ["2026-07-26", "2026-10-30"], extensions: [], gallery: ["orl-tablet", "orl-sketch", "worksheet", "orl-colony", "tablets", "laptops-room"], diary: ["workshop-make", "workshop-class", "coding-tablet", "pitch-stage"] },
-  { slug: "europe-steam-league", name: "Europe STEAM League", status: "live", accent: "steam-t", days: 12, ages: [11, 17], cohorts: ["2027-03-30"], pastEditions: ["2026-03-28"], extensions: ukExtensions, gallery: ["class-laptops", "vr", "lab", "activity", "lab-coat", "student-laptop", "boys-laptop", "london-steps"], diary: [] },
-  { slug: "steam-league-ai", name: "STEAM League AI", status: "live", accent: "steam-m", days: 12, ages: [11, 17], cohorts: ["2027-07-09"], pastEditions: ["2026-08-01"], extensions: ukExtensions, gallery: ["presenting", "uk-talk", "uk-lecture", "laptops-room"], diary: [] },
-  { slug: "tokyo-steam-championship", name: "Tokyo STEAM Championship", status: "upcoming", accent: "steam-a", days: 11, ages: [11, 17], cohorts: ["2027-08-02"], pastEditions: [], extensions: [{ key: "osakaKyoto", timing: "post", days: 2 }], gallery: ["tokyo-portrait", "tokyo-build", "tokyo-museum", "tokyo-friends", "tokyo-metro", "tokyo-cap", "tokyo-gate", "tokyo-team", "tokyo-temple"], diary: [] },
+  { slug: "orlando-steam-league", name: "Orlando STEAM League", status: "live", accent: "steam-e", days: 9, ages: [11, 17], englishLevel: "B1", cohorts: ["2027-01-22", "2027-07-09", "2027-10-30"], pastEditions: ["2026-07-26", "2026-10-30"], extensions: [], gallery: ["orl-tablet", "orl-sketch", "worksheet", "orl-colony", "tablets", "laptops-room", "orl-park-guide", "orl-campus", "orl-team-notes", "orl-classroom", "orl-coding"], diary: ["workshop-make", "workshop-class", "coding-tablet", "pitch-stage"] },
+  { slug: "europe-steam-league", name: "Europe STEAM League", status: "live", accent: "steam-t", days: 12, ages: [11, 17], englishLevel: "B1", cohorts: ["2027-03-30"], pastEditions: ["2026-03-28"], extensions: ukExtensions, gallery: ["class-laptops", "vr", "lab", "activity", "lab-coat", "student-laptop", "boys-laptop", "london-steps", "eu-mentor", "eu-oxford-walk", "eu-oxford-college", "eu-oxford-gate", "eu-st-pauls", "eu-thames", "eu-river-portrait"], diary: [] },
+  { slug: "steam-league-ai", name: "STEAM League AI", status: "live", accent: "steam-m", days: 12, ages: [11, 17], englishLevel: "B1", cohorts: ["2027-07-09"], pastEditions: ["2026-08-01"], extensions: ukExtensions, gallery: ["presenting", "uk-talk", "uk-lecture", "laptops-room", "ai-workshop-pair", "ai-workshop-focus", "ai-workshop-code", "ai-workshop-team", "ai-workshop-build", "ai-oxford-talk", "ai-tube"], diary: [] },
+  { slug: "tokyo-steam-championship", name: "Tokyo STEAM Championship", status: "upcoming", accent: "steam-a", days: 11, ages: [11, 17], englishLevel: "B1", cohorts: ["2027-08-02"], pastEditions: [], extensions: [{ key: "osakaKyoto", timing: "post", days: 2 }], gallery: ["tokyo-portrait", "tokyo-build", "tokyo-museum", "tokyo-friends", "tokyo-metro", "tokyo-cap", "tokyo-gate", "tokyo-team", "tokyo-temple", "tokyo-crew", "tokyo-forest", "tokyo-path", "tokyo-shrine", "tokyo-lantern", "tokyo-project", "tokyo-night"], diary: [] },
 ];
 
 export function getProgram(slug: string) {

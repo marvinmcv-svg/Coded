@@ -33,9 +33,9 @@ Sources: `.us` = codingeducation.us, `.com` = codededucation.com, scraped 2026-1
 ## 3. Programs (cohorts after today 2026-11-06 only)
 | Program | Location | Days | Ages | English | Price (USD) | Next cohorts | Status |
 |---|---|---|---|---|---|---|---|
-| Orlando STEAM League — "Create your own space colony!" | Orlando, 5 parks + NASA KSC + UCF | **9** ✅ (Marvin 2026-11-09) | 11–17 | B1/B2 🔴 | **$4,590** (.com) 🔴 publish? | Jan 22 2027 · Jul 9 2027 ✅ · Oct 30 2027 | |
-| Europe STEAM League — "STEAM Digital Career Portfolio" | London/UK, Woldingham School campus (.us 2027); Oxford excursion | 12 | 11–17 | B1/B2 🔴 | **$6,490** (.com) | Mar 30 2027 | |
-| STEAM League AI — "AI Innovation Studio" (SDG-aligned) | Bradfield College (UK) | **12** ✅ (Marvin 2026-11-09) | 11–17 | B1 | **$6,490** (.com) | Jul 9 2027 | |
+| Orlando STEAM League — "Create your own space colony!" | Orlando, 5 parks + NASA KSC + UCF | **9** ✅ (Marvin 2026-11-09) | 11–17 | **B1** ✅ (Marvin 2026-11-11) | **$4,590** (.com) 🔴 publish? | Jan 22 2027 · Jul 9 2027 ✅ · Oct 30 2027 | |
+| Europe STEAM League — "STEAM Digital Career Portfolio" | London/UK, Woldingham School campus (.us 2027); Oxford excursion | 12 | 11–17 | **B1** ✅ (Marvin 2026-11-11) | **$6,490** (.com) | Mar 30 2027 | |
+| STEAM League AI — "AI Innovation Studio" (SDG-aligned) | Bradfield College (UK) | **12** ✅ (Marvin 2026-11-09) | 11–17 | **B1** ✅ | **$6,490** (.com) | Jul 9 2027 | |
 | Tokyo STEAM Championship — "Building Solutions for Better Cities and Communities" | Tokyo; "authentic Japanese school" (.us) / "United Nations University" (.com) 🔴 | 11 (.com) | 11–17 | ? | not shown | Aug 2 2027 | |
 
 Extensions (.com, prices USD): Paris (pre, $1,790), Edinburgh & Liverpool (post, 3 days, $2,090), London extra activities ($500) — Europe & AI. Osaka & Kyoto (post, 2 days, $1,987) — Tokyo.

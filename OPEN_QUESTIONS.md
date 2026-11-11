@@ -12,6 +12,7 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 - **Q18 teachers:** ✅ show the teachers with names and photos. Delivery-partner names (Blueshift, Florida Film & STEM Academy) still unconfirmed → not shown.
 - **Media:** ✅ Instagram @coded.education reels/photos may be used (same consent as the sites). Pulled via Firecrawl (influencers-club posts provider) into assets/raw/instagram.
 - **Q7 durations/dates:** ✅ (2026-11-09) Orlando = 9 days, STEAM League AI = 12 days, Orlando July cohort = **Jul 9 2027**.
+- **Q5 English level:** ✅ (2026-11-11) B1 for every program.
 - **On hold:** WhatsApp (Q23), domain (Q0), legal pages (later). Prototype focus = UX/UI and motion.
 - **Recommendations:** Marvin approved the remaining proposals (assumed: Supabase `/admin` for Q4, Next 16 for Q3, as already built).
 
@@ -23,7 +24,7 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
 4. **CMS / editors.** Who edits cohorts & content after launch? (Supabase `/admin` vs Sanity — see PLAN §6.)
 
 ## P1 — facts (block P2/P3 copy)
-5. English level per program: B1 or B2?
+5. ~~English level per program: B1 or B2?~~ ✅ answered 2026-11-11 (B1, all programs).
 6. School count: +200, +210 or +250? Countries list behind "+20". Source for "+55 % girls" and "+95 % satisfaction".
 7. ~~Orlando: 9 or 10 days? AI League: 12 or 14 days? Orlando July cohort: Jul 8 or Jul 9 2027?~~ ✅ answered 2026-11-09 (see Decisions).
 8. Orlando hotels per cohort (Stella Nova / Terra Luna / Cabana Bay)?
@@ -62,6 +63,13 @@ Ordered by how much each one blocks. **P0 = blocks plan approval**, P1 = blocks 
     effort; a cheaper model (e.g. `claude-haiku-5-5`) is a one-variable change if cost matters more than answer quality — your call.
     Cody only repeats what the site publishes, so every 🔴 item stays unanswered (it hands over to the team). Should chats be logged
     (HubSpot, Supabase) for the sales team? Not built: needs a privacy-policy line first.
+
+## P1 — media still held (audit 2026-11-11)
+36. The live sites carry ~180 more images the rebuild does **not** use: Universal hotel rooms/pools (Q8: which hotel per cohort?),
+    venue/landmark marketing shots (Tokyo Tower, teamLab, Lion King, Arsenal…), stock/AI illustrations, food photos, avatar badges,
+    and 17 portraits from /steam-lab-360 (Q16). Photos showing third-party signage up close (NASA globe, Arsenal, Toyota, Epic
+    Universe arch) are also held under the no-logos rule. Say if any of these should render. The 11 YouTube videos on the old sites
+    need the original files or a YouTube embed (CSP change) — which do you prefer?
 
 ## P2
 34. **Blog posts held or edited in migration (P6).** 24 of 27 posts are live at /en/blog/<slug>. Held (old URL → blog index) because

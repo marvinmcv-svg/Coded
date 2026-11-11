@@ -330,6 +330,289 @@
     900
    ]
   },
+  "orl-park-guide": {
+   "source": "site/2026_04_Disney-Hollywood-Studios.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    750,
+    938
+   ]
+  },
+  "orl-campus": {
+   "source": "site/2026_04_UCF.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    750,
+    938
+   ]
+  },
+  "orl-team-notes": {
+   "source": "site/2026_04_e.jpg",
+   "widths": [
+    480
+   ],
+   "ratio": [
+    480,
+    600
+   ]
+  },
+  "orl-classroom": {
+   "source": "site/2026_04_m.jpg",
+   "widths": [
+    480
+   ],
+   "ratio": [
+    480,
+    600
+   ]
+  },
+  "orl-coding": {
+   "source": "site/2026_04_s.jpg",
+   "widths": [
+    480
+   ],
+   "ratio": [
+    480,
+    600
+   ]
+  },
+  "eu-mentor": {
+   "source": "site/2026_04_sle_0003_IMG_2297.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    920,
+    1150
+   ]
+  },
+  "eu-oxford-walk": {
+   "source": "site/2026_04_oxford_0005_IMG_4160.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-college": {
+   "source": "site/2026_04_oxford_0006_IMG_4063.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-gate": {
+   "source": "site/2026_04_oxford_0013_IMG_4159.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-st-pauls": {
+   "source": "site/2026_04_tours-sle_0005_IMG_2950.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-thames": {
+   "source": "site/2026_04_tours-sle_0008_IMG_3062.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-river-portrait": {
+   "source": "site/2026_04_tours-sle_0009_IMG_3068.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-workshop-pair": {
+   "source": "site/2026_04_steam-workshops_0000_IMG_0642.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-workshop-focus": {
+   "source": "site/2026_04_steam-workshops_0001_IMG_0613.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-workshop-code": {
+   "source": "site/2026_04_steam-workshops_0002_IMG_0651.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-workshop-team": {
+   "source": "site/2026_04_steam-workshops_0003_IMG_0661.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-workshop-build": {
+   "source": "site/2026_04_steam-workshops_0004_Background.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-oxford-talk": {
+   "source": "site/2026_04_oxford_0012_IMG_4147.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "ai-tube": {
+   "source": "site/2026_04_tours-sle_0003_IMG_2875.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-crew": {
+   "source": "site/2026_07_IMG_0758.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-forest": {
+   "source": "site/2026_07_IMG_0814.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-path": {
+   "source": "site/2026_07_IMG_0819.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-shrine": {
+   "source": "site/2026_07_IMG_0974.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    1600,
+    2000
+   ]
+  },
+  "tokyo-lantern": {
+   "source": "site/2026_07_IMG_0983.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-project": {
+   "source": "site/2026_07_IMG_1277-2.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-night": {
+   "source": "site/2026_07_IMG_1336-2.jpg",
+   "widths": [
+    480,
+    675
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
   "t-kay-hill": {
    "source": "site/2026_08_images-1.jpeg",
    "widths": [
