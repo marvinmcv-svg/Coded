@@ -13,6 +13,7 @@ import { photo } from "@/content/media";
 import { Link } from "@/lib/i18n/navigation";
 import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
+import { Videos } from "@/components/sections/Videos";
 
 export const revalidate = 86400;
 
@@ -96,6 +97,7 @@ export default async function WorldCitizensPage({ params }: Params) {
         </div>
       </section>
 
+      <Videos keys={["world-citizen"]} />
       <CTA />
     </main>
   );

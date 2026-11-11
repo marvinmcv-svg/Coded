@@ -613,6 +613,83 @@
     844
    ]
   },
+  "yt-orlando-2026": {
+   "source": "youtube/bh0uaHpQn9A.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
+  "yt-europe": {
+   "source": "youtube/Lru9srM6MYQ.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
+  "yt-europe-highlights": {
+   "source": "youtube/ZKMYAFb2aYg.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
+  "yt-ai": {
+   "source": "youtube/jzq198Yj3hg.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
+  "yt-recap": {
+   "source": "youtube/JR7sYGq8s-8.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
+  "yt-about": {
+   "source": "youtube/Mqxn9qDaKoA.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
+  "yt-world-citizen": {
+   "source": "youtube/FHyQJwQLNlM.jpg",
+   "widths": [
+    640,
+    960
+   ],
+   "ratio": [
+    1280,
+    720
+   ]
+  },
   "t-kay-hill": {
    "source": "site/2026_08_images-1.jpeg",
    "widths": [

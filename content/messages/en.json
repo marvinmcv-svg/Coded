@@ -946,5 +946,25 @@
     ],
     "offlineMore": "Anything else? I can also connect you with the team.",
     "offlineHandover": "Good question. I don't have that answer yet, but the team does: book a call, write to {email} or phone {phone}."
+  },
+  "videos": {
+    "eyebrow": "Watch",
+    "title": "See it for yourself",
+    "play": "Play video",
+    "allEyebrow": "Video",
+    "allTitle": "Every Coded video",
+    "items": {
+      "orlando-2026": "Orlando STEAM League 2026",
+      "orlando-league": "Inside the Orlando STEAM League",
+      "europe": "Europe STEAM League",
+      "europe-highlights": "Europe STEAM League highlights",
+      "ai": "STEAM League AI",
+      "tokyo": "Tokyo STEAM Championship",
+      "recap": "A Coded recap",
+      "tours": "Trips and tours",
+      "about": "About Coded",
+      "world-citizen": "World Citizens",
+      "schools": "Travelling with Coded, for schools"
+    }
   }
 }

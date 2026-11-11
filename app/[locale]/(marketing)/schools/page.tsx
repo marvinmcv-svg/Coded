@@ -14,6 +14,7 @@ import { buttonClass } from "@/components/ui/Button";
 import { Link } from "@/lib/i18n/navigation";
 import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
+import { Videos } from "@/components/sections/Videos";
 
 export const revalidate = 86400;
 
@@ -75,6 +76,7 @@ export default async function SchoolsPage({ params }: Params) {
       <Championship />
       <Teachers />
       <Trust />
+      <Videos keys={["schools"]} />
       <CTA />
     </main>
   );

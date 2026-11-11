@@ -71,6 +71,14 @@ IMAGES = {
     "tokyo-lantern": ("site/2026_07_IMG_0983.jpg", None, "4:5", [480, 675]),
     "tokyo-project": ("site/2026_07_IMG_1277-2.jpg", None, "4:5", [480, 675]),
     "tokyo-night": ("site/2026_07_IMG_1336-2.jpg", None, "4:5", [480, 675]),
+    # YouTube covers (Coded's channel thumbnails, maxresdefault) for content/videos.ts; tokyo/tours/schools use Coded photos
+    "yt-orlando-2026": ("youtube/bh0uaHpQn9A.jpg", None, "16:9", [640, 960]),
+    "yt-europe": ("youtube/Lru9srM6MYQ.jpg", None, "16:9", [640, 960]),
+    "yt-europe-highlights": ("youtube/ZKMYAFb2aYg.jpg", None, "16:9", [640, 960]),
+    "yt-ai": ("youtube/jzq198Yj3hg.jpg", None, "16:9", [640, 960]),
+    "yt-recap": ("youtube/JR7sYGq8s-8.jpg", None, "16:9", [640, 960]),
+    "yt-about": ("youtube/Mqxn9qDaKoA.jpg", None, "16:9", [640, 960]),
+    "yt-world-citizen": ("youtube/FHyQJwQLNlM.jpg", None, "16:9", [640, 960]),
     # teachers (codededucation.com) — square portraits, cropped to the teacher
     "t-kay-hill":      ("site/2026_08_images-1.jpeg", None, "1:1", [400]),
     "t-tom-caruth":    ("site/2026_06_team6.png", None, "1:1", [400]),

@@ -946,5 +946,25 @@
     ],
     "offlineMore": "¿Algo más? También puedo ponerte en contacto con el equipo.",
     "offlineHandover": "Buena pregunta. Todavía no tengo esa respuesta, pero el equipo sí: agenda una llamada, escribe a {email} o llama al {phone}."
+  },
+  "videos": {
+    "eyebrow": "Mira",
+    "title": "Míralo tú mismo",
+    "play": "Reproducir video",
+    "allEyebrow": "Video",
+    "allTitle": "Todos los videos de Coded",
+    "items": {
+      "orlando-2026": "Orlando STEAM League 2026",
+      "orlando-league": "Así es el Orlando STEAM League",
+      "europe": "Europe STEAM League",
+      "europe-highlights": "Lo mejor del Europe STEAM League",
+      "ai": "STEAM League AI",
+      "tokyo": "Tokyo STEAM Championship",
+      "recap": "Un resumen de Coded",
+      "tours": "Viajes y recorridos",
+      "about": "Conoce Coded",
+      "world-citizen": "World Citizens",
+      "schools": "Viajar con Coded, para colegios"
+    }
   }
 }

@@ -11,6 +11,7 @@ import { Teachers } from "@/components/sections/Teachers";
 import { programs } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { pageMetadata } from "@/lib/seo/meta";
+import { Videos } from "@/components/sections/Videos";
 
 type Params = { params: Promise<{ locale: string }> };
 
@@ -104,6 +105,7 @@ export default async function AboutPage({ params }: Params) {
         </Reveal>
       </section>
 
+      <Videos keys={["about", "recap"]} />
       <CTA />
     </main>
   );

@@ -15,6 +15,8 @@ import { Link } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
+import { programVideos } from "@/content/videos";
+import { Videos } from "@/components/sections/Videos";
 
 export const revalidate = 86400;
 export const dynamicParams = false;
@@ -173,6 +175,9 @@ export default async function ProgramPage({ params }: Params) {
 
       {/* Last edition: Orlando reels with Coded's own Instagram captions (CONTENT_FACTS §9) */}
       <Diary program={p} />
+
+      {/* Coded's YouTube videos for this program (click to play) */}
+      <Videos keys={programVideos[p.slug] ?? []} />
 
       {/* Gallery — Coded's own photos from this program's pages */}
       <section aria-labelledby="gallery-title" className="mx-auto flex max-w-7xl flex-col gap-12 px-6 pb-24">
