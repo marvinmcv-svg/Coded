@@ -14,6 +14,7 @@ import { getProgram, nextCohort } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
+import { Videos } from "@/components/sections/Videos";
 
 export const revalidate = 86400;
 
@@ -138,6 +139,8 @@ export default async function ChampionshipPage({ params }: Params) {
           </ul>
         </Reveal>
       </section>
+
+      <Videos keys={["tokyo"]} />
 
       <section className="mx-auto max-w-5xl px-6 pb-24">
         <Reveal className="flex flex-col items-start gap-5 rounded-[var(--radius-card)] bg-accent/15 p-8 md:p-12">

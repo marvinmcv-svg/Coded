@@ -11,6 +11,8 @@ import { buttonClass } from "@/components/ui/Button";
 import { getProgram } from "@/content/programs";
 import { Link } from "@/lib/i18n/navigation";
 import { pageMetadata } from "@/lib/seo/meta";
+import { videos, type VideoKey } from "@/content/videos";
+import { Videos } from "@/components/sections/Videos";
 
 type Params = { params: Promise<{ locale: string }> };
 
@@ -49,6 +51,7 @@ export default async function StoriesPage({ params }: Params) {
         </Reveal>
       </section>
 
+      <Videos all id="all-videos-title" keys={Object.keys(videos) as VideoKey[]} />
       <CTA />
     </main>
   );

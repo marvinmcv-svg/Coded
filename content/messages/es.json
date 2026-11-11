@@ -271,7 +271,9 @@
       "galleryEyebrow": "En el destino",
       "galleryTitle": "Estudiantes de Coded en este programa",
       "more": "Otros programas",
-      "pastEditions": "Ediciones anteriores"
+      "pastEditions": "Ediciones anteriores",
+      "english": "Nivel de inglés",
+      "englishValue": "{level} (intermedio) o superior"
     },
     "orlando-steam-league": {
       "tagline": "¡Crea tu propia colonia espacial!",
@@ -560,6 +562,10 @@
         {
           "q": "¿Para qué edades son los programas?",
           "a": "Para estudiantes de 11 a 17 años."
+        },
+        {
+          "q": "¿Qué nivel de inglés necesitan?",
+          "a": "B1 (intermedio) o superior, en todos los programas."
         },
         {
           "q": "¿Cómo se organizan las clases?",
@@ -872,7 +878,33 @@
     "tokyo-team": "Grupo de estudiantes de Coded frente a un templo en Tokio",
     "tokyo-museum": "Estudiantes en la entrada del Mori Art Museum, Tokio",
     "tokyo-metro": "Estudiantes con gorras de Coded en una escalera mecánica de una estación de Tokio",
-    "tokyo-gate": "Portal de un templo en Tokio con el grupo al frente"
+    "tokyo-gate": "Portal de un templo en Tokio con el grupo al frente",
+    "orl-park-guide": "Estudiantes con mochilas de Coded escuchan a un guía en un parque temático",
+    "orl-campus": "Un grupo de Coded camina por un campus universitario",
+    "orl-team-notes": "Estudiantes toman notas juntos durante un taller",
+    "orl-classroom": "Estudiantes con laptops siguen a una profesora en el aula",
+    "orl-coding": "Un estudiante escribe código en su laptop",
+    "eu-mentor": "Un mentor ayuda a una estudiante con su laptop",
+    "eu-oxford-walk": "Estudiantes con mochilas de Coded caminan por Oxford",
+    "eu-oxford-college": "El grupo frente a un college de Oxford",
+    "eu-oxford-gate": "Dos estudiantes miran a través de una reja ornamentada en Oxford",
+    "eu-st-pauls": "El grupo frente a la catedral de St Paul en Londres",
+    "eu-thames": "Un estudiante mira el Támesis",
+    "eu-river-portrait": "Un estudiante junto al río en Londres",
+    "ai-workshop-pair": "Dos estudiantes trabajando lado a lado en sus laptops",
+    "ai-workshop-focus": "Una estudiante concentrada en su laptop durante un taller",
+    "ai-workshop-code": "Un estudiante revisa código en su pantalla",
+    "ai-workshop-team": "Un equipo conversa sobre su proyecto alrededor de una mesa",
+    "ai-workshop-build": "Estudiantes con gorras de Coded construyen su proyecto juntos",
+    "ai-oxford-talk": "Un guía habla con el grupo en Oxford",
+    "ai-tube": "El grupo en un andén del metro de Londres",
+    "tokyo-crew": "Un grupo de estudiantes juntos en Tokio",
+    "tokyo-forest": "Estudiantes toman fotos en un sendero arbolado de Tokio",
+    "tokyo-path": "El grupo camina por un sendero a la sombra",
+    "tokyo-shrine": "Un estudiante frente a un templo japonés",
+    "tokyo-lantern": "Estudiantes bajo un gran farol rojo en un templo",
+    "tokyo-project": "Estudiantes muestran su proyecto junto a un mentor",
+    "tokyo-night": "Estudiantes recorren las calles de Tokio de noche"
   },
   "errors": {
     "notFound": {
@@ -914,5 +946,25 @@
     ],
     "offlineMore": "¿Algo más? También puedo ponerte en contacto con el equipo.",
     "offlineHandover": "Buena pregunta. Todavía no tengo esa respuesta, pero el equipo sí: agenda una llamada, escribe a {email} o llama al {phone}."
+  },
+  "videos": {
+    "eyebrow": "Mira",
+    "title": "Míralo tú mismo",
+    "play": "Reproducir video",
+    "allEyebrow": "Video",
+    "allTitle": "Todos los videos de Coded",
+    "items": {
+      "orlando-2026": "Orlando STEAM League 2026",
+      "orlando-league": "Así es el Orlando STEAM League",
+      "europe": "Europe STEAM League",
+      "europe-highlights": "Lo mejor del Europe STEAM League",
+      "ai": "STEAM League AI",
+      "tokyo": "Tokyo STEAM Championship",
+      "recap": "Un resumen de Coded",
+      "tours": "Viajes y recorridos",
+      "about": "Conoce Coded",
+      "world-citizen": "World Citizens",
+      "schools": "Viajar con Coded, para colegios"
+    }
   }
 }

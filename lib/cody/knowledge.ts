@@ -37,6 +37,7 @@ export function programFacts(now?: string): string {
       return [
         `- ${p.name} (page /<locale>/programs/${p.slug})`,
         `  ages ${p.ages[0]}–${p.ages[1]}`,
+        `  minimum English level: ${p.englishLevel} (CEFR)`,
         p.days ? `  ${p.days} days` : "  duration: ask the team",
         `  upcoming start dates: ${dates.length ? dates.join(", ") : "none published, ask the team"}`,
         past.length ? `  past editions (already completed, not bookable): ${past.join(", ")}` : "",

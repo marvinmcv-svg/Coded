@@ -15,6 +15,8 @@ import { Link } from "@/lib/i18n/navigation";
 import { routing } from "@/lib/i18n/routing";
 import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
+import { programVideos } from "@/content/videos";
+import { Videos } from "@/components/sections/Videos";
 
 export const revalidate = 86400;
 export const dynamicParams = false;
@@ -117,18 +119,19 @@ export default async function ProgramPage({ params }: Params) {
       <section id="dates" aria-labelledby="facts-title" className="mx-auto max-w-7xl scroll-mt-20 px-6">
         <h2 id="facts-title" className="sr-only">{t("keyFacts")}</h2>
         <Reveal>
-          <dl className="grid gap-px overflow-hidden rounded-[var(--radius-card)] bg-mist/15 sm:grid-cols-2 lg:grid-cols-4">
+          <dl className="grid gap-px overflow-hidden rounded-[var(--radius-card)] bg-mist/15 sm:grid-cols-2 lg:grid-cols-3">
             {[
               [t("location"), tp("location")],
               [t("ages"), t("agesValue", { min: p.ages[0], max: p.ages[1] })],
               [t("days"), p.days ? t("daysValue", { days: p.days }) : t("daysTbc")],
+              [t("english"), t("englishValue", { level: p.englishLevel })],
             ].map(([k, v]) => (
               <div key={k} className="bg-ink-2 p-7">
                 <dt className="font-mono text-xs tracking-widest text-mist uppercase">{k}</dt>
                 <dd className="mt-2 font-display text-xl">{v}</dd>
               </div>
             ))}
-            <div className="bg-ink-2 p-7">
+            <div className="bg-ink-2 p-7 sm:col-span-2 lg:col-span-2">
               <dt className="font-mono text-xs tracking-widest text-mist uppercase">{t("cohorts")}</dt>
               <dd className="mt-2 font-display text-xl">
                 {cohorts.length ? <ul>{cohorts.map((d) => <li key={d}><time dateTime={d}>{fmt(d)}</time></li>)}</ul> : t("daysTbc")}
@@ -172,6 +175,9 @@ export default async function ProgramPage({ params }: Params) {
 
       {/* Last edition: Orlando reels with Coded's own Instagram captions (CONTENT_FACTS §9) */}
       <Diary program={p} />
+
+      {/* Coded's YouTube videos for this program (click to play) */}
+      <Videos keys={programVideos[p.slug] ?? []} />
 
       {/* Gallery — Coded's own photos from this program's pages */}
       <section aria-labelledby="gallery-title" className="mx-auto flex max-w-7xl flex-col gap-12 px-6 pb-24">

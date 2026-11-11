@@ -1,6 +1,5 @@
 /**
  * Seeds only facts marked ✅/🟡 in CONTENT_FACTS.md. 🔴 values are left NULL (UI falls back):
- *  - Orlando & AI League days (9 vs 10, 12 vs 14), English level (B1/B2), Orlando July cohort date (Jul 8 vs 9)
  *  - All prices (Q2 unconfirmed) → price_from / price NULL ⇒ "Request pricing"
  *  - Teachers (consent), policies (C10 conflict), reviews (P4) are not seeded.
  * Idempotent: wipes and re-inserts seeded tables.  Usage: DATABASE_URL=… pnpm db:seed
@@ -14,7 +13,7 @@ import { cohorts, extensions, programs as programsTable, stats } from "../lib/db
 const PROGRAMS = programs.map((p, i) => ({
   slug: p.slug, name: p.name, sort: i + 1, status: p.status,
   tagline_es: es.programs[p.slug].tagline, tagline_en: en.programs[p.slug].tagline,
-  location_es: es.programs[p.slug].location, location_en: en.programs[p.slug].location, days: p.days,
+  location_es: es.programs[p.slug].location, location_en: en.programs[p.slug].location, days: p.days, english_level: p.englishLevel,
   age_min: p.ages[0], age_max: p.ages[1],
 }));
 

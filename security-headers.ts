@@ -1,6 +1,7 @@
 /**
  * Response headers for every route. The CSP lists only the third parties the site actually uses:
- * GA4 (loaded after consent, Q26) and the HubSpot meetings iframe on /consultation (Q24). HubSpot Forms is
+ * GA4 (loaded after consent, Q26) and the HubSpot meetings iframe on /consultation (Q24) and
+ * click-to-play YouTube (youtube-nocookie; the iframe only exists after "play", components/sections/YouTube.tsx). HubSpot Forms is
  * called server-side, so it needs no browser allowance. Add an origin here when a new embed lands (e.g. WhatsApp, Q23).
  * 'unsafe-inline' scripts: Next's static pages inline their bootstrap and JSON-LD; nonces would force dynamic rendering.
  */
@@ -14,7 +15,7 @@ const csp = [
   "font-src 'self'",
   "connect-src 'self' https://*.google-analytics.com https://*.analytics.google.com https://www.googletagmanager.com",
   "media-src 'self'",
-  "frame-src https://meetings.hubspot.com",
+  "frame-src https://meetings.hubspot.com https://www.youtube-nocookie.com",
   "worker-src 'self' blob:",
   "object-src 'none'",
   "base-uri 'self'",
