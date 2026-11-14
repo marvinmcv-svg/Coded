@@ -1,6 +1,7 @@
 """
 Builds the web media in public/media/ from the raw, consented Coded originals (assets/raw/, gitignored).
-Re-run: python3 -I scripts/build-media.py   (needs ImageMagick `convert` + `ffmpeg`)
+Re-run: python3 -I scripts/build-media.py   (needs ImageMagick `convert` + `ffmpeg`; existing outputs are reused,
+delete a file to rebuild it)
 Sources: assets/raw/site (codingeducation.us / codededucation.com crawl) and assets/raw/instagram (@coded.education).
 Consent basis: Marvin, 2026-11-07 — Coded's website and social media are cleared for use (OPEN_QUESTIONS Q1).
 """
@@ -90,6 +91,56 @@ IMAGES = {
     "t-richard-emmerton": ("site/2026_06_team-member4.png", None, "1:1", [400]),
     "t-scott-lu":      ("site/2026_06_team-member3.png", None, "1:1", [400]),
     "t-rayan-took":    ("site/2026_06_team-member2.png", None, "1:1", [400]),
+    # 2026-11-14 expansion (events / projects / gallery pages): more of Coded's own trip photos from the program pages
+    # of codededucation.com / codingeducation.us. Left out on purpose: stock and venue photos, close-ups of third-party
+    # signage (NASA globe, Arsenal, Red Bull, Toyota, Gundam, teamLab), STEAM Lab 360 portraits (Q16), avatar badges.
+    "orl-workbook": ("site/2026_04_Epic-Universe.jpg", None, "4:5", [480, 900]),
+    "orl-main-street": ("site/2026_04_IMG_7170.jpg", None, "4:5", [480, 900]),
+    "orl-dream-shirt": ("site/2026_04_IMG_7175.jpg", None, "4:5", [480, 900]),
+    "orl-caps": ("site/2026_04_IMG_7146.jpg", None, "4:5", [480, 750]),
+    "orl-pitch-stage": ("site/2026_04_slo-3.jpg", None, "4:5", [480, 750]),
+    "orl-sketching": ("site/2026_04_a.jpg", None, "4:5", [480]),
+    "orl-laptop": ("site/2026_04_t.jpg", None, "4:5", [480]),
+    "orl-tablet-pair": ("site/2026_07_8.jpg", None, "4:5", [480, 750]),
+    "orl-park-team": ("site/2026_07_c2.jpg", None, "4:5", [480, 750]),
+    "orl-crowd-shirt": ("site/2025_11_Coded-Octubre_-71.jpg", None, "4:5", [480, 700]),
+    "guardian-briefing": ("site/elementor_thumbs_DSC00284-1-1-reumb3panojqbky59xcck9j91twcj9y6ub3vrhg4e8.jpg", None, "4:5", [480, 640]),
+    "eu-campus": ("site/2026_04_campus.jpg", None, "4:5", [480, 750]),
+    "eu-vr": ("site/2026_04_europe_0000_IMG_2429.jpg", None, "4:5", [480, 750]),
+    "eu-thames-backpack": ("site/2026_04_europe_0001_IMG_3060.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-backpacks": ("site/2026_04_europe_0002_IMG_4160.jpg", None, "4:5", [480, 750]),
+    "eu-laptop-focus": ("site/2026_04_europe_0004_IMG_0714.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-spires": ("site/2026_04_oxford_0000_IMG_4055.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-guide": ("site/2026_04_oxford_0001_IMG_4049.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-theatre": ("site/2026_04_oxford_0003_IMG_4087.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-listen": ("site/2026_04_oxford_0004_IMG_4140.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-street": ("site/2026_04_oxford_0007_IMG_4075.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-square": ("site/2026_04_oxford_0008_IMG_4086.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-walk-2": ("site/2026_04_oxford_0009_IMG_4116.jpg", None, "4:5", [480, 750]),
+    "eu-radcliffe": ("site/2026_04_oxford_0010_IMG_4128.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-chapel": ("site/2026_04_oxford_0011_IMG_4134.jpg", None, "4:5", [480, 750]),
+    "eu-oxford-carving": ("site/2026_04_oxford_0014_IMG_4167.jpg", None, "4:5", [480, 750]),
+    "eu-station": ("site/2026_04_tours-sle_0000_IMG_2690.jpg", None, "4:5", [480, 750]),
+    "eu-museum-watches": ("site/2026_04_tours-sle_0001_IMG_2751.jpg", None, "4:5", [480, 750]),
+    "eu-red-brick": ("site/2026_04_tours-sle_0002_IMG_2866.jpg", None, "4:5", [480, 750]),
+    "eu-st-pauls-bus": ("site/2026_04_tours-sle_0004_IMG_2886.jpg", None, "4:5", [480, 750]),
+    "eu-walk-river": ("site/2026_04_tours-sle_0006_IMG_2975.jpg", None, "4:5", [480, 750]),
+    "eu-thames-portrait": ("site/2026_04_tours-sle_0007_IMG_3051.jpg", None, "4:5", [480, 750]),
+    "eu-london-eye": ("site/2026_04_tours-sle_0010_IMG_3082.jpg", None, "4:5", [480, 750]),
+    "eu-tower-bridge": ("site/2026_04_tours-sle_0011_IMG_3098.jpg", None, "4:5", [480, 750]),
+    "eu-tower-bridge-close": ("site/2026_04_tours-sle_0012_Background.jpg", None, "4:5", [480, 750]),
+    "eu-street-group": ("site/2025_11_SLE-1.jpg", None, "16:9", [960, 1600]),
+    "ai-bench-laptop": ("site/2026_04_slai_0000_IMG_0560.jpg", None, "4:5", [480, 750]),
+    "ai-campus-walk": ("site/2026_04_slai_0001_IMG_0559.jpg", None, "4:5", [480, 750]),
+    "ai-friends": ("site/2026_04_slai_0002_IMG_0566.jpg", None, "4:5", [480, 750]),
+    "ai-selfie": ("site/2026_04_slai_0003_IMG_0572.jpg", None, "4:5", [480, 750]),
+    "ai-backpack": ("site/2026_04_slai_0004_IMG_0587.jpg", None, "4:5", [480, 750]),
+    "ai-hall": ("site/2026_04_slai_0005_IMG_0601.jpg", None, "4:5", [480, 750]),
+    "tokyo-sake": ("site/2026_07_IMG_0821.jpg", None, "4:5", [480, 750]),
+    "tokyo-sensoji": ("site/2026_07_IMG_0979.jpg", None, "4:5", [480, 750]),
+    "tokyo-street-phone": ("site/2026_07_tokyo-gallery_0003_cierra-los-labos.jpg", None, "4:5", [480, 750]),
+    "tokyo-akihabara": ("site/2026_08_tokyo-labs_0000_Layer-5.jpg", None, "4:5", [480, 750]),
+    "tokyo-gates": ("site/2026_03_TOKYO3.png", None, "4:5", [480, 750]),
 }
 
 # key: [(source, start, duration), ...] concatenated; 3:4 crop from the 720x1280 reels, no audio
@@ -113,9 +164,17 @@ def ratio_crop(src, aspect):
         cw, ch = w, round(w * ah / aw)
     return f"{cw}x{ch}+{(w - cw) // 2}+{(h - ch) // 2}"
 
+prev = json.loads(pathlib.Path("content/media-built.json").read_text())
 manifest = {"images": {}, "videos": {}}
+# A raw source that is not on this machine (e.g. assets/raw/instagram) keeps its already-built files and manifest entry.
 for key, (src, crop, aspect, widths) in IMAGES.items():
     path = RAW / src
+    if not path.exists() and key in prev["images"]:
+        manifest["images"][key] = prev["images"][key]
+        continue
+    if all((OUT / f"{key}-{wd}.webp").exists() for wd in widths) and prev["images"].get(key, {}).get("widths") == widths:
+        manifest["images"][key] = prev["images"][key]
+        continue
     if crop is None and aspect:
         crop = ratio_crop(path, aspect)
     if crop is None:  # face-focused square for group shots: right-of-centre square
@@ -128,6 +187,9 @@ for key, (src, crop, aspect, widths) in IMAGES.items():
     manifest["images"][key] = {"source": src, "widths": widths, "ratio": [cw, ch]}
 
 for key, parts in VIDEOS.items():
+    if key in prev["videos"] and (OUT / f"{key}.mp4").exists():
+        manifest["videos"][key] = prev["videos"][key]
+        continue
     inputs, filters = [], []
     for i, (src, start, dur) in enumerate(parts):
         inputs += ["-ss", str(start), "-t", str(dur), "-i", str(RAW / src)]
@@ -142,7 +204,7 @@ for key, parts in VIDEOS.items():
     manifest["videos"][key] = {"sources": [p[0] for p in parts], "ratio": [3, 4]}
 
 # Phone backdrop for /championship: ~1 KB pre-blurred still (low-entropy, so Chrome skips it as LCP and the h1 stays the LCP).
-run(["convert", str(RAW / IMAGES["tokyo-group"][0]), "-auto-orient", "-resize", "96x", "-blur", "0x2", "-strip", "-quality", "50",
+if not (OUT / "tokyo-group-blur.webp").exists(): run(["convert", str(RAW / IMAGES["tokyo-group"][0]), "-auto-orient", "-resize", "96x", "-blur", "0x2", "-strip", "-quality", "50",
      str(OUT / "tokyo-group-blur.webp")])
 
 # Open Graph cards: 1200x630 JPG (what every link preview accepts), centre crop of a landscape original >= 1200 px wide.
@@ -157,8 +219,11 @@ OG = {
     "stories": IMAGES["presenting"][0],
     "method": IMAGES["lab"][0],
     "about": IMAGES["uk-lecture"][0],
+    "events": IMAGES["eu-street-group"][0],
 }
 for key, src in OG.items():
+    if (OUT / f"og-{key}.jpg").exists():
+        continue
     run(["convert", f"{RAW / src}[0]", "-auto-orient", "-resize", "1200x630^", "-gravity", "center", "-extent", "1200x630",
          "-strip", "-interlace", "Plane", "-quality", "78", str(OUT / f"og-{key}.jpg")])
 
