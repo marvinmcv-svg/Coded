@@ -36,6 +36,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   return pageMetadata(locale, `/programs/${p.slug}`, `${p.name} — Coded`, t("summary"));
 }
 
+const BLANK = "data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==";
+
 const letters = { S: "text-steam-s", T: "text-steam-t", E: "text-steam-e", A: "text-steam-a", M: "text-steam-m" } as const;
 
 function List({ items }: { items: string[] }) {
@@ -108,9 +110,13 @@ export default async function ProgramPage({ params }: Params) {
               {next ? <a href="#dates" className={buttonClass("ghost")}>{t("nextDeparture", { date: fmt(next) })}</a> : null}
             </div>
           </div>
-          <div className="intro-mask relative aspect-[4/5] overflow-hidden rounded-[var(--radius-card)] shadow-[0_40px_120px_-30px_rgb(118_0_231/.6)] md:aspect-[4/5]" data-cursor="">
-            {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized webp + srcset (content/media.ts) */}
-            <img {...hero} sizes="(min-width: 768px) 40vw, 90vw" alt={tm(p.slug)} fetchPriority="high" decoding="async" className="absolute inset-0 size-full object-cover" />
+          <div className="intro-mask relative hidden aspect-[4/5] overflow-hidden rounded-[var(--radius-card)] shadow-[0_40px_120px_-30px_rgb(118_0_231/.6)] md:block" data-cursor="">
+            {/* md+ only, like PageHero: phones fetch nothing (1×1 inline source) so the h1 stays the LCP element (CLAUDE.md). */}
+            <picture>
+              <source media="(max-width: 767px)" srcSet={BLANK} />
+              {/* eslint-disable-next-line @next/next/no-img-element -- pre-sized webp + srcset (content/media.ts) */}
+              <img {...hero} sizes="40vw" alt={tm(p.slug)} fetchPriority="high" decoding="async" className="absolute inset-0 size-full object-cover" />
+            </picture>
             <div aria-hidden className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-ink/70 to-transparent" />
           </div>
         </div>
