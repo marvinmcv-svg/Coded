@@ -16,6 +16,7 @@ import { routing } from "@/lib/i18n/routing";
 import { consultationHref } from "@/lib/links";
 import { pageMetadata } from "@/lib/seo/meta";
 import { programVideos } from "@/content/videos";
+import { programPhotos } from "@/content/gallery";
 import { Videos } from "@/components/sections/Videos";
 
 export const revalidate = 86400;
@@ -192,6 +193,7 @@ export default async function ProgramPage({ params }: Params) {
             </li>
           ))}
         </ul>
+        <Link href={`/gallery#${p.slug}`} className={`${buttonClass("ghost")} self-center`}>{t("seeAll", { count: programPhotos(p.slug).length })} →</Link>
       </section>
 
       <div className="mx-auto flex max-w-5xl flex-col gap-16 px-6 pb-24">

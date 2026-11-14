@@ -13,6 +13,9 @@ const pages = [
   ["faq", "faq"],
   ["contact", "contact"],
   ["method", "method"],
+  ["events", "events"],
+  ["projects", "projects"],
+  ["gallery", "gallery"],
 ] as const;
 
 for (const [locale, m] of Object.entries({ es, en })) {
@@ -45,7 +48,7 @@ test("header links reach the audience pages", async ({ page }) => {
   await page.setViewportSize({ width: 1280, height: 800 });
   await page.goto("/es");
   const nav = page.getByRole("navigation", { name: es.home.nav.label });
-  for (const path of ["schools", "world-citizens"]) await expect(nav.locator(`a[href="/es/${path}"]`)).toHaveCount(1);
+  for (const path of ["schools", "world-citizens", "events", "projects", "gallery"]) await expect(nav.locator(`a[href="/es/${path}"]`)).toHaveCount(1);
 });
 
 test("/es/stories renders every verbatim review and the four Orlando diary reels", async ({ page }) => {

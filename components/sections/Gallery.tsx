@@ -1,11 +1,13 @@
 import { getTranslations } from "next-intl/server";
 import { Marquee } from "@/components/motion/Marquee";
+import { allPhotos } from "@/content/gallery";
 import { photo, type BuiltImage } from "@/content/media";
+import { Link } from "@/lib/i18n/navigation";
 import { SectionHeading } from "./SectionHeading";
 
 const rows: BuiltImage[][] = [
-  ["class-laptops", "tokyo-build", "lab-coat", "vr", "purple-laptop", "worksheet", "tokyo-temple"],
-  ["presenting", "tablets", "activity", "tokyo-cap", "lab", "student-laptop", "boys-laptop", "laptops-room"],
+  ["class-laptops", "orl-workbook", "tokyo-build", "eu-oxford-guide", "lab-coat", "vr", "orl-main-street", "purple-laptop", "worksheet", "tokyo-temple"],
+  ["presenting", "eu-thames-backpack", "tablets", "ai-friends", "activity", "tokyo-cap", "orl-pitch-stage", "lab", "student-laptop", "tokyo-sensoji", "laptops-room"],
 ];
 
 /** "This is Coded": two photo rows drifting in opposite directions; scroll speed pushes them (full tier). */
@@ -28,6 +30,7 @@ export async function Gallery() {
           </Marquee>
         ))}
       </div>
+      <Link href="/gallery" className="mx-auto font-mono text-sm text-mist hover:text-paper">{t("all", { count: allPhotos().length })} →</Link>
     </section>
   );
 }

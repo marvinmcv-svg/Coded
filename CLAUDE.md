@@ -15,6 +15,9 @@ blocked on Q0 domain + DNS (Q30).
 **Cody** (AI receptionist, `components/cody` + `app/api/cody`): answers only from `content/messages` + `content/programs.ts`
 (`lib/cody/knowledge.ts`); Claude when `ANTHROPIC_API_KEY` is set, published-FAQ matching otherwise (Q35). Panel lazy-loads on first
 intent. Design review + roadmap: `DESIGN_REVIEW.md`.
+**Explore pages** (2026-11-14): /events (2026–27 calendar + per-program photo stories), /projects (the four project briefs,
+CONTENT_FACTS §3b), /gallery (every Coded photo, `content/gallery.ts`, filter + `<dialog>` lightbox); home calendar strip + projects
+teaser; phone nav menu (`MobileMenu`, below `xl`).
 Read first: `PLAN.md`, `AUDIT.md`, `CONTENT_FACTS.md`, `OPEN_QUESTIONS.md`, `LAUNCH.md`.
 
 ## Stack (planned — see PLAN.md §7 for pinned versions)

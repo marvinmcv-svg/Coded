@@ -789,6 +789,521 @@
     482,
     482
    ]
+  },
+  "orl-workbook": {
+   "source": "site/2026_04_Epic-Universe.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "orl-main-street": {
+   "source": "site/2026_04_IMG_7170.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    525,
+    656
+   ]
+  },
+  "orl-dream-shirt": {
+   "source": "site/2026_04_IMG_7175.jpg",
+   "widths": [
+    480,
+    900
+   ],
+   "ratio": [
+    525,
+    656
+   ]
+  },
+  "orl-caps": {
+   "source": "site/2026_04_IMG_7146.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    525,
+    656
+   ]
+  },
+  "orl-pitch-stage": {
+   "source": "site/2026_04_slo-3.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "orl-sketching": {
+   "source": "site/2026_04_a.jpg",
+   "widths": [
+    480
+   ],
+   "ratio": [
+    480,
+    600
+   ]
+  },
+  "orl-laptop": {
+   "source": "site/2026_04_t.jpg",
+   "widths": [
+    480
+   ],
+   "ratio": [
+    480,
+    600
+   ]
+  },
+  "orl-tablet-pair": {
+   "source": "site/2026_07_8.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    750,
+    938
+   ]
+  },
+  "orl-park-team": {
+   "source": "site/2026_07_c2.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    750,
+    938
+   ]
+  },
+  "orl-crowd-shirt": {
+   "source": "site/2025_11_Coded-Octubre_-71.jpg",
+   "widths": [
+    480,
+    700
+   ],
+   "ratio": [
+    704,
+    880
+   ]
+  },
+  "guardian-briefing": {
+   "source": "site/elementor_thumbs_DSC00284-1-1-reumb3panojqbky59xcck9j91twcj9y6ub3vrhg4e8.jpg",
+   "widths": [
+    480,
+    640
+   ],
+   "ratio": [
+    640,
+    800
+   ]
+  },
+  "eu-campus": {
+   "source": "site/2026_04_campus.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-vr": {
+   "source": "site/2026_04_europe_0000_IMG_2429.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "eu-thames-backpack": {
+   "source": "site/2026_04_europe_0001_IMG_3060.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "eu-oxford-backpacks": {
+   "source": "site/2026_04_europe_0002_IMG_4160.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "eu-laptop-focus": {
+   "source": "site/2026_04_europe_0004_IMG_0714.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "eu-oxford-spires": {
+   "source": "site/2026_04_oxford_0000_IMG_4055.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-guide": {
+   "source": "site/2026_04_oxford_0001_IMG_4049.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-theatre": {
+   "source": "site/2026_04_oxford_0003_IMG_4087.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-listen": {
+   "source": "site/2026_04_oxford_0004_IMG_4140.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-street": {
+   "source": "site/2026_04_oxford_0007_IMG_4075.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-square": {
+   "source": "site/2026_04_oxford_0008_IMG_4086.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-walk-2": {
+   "source": "site/2026_04_oxford_0009_IMG_4116.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-radcliffe": {
+   "source": "site/2026_04_oxford_0010_IMG_4128.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-chapel": {
+   "source": "site/2026_04_oxford_0011_IMG_4134.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-oxford-carving": {
+   "source": "site/2026_04_oxford_0014_IMG_4167.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-station": {
+   "source": "site/2026_04_tours-sle_0000_IMG_2690.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-museum-watches": {
+   "source": "site/2026_04_tours-sle_0001_IMG_2751.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-red-brick": {
+   "source": "site/2026_04_tours-sle_0002_IMG_2866.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-st-pauls-bus": {
+   "source": "site/2026_04_tours-sle_0004_IMG_2886.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-walk-river": {
+   "source": "site/2026_04_tours-sle_0006_IMG_2975.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-thames-portrait": {
+   "source": "site/2026_04_tours-sle_0007_IMG_3051.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-london-eye": {
+   "source": "site/2026_04_tours-sle_0010_IMG_3082.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-tower-bridge": {
+   "source": "site/2026_04_tours-sle_0011_IMG_3098.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-tower-bridge-close": {
+   "source": "site/2026_04_tours-sle_0012_Background.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "eu-street-group": {
+   "source": "site/2025_11_SLE-1.jpg",
+   "widths": [
+    960,
+    1600
+   ],
+   "ratio": [
+    1332,
+    749
+   ]
+  },
+  "ai-bench-laptop": {
+   "source": "site/2026_04_slai_0000_IMG_0560.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "ai-campus-walk": {
+   "source": "site/2026_04_slai_0001_IMG_0559.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "ai-friends": {
+   "source": "site/2026_04_slai_0002_IMG_0566.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "ai-selfie": {
+   "source": "site/2026_04_slai_0003_IMG_0572.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "ai-backpack": {
+   "source": "site/2026_04_slai_0004_IMG_0587.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "ai-hall": {
+   "source": "site/2026_04_slai_0005_IMG_0601.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "tokyo-sake": {
+   "source": "site/2026_07_IMG_0821.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-sensoji": {
+   "source": "site/2026_07_IMG_0979.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    675,
+    844
+   ]
+  },
+  "tokyo-street-phone": {
+   "source": "site/2026_07_tokyo-gallery_0003_cierra-los-labos.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    506,
+    632
+   ]
+  },
+  "tokyo-akihabara": {
+   "source": "site/2026_08_tokyo-labs_0000_Layer-5.jpg",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    1080,
+    1350
+   ]
+  },
+  "tokyo-gates": {
+   "source": "site/2026_03_TOKYO3.png",
+   "widths": [
+    480,
+    750
+   ],
+   "ratio": [
+    668,
+    835
+   ]
   }
  },
  "videos": {

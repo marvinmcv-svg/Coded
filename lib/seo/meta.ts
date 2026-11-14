@@ -26,6 +26,9 @@ const OG_IMAGES: Record<string, string> = {
   "/stories": "stories",
   "/method": "method",
   "/about": "about",
+  "/events": "events",
+  "/gallery": "events",
+  "/projects": "stories",
 };
 
 export function ogImage(path: string) {
