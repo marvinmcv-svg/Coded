@@ -59,3 +59,15 @@ export function pastEditions(p: Program, now = today()): string[] {
 export function nextCohort(p: Program, now = today()): string | null {
   return upcomingCohorts(p, now)[0] ?? null;
 }
+
+export type Edition = { program: Program; date: string; past: boolean };
+
+/** Every edition across programs (run + upcoming), oldest first — the events calendar on /events and the home strip. */
+export function allEditions(now = today()): Edition[] {
+  return programs
+    .flatMap((program) => [
+      ...pastEditions(program, now).map((date) => ({ program, date, past: true })),
+      ...upcomingCohorts(program, now).map((date) => ({ program, date, past: false })),
+    ])
+    .sort((a, b) => a.date.localeCompare(b.date));
+}

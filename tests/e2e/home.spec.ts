@@ -70,10 +70,11 @@ test("moving photo rows can be paused (WCAG 2.2.2)", async ({ page }) => {
 test("no past cohort dates are shown", async ({ page }) => {
   await page.goto("/en");
   const today = new Date().toISOString().slice(0, 10);
-  // cohort/event dates only — review dates (#reviews) are in the past by nature
+  // cohort/event dates only — review dates (#reviews) are in the past by nature, and editions already run
+  // ([data-past], the calendar strip) are shown as completed, never bookable
   const dates = await page
     .locator("time[datetime]")
-    .evaluateAll((els) => els.filter((e) => !e.closest("#reviews")).map((e) => e.getAttribute("datetime")!));
+    .evaluateAll((els) => els.filter((e) => !e.closest("#reviews") && !e.closest("[data-past]")).map((e) => e.getAttribute("datetime")!));
   expect(dates.length).toBeGreaterThan(0);
   for (const d of dates) expect(d > today, `${d} is not in the future`).toBe(true);
 });

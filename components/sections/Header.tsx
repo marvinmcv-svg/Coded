@@ -3,14 +3,17 @@ import { LocaleSwitch } from "@/components/ui/LocaleSwitch";
 import { Link } from "@/lib/i18n/navigation";
 import { buttonClass } from "@/components/ui/Button";
 import { consultationHref } from "@/lib/links";
+import { MobileMenu } from "./MobileMenu";
 
 const items = [
   ["programs", "/programs"],
+  ["events", "/events"],
+  ["projects", "/projects"],
+  ["gallery", "/gallery"],
   ["schools", "/schools"],
   ["worldCitizens", "/world-citizens"],
   ["championship", "/championship"],
   ["safety", "/safety"],
-  ["contact", "/contact"],
 ] as const;
 
 export async function Header() {
@@ -19,19 +22,29 @@ export async function Header() {
   const th = await getTranslations("home.hero");
 
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-ink/60 backdrop-blur-xl backdrop-saturate-150">
+    <header className="sticky top-0 isolate z-40 border-b border-white/10 bg-ink/60 backdrop-blur-xl backdrop-saturate-150">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-3">
         <Link href="/" className="font-display text-xl font-semibold tracking-tight">coded</Link>
-        <nav aria-label={t("label")} className="hidden lg:block">
-          <ul className="flex gap-6 text-sm text-mist">
+        <nav aria-label={t("label")} className="hidden xl:block">
+          <ul className="flex gap-5 text-sm text-mist 2xl:gap-6">
             {items.map(([key, href]) => (
               <li key={key}><Link href={href} className="hover:text-paper">{t(key)}</Link></li>
             ))}
           </ul>
         </nav>
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3 sm:gap-4">
+          <MobileMenu label={t("menu")}>
+            <nav aria-label={t("label")}>
+              <ul className="mx-auto grid max-w-6xl grid-cols-2 gap-x-6 px-6 py-4 sm:grid-cols-3">
+                {items.map(([key, href]) => (
+                  <li key={key}><Link href={href} className="flex min-h-11 items-center text-mist hover:text-paper">{t(key)}</Link></li>
+                ))}
+                <li><Link href="/contact" className="flex min-h-11 items-center text-mist hover:text-paper">{t("contact")}</Link></li>
+              </ul>
+            </nav>
+          </MobileMenu>
           <LocaleSwitch label={tc("otherLocaleName")} title={tc("switchLocale")} />
-          <Link prefetch={false} href={consultationHref()} className={`${buttonClass("primary")} hidden min-h-10 px-4 text-sm sm:inline-flex`}>
+          <Link prefetch={false} href={consultationHref()} className={`${buttonClass("primary")} min-h-10 px-4 text-sm max-sm:hidden`}>
             {th("ctaPrimary")}
           </Link>
         </div>

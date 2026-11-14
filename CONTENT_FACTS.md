@@ -48,6 +48,27 @@ Orlando STEAM League October 2026: **Oct 30 2026** (`program/orlando-steam-leagu
 automatically once their start date passes (`pastEditions()` in content/programs.ts). Not used: Colegio Granadino's FB "June 2026"
 for Orlando (third-party, conflicts with the site's Jul 26).
 
+### 3b. Project briefs 🟡 (codingeducation.us program pages, scraped 2026-11-14) — rendered on /projects and the home teaser
+- **Orlando** ("Create your own space colony"): "develop a fully operational space colony prototype capable of sustaining human
+  life in a remote and extreme environment. Every aspect of the colony must be meticulously planned, from infrastructure and
+  transportation to automation and artificial intelligence." (`program/orlando-steam-league-summer-2027`)
+- **All leagues:** students work on the program's core theme, their own topic within the rubric, and choose at least one UN SDG;
+  they learn techniques and tools in the workshops to put their solutions into action.
+- **Europe** ("Create your own STEAM Digital Career Portfolio"): "develop a digital portfolio by applying STEAM disciplines to tackle a
+  real-life challenge aligned with the UN SDGs." (`program/europe-steam-league-2027`)
+- **AI:** "Each team will design an AI Innovation Studio aligned with the UN SDGs…"; "design, customize, and test AI-powered chatbots for
+  civic innovation, inspired by Stanford University's Bot101 framework." London tours: Monarchy and Landmarks · Kensington and Hyde
+  Park · Icons of the Thames. (`program/steam-league-ai-2027`)
+- **Tokyo:** "Develop a project solving a local problem in your home country using technology and innovation"; "Coded Academics project
+  guidelines"; winning team gets "full support from Coded along with a cash prize". (`program/orlando-steam-league-summer-2027`)
+- "If you can dream it, you can CODE it!" — Coded's own line (.us home; printed on staff shirts in Coded photos). Used as the /projects h1.
+
+### 3c. Photos per program (2026-11-14) — /gallery, /events
+47 more of Coded's own photos from the program pages (scripts/build-media.py, `content/gallery.ts`). Grouped by the program page they
+were published on, **not** by edition: the crawl doesn't say which edition a photo is from, so no photo is captioned with a date.
+Left out: stock/venue images, close-up third-party signage, STEAM Lab 360 portraits (Q16), avatar badges, and one photo published on
+both the Orlando and Tokyo pages (program unclear).
+
 ### Program details 🟡 (from .com unless noted)
 - **Orlando pathway:** S Coding at the Digital Hub / Physics of Disney Hollywood Studios · T 6-degrees-of-freedom workshop at Universal; Robotics with Ozobots · E Environmental engineering at Epic Universe; VelociCoaster creation (Islands of Adventure) · A Art of Animation: colony layout & space-suit design · M AI & ML coding chatbots. Two full academic days on UCF campus.
 - **Orlando inclusions:** meals during academic program (3 meals not included*), software/materials (own laptop), academic content, theme-park + NASA tickets, accommodation, private transport, medical insurance, tracking app, certificate. Flights excluded. Gender-split rooms, 10 pm curfew. 2–4 students/room (up to 5 in suites).

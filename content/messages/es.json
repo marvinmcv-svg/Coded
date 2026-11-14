@@ -28,7 +28,11 @@
       "safety": "Seguridad",
       "contact": "Contacto",
       "schools": "Colegios",
-      "worldCitizens": "World Citizens"
+      "worldCitizens": "World Citizens",
+      "events": "Eventos",
+      "projects": "Proyectos",
+      "gallery": "Galería",
+      "menu": "Menú"
     },
     "hero": {
       "eyebrow": "Escuela STEAM sin fronteras",
@@ -78,7 +82,8 @@
     },
     "gallery": {
       "eyebrow": "En terreno",
-      "title": "Así se vive Coded."
+      "title": "Así se vive Coded.",
+      "all": "Ver las {count} fotos"
     },
     "method": {
       "eyebrow": "Nuestro método",
@@ -199,6 +204,18 @@
       "rights": "© {year} Coded. Todos los derechos reservados.",
       "explore": "Explora",
       "tagline": "Escuela STEAM sin fronteras: el mundo es el aula."
+    },
+    "events": {
+      "eyebrow": "Calendario 2026 – 2027",
+      "title": "Cada edición, la que pasó y la que viene",
+      "completed": "Realizada",
+      "upcoming": "Próxima",
+      "more": "Ver el calendario completo"
+    },
+    "projects": {
+      "eyebrow": "Proyectos de estudiantes",
+      "title": "Cuatro desafíos. Un escenario.",
+      "more": "Ver todos los proyectos"
     }
   },
   "styleguide": {
@@ -273,7 +290,8 @@
       "more": "Otros programas",
       "pastEditions": "Ediciones anteriores",
       "english": "Nivel de inglés",
-      "englishValue": "{level} (intermedio) o superior"
+      "englishValue": "{level} (intermedio) o superior",
+      "seeAll": "Ver las {count} fotos de este programa"
     },
     "orlando-steam-league": {
       "tagline": "¡Crea tu propia colonia espacial!",
@@ -842,6 +860,129 @@
       "englishOnly": "Este artículo está disponible solo en inglés.",
       "ctaTitle": "¿Quieres vivir esto en un programa Coded?",
       "cta": "Agenda una llamada"
+    },
+    "events": {
+      "title": "Eventos",
+      "metaDescription": "Todas las ediciones de Coded: el calendario 2026–2027 y cómo se viven las ligas en Orlando, el Reino Unido y Tokio.",
+      "eyebrow": "Eventos y ediciones",
+      "heroTitle": "Cada edición, cada salida",
+      "intro": "El calendario completo de Coded —las ediciones que ya se realizaron y las próximas salidas— y cómo se vive cada liga, de Orlando a Londres, Oxford y Tokio.",
+      "stats": {
+        "past": "ediciones realizadas",
+        "next": "próximas salidas",
+        "programs": "programas",
+        "countries": "países",
+        "countriesValue": "+20"
+      },
+      "calendarEyebrow": "Calendario",
+      "calendarTitle": "2026 – 2027 de un vistazo",
+      "insideEyebrow": "Dentro de las ligas",
+      "insideTitle": "Así se vive una edición de Coded",
+      "editions": "Ediciones",
+      "nextDeparture": "Próxima salida",
+      "toursTitle": "Recorridos por Londres",
+      "photos": "{count} fotos",
+      "stories": {
+        "orlando-steam-league": {
+          "title": "Orlando: una colonia espacial en nueve días",
+          "body": "Cinco parques temáticos, el Kennedy Space Center de la NASA y dos días académicos en el campus de UCF. Al final, los estudiantes presentan sus proyectos en un escenario en la NASA."
+        },
+        "europe-steam-league": {
+          "title": "Europa: doce días entre Londres y Oxford",
+          "body": "Talleres en el campus de un colegio en el Reino Unido, recorridos por Londres —St Paul's, el Támesis, el Tower Bridge, el London Eye— y un día en Oxford. Todo suma al portafolio digital de cada estudiante."
+        },
+        "steam-league-ai": {
+          "title": "STEAM League AI: vida de campus en Bradfield College",
+          "body": "Doce días viviendo en un campus estilo universitario en Bradfield College, creando chatbots con IA para la innovación cívica, con recorridos por Londres y una visita a Oxford.",
+          "tours": [
+            "Monarquía y monumentos",
+            "Kensington y Hyde Park",
+            "Íconos del Támesis"
+          ]
+        },
+        "tokyo-steam-championship": {
+          "title": "Tokio: donde se encuentran las ligas",
+          "body": "Cada dos años, los 20 colegios ganadores de las ligas anteriores de Coded se reúnen en Tokio para presentar soluciones para ciudades y comunidades mejores."
+        }
+      }
+    },
+    "projects": {
+      "title": "Proyectos",
+      "metaDescription": "Lo que construyen los estudiantes de Coded: una colonia espacial en Orlando, un portafolio digital de carrera STEAM en el Reino Unido, un AI Innovation Studio en Bradfield College y soluciones para ciudades mejores en Tokio.",
+      "eyebrow": "Proyectos de estudiantes",
+      "heroTitle": "Si lo puedes soñar, lo puedes programar",
+      "intro": "Cada liga de Coded termina con un proyecto que los estudiantes diseñan, construyen y presentan ellos mismos, ligado a un desafío real y a por lo menos un Objetivo de Desarrollo Sostenible de la ONU.",
+      "howEyebrow": "Cómo funciona un proyecto",
+      "howTitle": "De un gran tema a tu propia solución",
+      "steps": [
+        {
+          "title": "Un tema central",
+          "body": "Cada programa define el tema general: una colonia espacial, un portafolio de carrera, un estudio de IA, una ciudad mejor."
+        },
+        {
+          "title": "Tu propio tema",
+          "body": "Cada equipo elige su propio tema dentro de la rúbrica del programa."
+        },
+        {
+          "title": "Al menos un ODS",
+          "body": "Cada proyecto se conecta con por lo menos uno de los Objetivos de Desarrollo Sostenible de la ONU."
+        },
+        {
+          "title": "Aprenderlo en los talleres",
+          "body": "En los talleres aprenden técnicas y herramientas nuevas, y luego las usan para poner su solución en marcha."
+        },
+        {
+          "title": "Presentarlo",
+          "body": "Al final del programa, los equipos presentan sus proyectos. En Orlando, el escenario está en la NASA."
+        }
+      ],
+      "brief": "El reto",
+      "workshops": "Talleres",
+      "programLink": "Ver el programa",
+      "chapters": {
+        "orlando-steam-league": {
+          "title": "Una colonia espacial",
+          "brief": "Desarrollar un prototipo de colonia espacial totalmente operativa, capaz de sostener la vida humana en un entorno remoto y extremo.",
+          "body": "Cada aspecto de la colonia se planifica: desde la infraestructura y el transporte hasta la automatización y la inteligencia artificial."
+        },
+        "europe-steam-league": {
+          "title": "Un portafolio digital de carrera STEAM",
+          "brief": "Crear un portafolio digital aplicando las disciplinas STEAM a un desafío real alineado con los Objetivos de Desarrollo Sostenible de la ONU.",
+          "body": "Durante doce días en el Reino Unido, cada taller suma una pieza nueva al portafolio."
+        },
+        "steam-league-ai": {
+          "title": "Un AI Innovation Studio",
+          "brief": "Cada equipo diseña un AI Innovation Studio alineado con los Objetivos de Desarrollo Sostenible, que muestra cómo los sistemas inteligentes apoyan la resolución de problemas, la toma de decisiones y la vida diaria.",
+          "body": "Los estudiantes diseñan, personalizan y prueban chatbots con IA para la innovación cívica, inspirados en el marco Bot101 de la Universidad de Stanford."
+        },
+        "tokyo-steam-championship": {
+          "title": "Soluciones para ciudades y comunidades mejores",
+          "brief": "Desarrollar un proyecto que resuelva un problema local de tu país con tecnología e innovación.",
+          "body": "Los equipos se preparan durante seis meses con las guías académicas de proyecto de Coded. El equipo ganador recibe un premio en efectivo y el apoyo de Coded para hacer realidad su proyecto."
+        }
+      },
+      "pitchEyebrow": "Día de presentación",
+      "pitchTitle": "En el escenario, frente a todos",
+      "pitchBody": "Después de días construyendo y puliendo, los estudiantes presentan sus propios proyectos. En Orlando, el escenario está en la NASA.",
+      "roadTitle": "Los mejores proyectos van a Tokio",
+      "roadBody": "Los ganadores de cada liga se ganan su lugar en el Tokyo STEAM Championship, que se celebra cada dos años con los 20 colegios ganadores.",
+      "roadLink": "El camino a Tokio"
+    },
+    "gallery": {
+      "title": "Galería",
+      "metaDescription": "Fotos de las ligas de Coded en Orlando, Londres, Oxford, Bradfield College y Tokio.",
+      "eyebrow": "Galería",
+      "heroTitle": "Coded, en imágenes",
+      "intro": "Talleres, campus, recorridos por la ciudad y días de presentación. Cada foto fue tomada en un programa de Coded.",
+      "filterLabel": "Mostrar fotos de",
+      "all": "Todas",
+      "life": "Vida en el aula",
+      "count": "{count} fotos",
+      "open": "Abrir foto",
+      "close": "Cerrar",
+      "prev": "Foto anterior",
+      "next": "Foto siguiente",
+      "position": "{n} de {total}"
     }
   },
   "media": {
@@ -904,7 +1045,54 @@
     "tokyo-shrine": "Un estudiante frente a un templo japonés",
     "tokyo-lantern": "Estudiantes bajo un gran farol rojo en un templo",
     "tokyo-project": "Estudiantes muestran su proyecto junto a un mentor",
-    "tokyo-night": "Estudiantes recorren las calles de Tokio de noche"
+    "tokyo-night": "Estudiantes recorren las calles de Tokio de noche",
+    "orl-workbook": "Un estudiante muestra un cuaderno de Coded sobre planificación urbana, IA y colonias espaciales en un parque temático",
+    "orl-main-street": "Un grupo de Coded con gorras moradas en la calle principal de un parque temático en Orlando",
+    "orl-dream-shirt": "Un integrante del equipo de Coded con la camiseta “If you can dream it, you can code it”",
+    "orl-caps": "Estudiantes con gorras moradas de Coded entrando a un parque temático",
+    "orl-pitch-stage": "Estudiantes en el escenario frente a un público de estudiantes de Coded",
+    "orl-sketching": "Un estudiante dibuja un diseño a lápiz",
+    "orl-laptop": "Un estudiante trabaja en su laptop durante un taller",
+    "orl-tablet-pair": "Dos estudiantes trabajan con una tableta en una mesa de taller",
+    "orl-park-team": "Un equipo de Coded con camisetas iguales en la entrada de un parque temático",
+    "orl-crowd-shirt": "Un integrante del equipo de Coded con la camiseta “If you can dream it, you can code it” entre la gente de un parque",
+    "guardian-briefing": "Una integrante del equipo de Coded da indicaciones a un grupo de estudiantes",
+    "eu-campus": "Un edificio escolar de ladrillo rojo en el Reino Unido bajo un cielo azul",
+    "eu-vr": "Una estudiante prueba un visor de realidad virtual",
+    "eu-thames-backpack": "Un estudiante con mochila de Coded mira el Támesis",
+    "eu-oxford-backpacks": "Estudiantes con mochilas de Coded caminando por Oxford",
+    "eu-laptop-focus": "Una estudiante concentrada en su laptop durante un taller",
+    "eu-oxford-spires": "Torres góticas de un college de Oxford",
+    "eu-oxford-guide": "Un guía habla con estudiantes de Coded en una calle de Oxford",
+    "eu-oxford-theatre": "Un edificio histórico de piedra en Oxford",
+    "eu-oxford-listen": "Estudiantes con mochilas de Coded escuchan a un guía en Oxford",
+    "eu-oxford-street": "Fachadas de colores en una calle de Oxford",
+    "eu-oxford-square": "Una hilera de casas antiguas en una plaza de Oxford",
+    "eu-oxford-walk-2": "Estudiantes de Coded caminando entre los colleges de Oxford",
+    "eu-radcliffe": "La cúpula de la Radcliffe Camera en Oxford",
+    "eu-oxford-chapel": "La capilla de un college de Oxford detrás de una reja",
+    "eu-oxford-carving": "Tallados en piedra en el muro de un college de Oxford",
+    "eu-station": "Una pequeña estación de tren en el Reino Unido",
+    "eu-museum-watches": "Relojes de bolsillo antiguos en la vitrina de un museo de Londres",
+    "eu-red-brick": "Una torre de ladrillo rojo vista desde abajo",
+    "eu-st-pauls-bus": "La catedral de St Paul's con un bus rojo de Londres",
+    "eu-walk-river": "Estudiantes de Coded caminando junto al Támesis",
+    "eu-thames-portrait": "Un estudiante en un puente sobre el Támesis",
+    "eu-london-eye": "El London Eye contra un cielo nublado",
+    "eu-tower-bridge": "El Tower Bridge sobre el Támesis",
+    "eu-tower-bridge-close": "Una torre del Tower Bridge vista desde abajo",
+    "eu-street-group": "Estudiantes de Coded en una calle de Londres",
+    "ai-bench-laptop": "Dos estudiantes programan en una laptop sobre una banca del jardín",
+    "ai-friends": "Estudiantes con mochilas y credenciales de Coded conversando en el campus",
+    "ai-hall": "Estudiantes trabajando en laptops en un salón grande",
+    "ai-selfie": "Dos estudiantes se toman una selfie en el campus",
+    "ai-campus-walk": "Estudiantes caminando por un sendero del campus",
+    "ai-backpack": "Estudiantes con mochilas de Coded en el campus",
+    "tokyo-sensoji": "Un estudiante frente a un templo en Tokio",
+    "tokyo-akihabara": "Una calle llena de letreros luminosos en Akihabara, Tokio",
+    "tokyo-gates": "Estudiantes pasando por los torniquetes de una estación de tren en Tokio",
+    "tokyo-street-phone": "Una estudiante toma fotos en una calle concurrida de Tokio",
+    "tokyo-sake": "Una pared de barriles de sake decorados en Tokio"
   },
   "errors": {
     "notFound": {

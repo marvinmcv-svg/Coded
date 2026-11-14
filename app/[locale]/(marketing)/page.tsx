@@ -1,11 +1,13 @@
 import { setRequestLocale } from "next-intl/server";
 import { Championship } from "@/components/sections/Championship";
 import { CTA } from "@/components/sections/CTA";
+import { EventCalendar } from "@/components/sections/EventCalendar";
 import { Gallery } from "@/components/sections/Gallery";
 import { GlobeRoute } from "@/components/sections/GlobeRoute";
 import { Hero } from "@/components/sections/Hero";
 import { Method } from "@/components/sections/Method";
 import { Programs } from "@/components/sections/Programs";
+import { ProjectsTeaser } from "@/components/sections/ProjectsTeaser";
 import { Reviews } from "@/components/sections/Reviews";
 import { Skills } from "@/components/sections/Skills";
 import { Teachers } from "@/components/sections/Teachers";
@@ -25,7 +27,9 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
       <Ticker />
       <GlobeRoute />
       <Programs />
+      <EventCalendar compact />
       <Gallery />
+      <ProjectsTeaser />
       <Method />
       <Skills />
       <Championship />
